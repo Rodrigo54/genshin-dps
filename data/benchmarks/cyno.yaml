@@ -1,0 +1,26 @@
+# Fonte: ranking de DPS do Lunnoa (X/Twitter), versão corrigida, simulado no LUNABASE Simulator.
+# Critérios de transcrição:
+# - DPS e tempo de rotação: direto da imagem do post ("252.3K DPS (18.94s)" = teamDps 252300, rotationTime 18.94).
+# - Constelações pela regra do post: C0 de base; 5★ do evento "Controlar-se e Viajar Para Longe" em C1;
+#   4★ em C6; Yumemizuki Mizuki em C2; Viajante (蛍, a Lumine no post) em C6.
+# - Armas: ícone no canto inferior direito de cada retrato. Refinamento pela regra do post (R1; Viajante com a
+#   Exaiphanes Blade R5), exceto a Favonius Sword da Furina e a Dragon's Bane do Illuga, ambas em R5.
+
+- teamDps: 196800
+  rotationTime: 20.01
+  patch: '7.1'
+  ref:
+    author: Lunnoa
+    url: https://x.com/lunnoa1013/status/2101706373260284145
+    tool: LUNABASE Simulator
+    notes:
+      pt: >-
+        Simulação de 2 rotações no padrão KQMs. Investimento de base C0R1, com 5★ do evento Controlar-se e Viajar
+        Para Longe em C1, 4★ em C6, Yumemizuki Mizuki em C2 e Viajante em C6R5. O autor calcula com números da fase
+        beta (leak), então os valores podem mudar no lançamento, e avisa que o ranking é só um exemplo: os times
+        estão próximos e mudam de ordem com qualquer diferença de condição.
+  main: { constellation: 1, weapon: { name: Staff of the Scarlet Sands, refinement: 1 } }
+  supports:
+    - { character: Odette, constellation: 0, weapon: { name: Whitelake Frostfeather, refinement: 1 } }
+    - { character: Yae Miko, constellation: 1, weapon: { name: Kagura's Verity, refinement: 1 } }
+    - { character: Nicole, constellation: 0, weapon: { name: Angelos' Heptades, refinement: 1 } }

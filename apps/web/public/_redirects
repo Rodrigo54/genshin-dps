@@ -1,0 +1,11 @@
+# Netlify: regras não forçadas só valem quando não existe arquivo no caminho,
+# então as páginas prerenderizadas, /data, /i18n e /images passam direto.
+
+# Idioma já na URL e página inexistente: 404 do próprio idioma.
+# Fica antes das regras de idioma para /pt/x nunca virar /pt/pt/x.
+/pt/*  /pt/not-found/index.html  404
+/en/*  /en/not-found/index.html  404
+
+# Sem idioma na URL: cookie nf_lang (gravado pelo seletor) ou Accept-Language do navegador
+/*  /pt/:splat  302  Language=pt
+/*  /en/:splat  302

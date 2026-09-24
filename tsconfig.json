@@ -1,0 +1,17 @@
+{
+  // Typecheck dos pacotes e scripts executados pelo Bun; o app Angular tem o próprio tsconfig
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "Preserve",
+    "moduleResolution": "bundler",
+    "lib": ["ESNext"],
+    "types": ["bun"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["packages/**/*.ts", "scripts/**/*.ts"]
+}

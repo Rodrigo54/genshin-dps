@@ -1,0 +1,45 @@
+# Fonte: planilha de testes da comunidade (feita pela April, Discord), aba Mavuika.
+# Critérios de transcrição:
+# - "Mavuika R1" = arma assinatura R1, com a Mavuika em C0 (regra da capa: uma R1 ou uma C1 por time).
+# - Constelação omitida na fonte = C0 (inclusive o Bennett); arma dos suportes só quando a fonte cita.
+# - Refinamento omitido na fonte, confirmado na revisão: Thrilling Tales of Dragon Slayers da Citlali em R5.
+
+- teamDps: 180000
+  patch: '7.1'
+  ref:
+    author: April
+    url: https://docs.google.com/spreadsheets/d/1N7SLT2q8tzZYH_94WxlWZDD5CqIjqlhThpm6IkUuA8I/edit?gid=1202408569
+    notes:
+      pt: Medição no boneco de DPS do Miliastra, alvo único, ao fim de 3 a 6 rotações.
+  rotation: 3C FD
+  main: { constellation: 0, weapon: { name: A Thousand Blazing Suns, refinement: 1 } }
+  supports:
+    - { character: Iansan, constellation: 6 }
+    - { character: Bennett, constellation: 0 }
+    - { character: Citlali, constellation: 0, weapon: { name: Thrilling Tales of Dragon Slayers, refinement: 5 } }
+
+# Lunnoa (X/Twitter), ranking de DPS corrigido, simulado no LUNABASE Simulator.
+# Critérios de transcrição do Lunnoa:
+# - DPS e tempo de rotação: direto da imagem do post ("252.3K DPS (18.94s)" = teamDps 252300, rotationTime 18.94).
+# - Constelações pela regra do post: C0 de base; 5★ do evento "Controlar-se e Viajar Para Longe" em C1;
+#   4★ em C6; Yumemizuki Mizuki em C2; Viajante (蛍, a Lumine no post) em C6.
+# - Armas: ícone no canto inferior direito de cada retrato. Refinamento pela regra do post (R1; Viajante com a
+#   Exaiphanes Blade R5), exceto a Favonius Sword da Furina e a Dragon's Bane do Illuga, ambas em R5.
+- teamDps: 230000
+  rotationTime: 18
+  patch: '7.1'
+  ref:
+    author: Lunnoa
+    url: https://x.com/lunnoa1013/status/2101706373260284145
+    tool: LUNABASE Simulator
+    notes:
+      pt: >-
+        Simulação de 2 rotações no padrão KQMs. Investimento de base C0R1, com 5★ do evento Controlar-se e Viajar
+        Para Longe em C1, 4★ em C6, Yumemizuki Mizuki em C2 e Viajante em C6R5. O autor calcula com números da fase
+        beta (leak), então os valores podem mudar no lançamento, e avisa que o ranking é só um exemplo: os times
+        estão próximos e mudam de ordem com qualquer diferença de condição.
+  main: { constellation: 0, weapon: { name: A Thousand Blazing Suns, refinement: 1 } }
+  supports:
+    - { character: Citlali, constellation: 0, weapon: { name: Starcaller's Watch, refinement: 1 } }
+    - { character: Iansan, constellation: 6, weapon: { name: Skyward Spine, refinement: 1 } }
+    - { character: Chevreuse, constellation: 6, weapon: { name: Symphonist of Scents, refinement: 1 } }

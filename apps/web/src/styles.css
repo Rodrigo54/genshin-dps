@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+/* Fontes servidas pelo próprio site: Zen Kaku no texto, só no subconjunto latino */
+@import '@fontsource/zen-kaku-gothic-new/latin-400.css';
+@import '@fontsource/zen-kaku-gothic-new/latin-500.css';
+@import '@fontsource/zen-kaku-gothic-new/latin-700.css';
+
+/* HYWenHei, a fonte do jogo, cortada para latin (arquivo do Akasha/Enka); tem um peso só */
+@font-face {
+  font-family: 'Genshin';
+  src: url('/fonts/genshin.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Tokens do site: superfícies, texto, elementos e raridades do jogo */
+@theme {
+  --color-surface: #0e1016;
+  --color-surface-raised: #1a1e29;
+  --color-border: #2b3040;
+  --color-ink: #ece9e4;
+  --color-ink-muted: #9ba1ae;
+  --color-accent: #f0c35a;
+
+  --color-pyro: #ff7a45;
+  --color-hydro: #3fb8ff;
+  --color-anemo: #3ed6a6;
+  --color-electro: #b98bff;
+  --color-dendro: #9ccc3a;
+  --color-cryo: #9fe4ff;
+  --color-geo: #f2b92c;
+  --color-none: #9ba1ae;
+
+  --color-rarity-5: #b8783a;
+  --color-rarity-4: #7d5fb3;
+  --color-rarity-3: #3f7cae;
+  --color-rarity-2: #4d8a6a;
+  --color-rarity-1: #6b6f78;
+
+  --color-medal-gold: #f5cf6b;
+  --color-medal-gold-deep: #8f5f17;
+  --color-medal-silver: #e3e8f2;
+  --color-medal-silver-deep: #6f788c;
+  --color-medal-bronze: #eea277;
+  --color-medal-bronze-deep: #7e4125;
+
+  --font-sans: 'Zen Kaku Gothic New', system-ui, sans-serif;
+  --font-display: 'Genshin', 'Zen Kaku Gothic New', sans-serif;
+}
+
+/* Moldura com brilho das linhas do ranking; a cor vem de --frame-color */
+@utility ranking-frame {
+  border: 2px solid var(--frame-color);
+  box-shadow:
+    0 0 14px -2px var(--frame-color),
+    inset 0 0 18px -8px var(--frame-color);
+}
+
+/* Fundo noturno da home feito só com gradientes, sem imagem para baixar */
+@utility bg-night {
+  background-image:
+    radial-gradient(ellipse at 75% 0%, #34489a59, transparent 60%),
+    radial-gradient(ellipse at 0% 100%, #3a2a7a40, transparent 55%),
+    linear-gradient(180deg, #121833, var(--color-surface));
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-surface font-sans text-ink antialiased;
+  }
+}

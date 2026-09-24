@@ -1,0 +1,33 @@
+{
+  "name": "genshin-dps",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "scripts"
+  ],
+  "scripts": {
+    "data": "bun scripts/build-data.ts",
+    "images": "bun scripts/build-images.ts",
+    "build": "bun run data && bun run images && bun run --cwd apps/web build",
+    "start": "bun run data && bun run images && bun run --cwd apps/web start",
+    "test": "bun test packages scripts && bun run --cwd apps/web test",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check:i18n": "bun scripts/check-i18n.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/bun": "^1.4.2",
+    "angular-eslint": "^22.5.0",
+    "eslint": "^10.11.0",
+    "prettier": "^3.9.9",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.70.1"
+  }
+}
