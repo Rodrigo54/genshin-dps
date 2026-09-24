@@ -1,0 +1,12 @@
+{
+  "name": "@genshin-dps/scripts",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@genshin-dps/schema": "workspace:*",
+    "genshin-db": "5.2.14",
+    "sharp": "^0.35.4",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
+  }
+}
