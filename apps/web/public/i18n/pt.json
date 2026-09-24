@@ -1,0 +1,114 @@
+{
+  "site": {
+    "name": "Genshin DPS",
+    "description": "Ranking de DPS de times do Genshin Impact que reúne benchmarks da comunidade, com crédito e fonte para cada número."
+  },
+  "nav": {
+    "ranking": "Ranking",
+    "about": "Sobre",
+    "main": "Navegação principal",
+    "language": "Idioma"
+  },
+  "language": {
+    "pt": "Português",
+    "en": "English"
+  },
+  "state": {
+    "loading": "Carregando…",
+    "loadError": "Não foi possível carregar os dados."
+  },
+  "investment": {
+    "label": "Investimento",
+    "baseline": "Baseline",
+    "all": "Sem baseline",
+    "baselineHint": "Personagens 5★ em C0 e armas 5★ em R1, exceto o que o jogo dá de graça: C1 dos 5★ do evento Controlar-se e Viajar Para Longe, constelações da Viajante e armas 5★ gratuitas. Personagens 4★ e armas 4★ ou 3★ entram com qualquer investimento."
+  },
+  "ranking": {
+    "title": "Ranking de DPS",
+    "description": "O melhor time medido de cada DPS principal, ordenado pelo DPS do time.",
+    "criteriaTitle": "Critério",
+    "criteriaSources": "Benchmarks da comunidade, cada um na metodologia da própria fonte.",
+    "criteriaMetric": "DPS do time: a soma dos quatro personagens na rotação.",
+    "criteriaAll": "Sem teto de investimento: qualquer constelação e refinamento.",
+    "teamDpsValue": "{{value}} DPS",
+    "empty": "Nenhum benchmark neste filtro ainda."
+  },
+  "character": {
+    "title": "Times de {{name}}",
+    "description": "Todos os times medidos com {{name}} como DPS principal, ordenados pelo DPS do time.",
+    "notFound": "Nenhum benchmark encontrado para este personagem."
+  },
+  "team": {
+    "title": "Time de {{name}}",
+    "description": "{{name}}: DPS do time, rotação e fonte do benchmark.",
+    "members": "Membros",
+    "teamDps": "DPS do time",
+    "rotationTime": "Tempo de rotação",
+    "rotation": "Rotação",
+    "patch": "Patch {{patch}}",
+    "source": "Fonte do benchmark",
+    "sourceAuthor": "por {{author}}",
+    "sourceTool": "com {{tool}}",
+    "viewSource": "Ver publicação original",
+    "notes": "Notas",
+    "originalIn": "original em {{language}}",
+    "obsolete": "Obsoleto",
+    "baseline": "Baseline",
+    "talents": "Talentos",
+    "sets": "Sets de artefatos",
+    "mainStats": "Principais (relógio / cálice / tiara)",
+    "stats": "Atributos",
+    "details": "Ver detalhes do time",
+    "backToCharacter": "Todos os times de {{name}}",
+    "notFound": "Time não encontrado."
+  },
+  "member": {
+    "summary": "{{character}} C{{constellation}} com {{weapon}}",
+    "unknownWeapon": "arma não informada"
+  },
+  "weapon": {
+    "level": "Nível {{level}}"
+  },
+  "stats": {
+    "hp": "Vida",
+    "atk": "ATQ",
+    "def": "DEF",
+    "elementalMastery": "Proficiência Elemental",
+    "energyRecharge": "Recarga de Energia",
+    "critRate": "Taxa Crítica",
+    "critDamage": "Dano Crítico"
+  },
+  "mainStat": {
+    "hpPercent": "Vida%",
+    "atkPercent": "ATQ%",
+    "defPercent": "DEF%",
+    "elementalMastery": "Proficiência Elemental",
+    "energyRecharge": "Recarga de Energia",
+    "pyroDmgBonus": "Bônus de Dano Pyro",
+    "hydroDmgBonus": "Bônus de Dano Hydro",
+    "anemoDmgBonus": "Bônus de Dano Anemo",
+    "electroDmgBonus": "Bônus de Dano Electro",
+    "dendroDmgBonus": "Bônus de Dano Dendro",
+    "cryoDmgBonus": "Bônus de Dano Cryo",
+    "geoDmgBonus": "Bônus de Dano Geo",
+    "physicalDmgBonus": "Bônus de Dano Físico",
+    "critRate": "Taxa Crítica",
+    "critDamage": "Dano Crítico",
+    "healingBonus": "Bônus de Cura"
+  },
+  "about": {
+    "title": "Sobre",
+    "description": "Metodologia, regra do baseline e créditos do Genshin DPS.",
+    "methodologyTitle": "Metodologia",
+    "methodology": "O Genshin DPS agrega benchmarks publicados pela comunidade, como medições no boneco de DPS e simulações. Cada número é o DPS do time inteiro, a soma dos quatro personagens na rotação, e segue a metodologia da fonte: a página de cada time credita o autor, descreve o método e leva à publicação original.",
+    "baselineTitle": "Baseline",
+    "baseline": "O filtro Baseline mostra só times em que todo personagem 5★ está em C0 e toda arma 5★ está em R1. A exceção é o que o jogo dá de graça: a C1 dos 5★ do evento Controlar-se e Viajar Para Longe, qualquer constelação da Viajante e armas 5★ gratuitas, como a Exaiphanes Blade, em qualquer refinamento. Personagens 4★ e armas 4★ ou 3★ entram com qualquer investimento.",
+    "creditsTitle": "Créditos",
+    "credits": "Nomes e dados do jogo vêm do pacote genshin-db. Os ícones vêm da Enka.Network.",
+    "fanContent": "Genshin DPS é um projeto de fã, sem afiliação com a HoYoverse. Genshin Impact, seus personagens, imagens e marcas pertencem à HoYoverse."
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "backHome": "Voltar ao ranking"
+  }
+}

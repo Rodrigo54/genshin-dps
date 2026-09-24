@@ -1,0 +1,114 @@
+{
+  "site": {
+    "name": "Genshin DPS",
+    "description": "Genshin Impact team DPS ranking that gathers community benchmarks, with credit and a source for every number."
+  },
+  "nav": {
+    "ranking": "Ranking",
+    "about": "About",
+    "main": "Main navigation",
+    "language": "Language"
+  },
+  "language": {
+    "pt": "Português",
+    "en": "English"
+  },
+  "state": {
+    "loading": "Loading…",
+    "loadError": "Could not load the data."
+  },
+  "investment": {
+    "label": "Investment",
+    "baseline": "Baseline",
+    "all": "No baseline",
+    "baselineHint": "5★ characters at C0 and 5★ weapons at R1, except what the game gives for free: C1 of the 5★ characters from the To Temper Thyself and Journey Far event, Traveler constellations and free 5★ weapons. 4★ characters and 4★ or 3★ weapons count at any investment."
+  },
+  "ranking": {
+    "title": "DPS Ranking",
+    "description": "The best measured team of each main DPS, sorted by team DPS.",
+    "criteriaTitle": "Criteria",
+    "criteriaSources": "Community benchmarks, each following its own source’s methodology.",
+    "criteriaMetric": "Team DPS: the sum of all four characters over the rotation.",
+    "criteriaAll": "No investment cap: any constellation and refinement.",
+    "teamDpsValue": "{{value}} DPS",
+    "empty": "No benchmarks in this filter yet."
+  },
+  "character": {
+    "title": "{{name}} teams",
+    "description": "Every measured team with {{name}} as the main DPS, sorted by team DPS.",
+    "notFound": "No benchmarks found for this character."
+  },
+  "team": {
+    "title": "{{name}} team",
+    "description": "{{name}}: team DPS, rotation and benchmark source.",
+    "members": "Members",
+    "teamDps": "Team DPS",
+    "rotationTime": "Rotation time",
+    "rotation": "Rotation",
+    "patch": "Patch {{patch}}",
+    "source": "Benchmark source",
+    "sourceAuthor": "by {{author}}",
+    "sourceTool": "with {{tool}}",
+    "viewSource": "View original post",
+    "notes": "Notes",
+    "originalIn": "original in {{language}}",
+    "obsolete": "Obsolete",
+    "baseline": "Baseline",
+    "talents": "Talents",
+    "sets": "Artifact sets",
+    "mainStats": "Main stats (sands / goblet / circlet)",
+    "stats": "Stats",
+    "details": "See team details",
+    "backToCharacter": "All {{name}} teams",
+    "notFound": "Team not found."
+  },
+  "member": {
+    "summary": "{{character}} C{{constellation}} with {{weapon}}",
+    "unknownWeapon": "unknown weapon"
+  },
+  "weapon": {
+    "level": "Lv. {{level}}"
+  },
+  "stats": {
+    "hp": "HP",
+    "atk": "ATK",
+    "def": "DEF",
+    "elementalMastery": "Elemental Mastery",
+    "energyRecharge": "Energy Recharge",
+    "critRate": "CRIT Rate",
+    "critDamage": "CRIT DMG"
+  },
+  "mainStat": {
+    "hpPercent": "HP%",
+    "atkPercent": "ATK%",
+    "defPercent": "DEF%",
+    "elementalMastery": "Elemental Mastery",
+    "energyRecharge": "Energy Recharge",
+    "pyroDmgBonus": "Pyro DMG Bonus",
+    "hydroDmgBonus": "Hydro DMG Bonus",
+    "anemoDmgBonus": "Anemo DMG Bonus",
+    "electroDmgBonus": "Electro DMG Bonus",
+    "dendroDmgBonus": "Dendro DMG Bonus",
+    "cryoDmgBonus": "Cryo DMG Bonus",
+    "geoDmgBonus": "Geo DMG Bonus",
+    "physicalDmgBonus": "Physical DMG Bonus",
+    "critRate": "CRIT Rate",
+    "critDamage": "CRIT DMG",
+    "healingBonus": "Healing Bonus"
+  },
+  "about": {
+    "title": "About",
+    "description": "Methodology, baseline rule and credits of Genshin DPS.",
+    "methodologyTitle": "Methodology",
+    "methodology": "Genshin DPS gathers benchmarks published by the community, such as DPS dummy measurements and simulations. Every number is the DPS of the whole team, the sum of all four characters over the rotation, and follows the source’s methodology: each team page credits the author, describes the method and links to the original post.",
+    "baselineTitle": "Baseline",
+    "baseline": "The Baseline filter only shows teams where every 5★ character is at C0 and every 5★ weapon is at R1. The exception is what the game gives for free: C1 of the 5★ characters from the To Temper Thyself and Journey Far event, any Traveler constellation and free 5★ weapons, such as the Exaiphanes Blade, at any refinement. 4★ characters and 4★ or 3★ weapons count at any investment.",
+    "creditsTitle": "Credits",
+    "credits": "Game names and data come from the genshin-db package. Icons come from Enka.Network.",
+    "fanContent": "Genshin DPS is a fan project, not affiliated with HoYoverse. Genshin Impact, its characters, images and trademarks belong to HoYoverse."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "backHome": "Back to ranking"
+  }
+}
