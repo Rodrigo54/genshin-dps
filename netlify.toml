@@ -1,0 +1,5 @@
+# O build roda no GitHub Actions e o deploy sobe a pasta pronta pela Netlify CLI;
+# a Netlify não builda nada, só serve os arquivos estáticos.
+[build]
+  publish = "apps/web/dist/web/browser"
+  command = ""

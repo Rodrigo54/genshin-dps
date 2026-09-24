@@ -1,0 +1,23 @@
+# Dependências
+node_modules/
+
+# Build do Angular
+dist/
+# Sem barra no meio: vale em qualquer pasta (o cache fica em apps/web/.angular)
+.angular/
+out-tsc/
+coverage/
+
+# Gerados por `bun run data` e `bun run images` (nunca editar à mão)
+apps/web/public/data/
+apps/web/public/images/
+
+# Netlify CLI
+.netlify/
+
+# IDE e sistema
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db

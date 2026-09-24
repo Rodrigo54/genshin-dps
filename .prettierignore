@@ -1,0 +1,6 @@
+bun.lock
+apps/web/public/data/
+apps/web/public/images/
+dist/
+.angular/
+.claude/

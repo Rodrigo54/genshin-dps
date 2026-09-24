@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main, develop]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  SITE_DIRECTORY: apps/web/dist/web/browser
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: package.json
+
+      - run: bun install --frozen-lockfile
+
+      - name: Lint e formatação
+        run: |
+          bun run lint
+          bun run format:check
+          bun run typecheck
+
+      - name: Testes de pacotes e scripts
+        run: bun test packages scripts
+
+      - name: Valida e gera os dados
+        run: bun run data
+
+      - name: Cache dos ícones
+        uses: actions/cache@v6
+        with:
+          path: apps/web/public/images
+          key: icons-${{ hashFiles('apps/web/public/data/catalog.json') }}
+          restore-keys: icons-
+
+      - name: Baixa os ícones que faltam
+        run: bun run images
+
+      - name: Testes do app
+        run: bun run --cwd apps/web test
+
+      - name: Build com prerender
+        run: bun run --cwd apps/web build
+
+      - name: Barra chave sem tradução no HTML
+        run: bun run check:i18n
+
+      - name: Deploy de preview (PR)
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          url=$(bunx netlify-cli@27 deploy --dir="$SITE_DIRECTORY" --alias="pr-${{ github.event.number }}" --json | jq -r .deploy_url)
+          echo "Preview: $url" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Deploy de produção (main)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: bunx netlify-cli@27 deploy --prod --dir="$SITE_DIRECTORY"
