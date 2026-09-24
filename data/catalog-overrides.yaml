@@ -1,0 +1,16 @@
+# Complementa o catálogo do genshin-db (nomes PT/EN, raridade, elemento, ícone).
+# aliases: nome usado nas fontes → nome canônico em inglês do catálogo
+# characters/weapons/artifactSets: entradas que o genshin-db ainda não tem (ou correções)
+# O build avisa quando um override fica redundante porque o genshin-db passou a cobrir o caso.
+aliases:
+  # A Viajante é uma entrada só: o site não diferencia Lumine e Aether
+  characters: { Lumine: Traveler, Aether: Traveler }
+  weapons: {}
+  artifactSets: {}
+characters:
+  - name: { en: Traveler, pt: Viajante }
+    rarity: 5
+    element: none
+    icon: UI_AvatarIcon_PlayerGirl
+weapons: []
+artifactSets: []
