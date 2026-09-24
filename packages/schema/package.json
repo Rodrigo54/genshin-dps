@@ -1,0 +1,13 @@
+{
+  "name": "@genshin-dps/schema",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./site-data": "./src/site-data.ts"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  }
+}
