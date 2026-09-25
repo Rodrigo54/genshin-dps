@@ -12,7 +12,7 @@ Sempre Bun, nunca npm/yarn/pnpm.
 | `bun install`                                                 | instala o monorepo inteiro                                    |
 | `bun run data`                                                | valida `data/**/*.yaml` e gera `apps/web/public/data/*.json`  |
 | `bun run images`                                              | baixa só os ícones que faltam (Enka e Project Amber), em WebP |
-| `bun run vision-labels`                                       | a cada patch: regrava `data/vision-labels.yaml` (aba Perfil)  |
+| `bun run characters`                                          | a cada patch: regera `data/characters/*.yaml` do jogo         |
 | `bun run start`                                               | dados + ícones + `ng serve`                                   |
 | `bun run build`                                               | dados + ícones + `ng build` com prerender                     |
 | `bun run check:i18n`                                          | depois do build: falha se algum HTML tiver chave sem tradução |
@@ -22,18 +22,20 @@ Sempre Bun, nunca npm/yarn/pnpm.
 ## Mapa do monorepo
 
 - `data/benchmarks/<id-do-personagem>.yaml`: benchmarks de um DPS principal (fonte da verdade).
-- `data/catalog-overrides.yaml`: aliases e entradas que o `genshin-db` ainda não tem.
-- `data/vision-labels.yaml`: rótulo do elemento na aba Perfil ("Eixo Estelar", "Disco Lunar"…), gerado das tabelas
-  do jogo (Dimbreath/animegamedata2). Não edite à mão.
+- `data/characters/<id>.yaml`: catálogo de personagens, gerado por `bun run characters` a partir das tabelas do jogo
+  (Dimbreath/animegamedata2). Não edite à mão; regras próprias (regiões, Viajante) ficam em `scripts/src/characters/`.
+- `data/catalog-overrides.yaml`: aliases e entradas que a fonte ainda não tem.
 - `packages/schema`: schemas Zod da entrada e tipos do JSON gerado. O app importa só `@genshin-dps/schema/site-data`,
   que não puxa o Zod para o bundle.
-- `scripts/`: `build-data.ts`, `build-images.ts` e `check-i18n.ts`, com a lógica testável em `scripts/src/`.
+- `scripts/`: `build-data.ts`, `build-images.ts`, `build-characters.ts` e `check-i18n.ts`, com a lógica testável em
+  `scripts/src/`.
 - `apps/web`: Angular com `outputMode: 'static'`.
 - `.github/workflows/ci.yml`: lint → testes → dados → ícones → build → i18n → deploy na Netlify.
 
 ## Fluxo de dados
 
-YAML → Zod + catálogo (`genshin-db` + overrides) → JSON em `apps/web/public/data/` → app.
+YAML → Zod + catálogo (personagens de `data/characters`, armas e sets do `genshin-db`, + overrides) → JSON em
+`apps/web/public/data/` → app.
 
 - **Nunca editar o JSON gerado.** `apps/web/public/data/` e `apps/web/public/images/` ficam fora do git.
 - **Nomes são exatos:** PT ou EN, ignorando só caixa e espaços. O `genshin-db` faz busca aproximada e esse
@@ -46,7 +48,10 @@ YAML → Zod + catálogo (`genshin-db` + overrides) → JSON em `apps/web/public
 - **Dado ausente na fonte:** nos suportes, `weapon` é opcional (a UI mostra "arma não informada") e não tira o time
   do Baseline, mas arma informada sempre leva `refinement`. A constelação é sempre obrigatória: quando a fonte
   omite, transcreva C0 e registre o critério no comentário do YAML. O DPS principal exige tudo.
-- **Id do time:** hash do DPS principal e dos outros três membros, sem importar a ordem, com C/R e armas. DPS,
+- **Nível:** `level` por membro aceita 90, 95 ou 100; ausente vale 90. O card de personagem mostra os status desse
+  nível.
+- **Id do time:** hash do DPS principal e dos outros três membros, sem importar a ordem, com C/R, armas e o nível
+  quando não é 90. DPS,
   patch e `ref` ficam de fora, então uma nova medição do mesmo time mantém a URL. O mesmo time com o mesmo
   investimento só pode aparecer uma vez: o build recusa a duplicata.
 - **Sem dados fictícios:** todo benchmark precisa de uma `ref` real e verificável: `{ author, url, tool?, notes? }`,
@@ -57,11 +62,12 @@ YAML → Zod + catálogo (`genshin-db` + overrides) → JSON em `apps/web/public
 - **Agregador:** o site reúne benchmarks da comunidade (medição no boneco, simulação etc.) e não padroniza o método.
   O número é sempre o DPS do time (soma dos 4 na rotação), e a metodologia é responsabilidade da fonte, descrita
   em `ref.notes`. Não há campo de método nem selo por método.
-- **Baseline é um teto de investimento:** personagem 5★ até C0 e arma 5★ até R1, mais o que o jogo dá de graça:
+- **Baseline é um teto de investimento:** todo personagem até o nível 90, personagem 5★ até C0 e arma 5★ até R1,
+  mais o que o jogo dá de graça:
   - C1 dos 5★ do evento "Controlar-se e Viajar Para Longe" (EN: "To Temper Thyself and Journey Far", JP: 鍛錬の道);
   - qualquer constelação da Viajante;
   - armas 5★ gratuitas (Exaiphanes Blade) em qualquer refinamento;
-  - personagens 4★ e armas 4★/3★ com qualquer investimento.
+  - personagens 4★ e armas 4★/3★ em qualquer constelação e refinamento.
 
   A regra e as listas ficam em `packages/schema/src/baseline.ts`.
 
