@@ -1,5 +1,4 @@
 import {
-  type CharacterTooltipData,
   FLAT_WEAPON_SUBSTAT,
   type Locale,
   type MemberStats,
@@ -44,6 +43,6 @@ export function formatWeaponSubstat(type: WeaponSubstatType, value: number, loca
 }
 
 // Atributo de ascensão do personagem: porcentagem com uma casa, ou inteiro na Proficiência Elemental
-export function formatAscensionStat(stat: CharacterTooltipData['ascensionStat'], locale: Locale): string {
-  return stat.isPercent ? formatPercentStat(stat.value, locale) : formatFlatStat(stat.value, locale);
+export function formatAscensionStat(value: number, isPercent: boolean, locale: Locale): string {
+  return isPercent ? formatPercentStat(value, locale) : formatFlatStat(value, locale);
 }

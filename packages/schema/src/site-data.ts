@@ -47,14 +47,21 @@ export interface CharacterTooltipText {
   description: string;
 }
 
-// Status no nível máximo, como o tooltip de arma; porcentagens já multiplicadas por 100
+// Status base num nível, depois da última ascensão; porcentagens já multiplicadas por 100
+export interface CharacterLevelStats {
+  level: CharacterLevel;
+  hp: number;
+  atk: number;
+  def: number;
+  ascensionStat: number;
+}
+
+// O card mostra os status no nível do membro no time
 export interface CharacterTooltipData {
-  level: number;
-  baseHp: number;
-  baseAtk: number;
-  baseDef: number;
+  // Um por nível de CHARACTER_LEVELS
+  stats: CharacterLevelStats[];
   // Só a Proficiência Elemental é plana; os outros atributos de ascensão são porcentagem
-  ascensionStat: { value: number; isPercent: boolean };
+  isAscensionStatPercent: boolean;
   text: Record<Locale, CharacterTooltipText>;
 }
 

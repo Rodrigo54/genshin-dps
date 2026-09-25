@@ -32,7 +32,7 @@ describe('formatWeaponSubstat', () => {
 
 describe('formatAscensionStat', () => {
   it('mostra porcentagem com uma casa e valor plano como inteiro', () => {
-    expect(formatAscensionStat({ value: 88.4, isPercent: true }, 'pt')).toBe('88,4%');
-    expect(formatAscensionStat({ value: 115, isPercent: false }, 'en')).toBe('115');
+    expect(formatAscensionStat(88.4, true, 'pt')).toBe('88,4%');
+    expect(formatAscensionStat(115, false, 'en')).toBe('115');
   });
 });

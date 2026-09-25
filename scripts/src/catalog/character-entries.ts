@@ -2,7 +2,6 @@ import {
   type CharacterEntry,
   type CharacterFile,
   type CharacterTooltipData,
-  DEFAULT_CHARACTER_LEVEL,
   LOCALES,
   type Locale,
 } from '@genshin-dps/schema';
@@ -21,15 +20,10 @@ function toTooltipText(file: CharacterFile, locale: Locale): CharacterTooltipDat
   };
 }
 
-function toTooltip(id: string, file: CharacterFile): CharacterTooltipData {
-  const stats = file.stats.find(({ level }) => level === DEFAULT_CHARACTER_LEVEL);
-  if (!stats) throw new Error(`data/characters/${id}.yaml sem status no nível ${DEFAULT_CHARACTER_LEVEL}`);
+function toTooltip(file: CharacterFile): CharacterTooltipData {
   return {
-    level: stats.level,
-    baseHp: stats.hp,
-    baseAtk: stats.atk,
-    baseDef: stats.def,
-    ascensionStat: { value: stats.ascensionStat, isPercent: file.ascensionStat.isPercent },
+    stats: file.stats,
+    isAscensionStatPercent: file.ascensionStat.isPercent,
     text: Object.fromEntries(
       LOCALES.map((locale) => [locale, toTooltipText(file, locale)]),
     ) as CharacterTooltipData['text'],
@@ -44,6 +38,6 @@ export function toCharacterEntries(files: Record<string, CharacterFile>): Charac
     rarity: file.rarity,
     element: file.element,
     icon: file.icon,
-    tooltip: toTooltip(id, file),
+    tooltip: toTooltip(file),
   }));
 }

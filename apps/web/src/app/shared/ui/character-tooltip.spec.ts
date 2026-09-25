@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { type CharacterEntry } from '@genshin-dps/schema/site-data';
+import { type CharacterEntry, type CharacterLevel } from '@genshin-dps/schema/site-data';
 import { TranslocoService } from '@jsverse/transloco';
 import { provideTranslocoForTests } from '../../testing/transloco-testing';
 import { CharacterTooltip } from './character-tooltip';
@@ -12,11 +12,12 @@ const mavuika: CharacterEntry = {
   element: 'pyro',
   icon: 'UI_AvatarIcon_Mavuika',
   tooltip: {
-    level: 90,
-    baseHp: 12552,
-    baseAtk: 359,
-    baseDef: 792,
-    ascensionStat: { value: 88.4, isPercent: true },
+    stats: [
+      { level: 90, hp: 12552, atk: 359, def: 792, ascensionStat: 88.4 },
+      { level: 95, hp: 12998, atk: 399, def: 820, ascensionStat: 88.4 },
+      { level: 100, hp: 13444, atk: 439, def: 848, ascensionStat: 88.4 },
+    ],
+    isAscensionStatPercent: true,
     text: {
       pt: {
         title: 'Chama da Noite Ardente',
@@ -46,7 +47,13 @@ const mavuika: CharacterEntry = {
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CharacterTooltip],
   template: `
-    <span tabindex="0" [appCharacterTooltip]="character()" [constellation]="constellation()" element="pyro">
+    <span
+      tabindex="0"
+      [appCharacterTooltip]="character()"
+      [constellation]="constellation()"
+      [level]="level()"
+      element="pyro"
+    >
       personagem
     </span>
   `,
@@ -54,6 +61,7 @@ const mavuika: CharacterEntry = {
 class CharacterTooltipHost {
   readonly character = signal(mavuika);
   readonly constellation = signal(2);
+  readonly level = signal<CharacterLevel>(90);
 }
 
 async function openTooltip(configure: (host: CharacterTooltipHost) => void = () => undefined) {
@@ -95,6 +103,14 @@ describe('CharacterTooltip', () => {
     expect(text).toContain('A líder de Natlan.');
     expect(card?.querySelector('img[src$="UI_Buff_Element_Fire.webp"]')).not.toBeNull();
     expect(trigger.getAttribute('aria-describedby')).toBe(card?.id);
+  });
+
+  it('mostra o nível e os status do nível do membro no time', async () => {
+    const { card } = await openTooltip((host) => host.level.set(100));
+    const tags = [...card!.querySelectorAll('.whitespace-nowrap')].map((tag) => tag.textContent?.trim());
+    expect(tags[0]).toBe('Nível 100');
+    expect(card?.textContent).toContain('13.444');
+    expect(card?.textContent).not.toContain('12.552');
   });
 
   it('omite título e afiliação de quem não tem', async () => {

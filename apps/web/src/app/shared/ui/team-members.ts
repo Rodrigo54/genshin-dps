@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, input } from '@angular/co
 import {
   type Catalog,
   type CharacterEntry,
+  type CharacterLevel,
   ELEMENT_ICONS,
   type TeamElement,
   type TeamMember,
@@ -40,6 +41,7 @@ interface MemberView {
   elementIconUrl: string;
   elementTextClass: string;
   constellation: number;
+  level: CharacterLevel;
   // Ausente quando a fonte não informou a arma do suporte
   weapon?: WeaponView;
 }
@@ -64,6 +66,7 @@ interface MemberView {
             tabindex="0"
             [appCharacterTooltip]="member.character"
             [constellation]="member.constellation"
+            [level]="member.level"
             [element]="member.element"
           >
             <span class="sr-only">{{ summary }}</span>
@@ -125,6 +128,7 @@ export class TeamMembers {
       elementIconUrl: iconUrl(ELEMENT_ICONS[member.element]),
       elementTextClass: elementTextColor(member.element),
       constellation: member.constellation,
+      level: member.level,
       ...(member.weapon && { weapon: this.toWeaponView(member.weapon.weaponId, member.weapon.refinement) }),
     };
   }

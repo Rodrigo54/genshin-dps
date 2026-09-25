@@ -3,6 +3,8 @@ import { ComponentPortal } from '@angular/cdk/portal';
 import { ChangeDetectionStrategy, Component, computed, Directive, input } from '@angular/core';
 import {
   type CharacterEntry,
+  type CharacterLevel,
+  type CharacterLevelStats,
   type CharacterTooltipData,
   ELEMENT_ICONS,
   type TeamElement,
@@ -68,6 +70,8 @@ export class CharacterTooltipCard {
   readonly character = input.required<CharacterEntry>();
   readonly tooltip = input.required<CharacterTooltipData>();
   readonly constellation = input.required<number>();
+  // Nível do membro no time: escolhe os status mostrados
+  readonly level = input.required<CharacterLevel>();
   // Elemento do membro no time: cobre quem não tem elemento fixo
   readonly element = input.required<TeamElement>();
 
@@ -78,11 +82,15 @@ export class CharacterTooltipCard {
   protected readonly stars = computed(() => Array.from({ length: this.character().rarity }));
   protected readonly characterIconUrl = computed(() => iconUrl(this.character().icon));
   protected readonly elementIconUrl = computed(() => iconUrl(ELEMENT_ICONS[this.element()]));
+  protected readonly levelStats = computed<CharacterLevelStats>(() => {
+    const stats = this.tooltip().stats.find(({ level }) => level === this.level());
+    if (!stats) throw new Error(`${this.character().id} sem status no nível ${this.level()}`);
+    return stats;
+  });
   protected readonly tags = computed<RichTooltipTag[]>(() => {
-    const { level, text } = this.tooltip();
-    const { region, weaponType } = text[this.locale()];
+    const { region, weaponType } = this.tooltip().text[this.locale()];
     return [
-      { text: this.translate('tooltip.level', { level }) },
+      { text: this.translate('tooltip.level', { level: this.level() }) },
       { text: region },
       { text: weaponType },
       { text: `C${this.constellation()}`, colorClass: 'text-[wheat]' },
@@ -99,13 +107,17 @@ export class CharacterTooltipCard {
     return rows.filter((row): row is TableRow => row !== false);
   });
   protected readonly statRows = computed<TableRow[]>(() => {
-    const { baseHp, baseAtk, baseDef, ascensionStat, text } = this.tooltip();
+    const { isAscensionStatPercent, text } = this.tooltip();
+    const { hp, atk, def, ascensionStat } = this.levelStats();
     const locale = this.locale();
     return [
-      { label: this.translate('tooltip.baseHp'), value: formatFlatStat(baseHp, locale) },
-      { label: this.translate('tooltip.baseAtk'), value: formatFlatStat(baseAtk, locale) },
-      { label: this.translate('tooltip.baseDef'), value: formatFlatStat(baseDef, locale) },
-      { label: text[locale].ascensionStatName, value: formatAscensionStat(ascensionStat, locale) },
+      { label: this.translate('tooltip.baseHp'), value: formatFlatStat(hp, locale) },
+      { label: this.translate('tooltip.baseAtk'), value: formatFlatStat(atk, locale) },
+      { label: this.translate('tooltip.baseDef'), value: formatFlatStat(def, locale) },
+      {
+        label: text[locale].ascensionStatName,
+        value: formatAscensionStat(ascensionStat, isAscensionStatPercent, locale),
+      },
     ];
   });
 }
@@ -114,6 +126,7 @@ export class CharacterTooltipCard {
 export class CharacterTooltip extends RichTooltipTrigger {
   readonly appCharacterTooltip = input.required<CharacterEntry>();
   readonly constellation = input.required<number>();
+  readonly level = input.required<CharacterLevel>();
   readonly element = input.required<TeamElement>();
 
   protected hasCardData(): boolean {
@@ -127,6 +140,7 @@ export class CharacterTooltip extends RichTooltipTrigger {
     card.setInput('character', character);
     card.setInput('tooltip', character.tooltip);
     card.setInput('constellation', this.constellation());
+    card.setInput('level', this.level());
     card.setInput('element', this.element());
   }
 }
