@@ -4,7 +4,7 @@ import { TranslocoPipe } from '@jsverse/transloco';
 import { iconUrl } from '../../core/data/site-data';
 import { injectActiveLocale } from '../../core/i18n/active-locale';
 import { formatWeaponLabel } from '../format/weapon-label';
-import { rarityBackground } from './game-colors';
+import { elementTextColor, rarityBackground } from './game-colors';
 import { Tooltip } from './tooltip';
 import { WeaponTooltip } from './weapon-tooltip';
 
@@ -12,14 +12,15 @@ type TeamMembersSize = 'md' | 'lg';
 
 // Classes completas (não interpoladas) para o Tailwind encontrá-las no código-fonte
 const PORTRAIT_SIZES: Record<TeamMembersSize, string> = {
-  md: 'size-12',
-  lg: 'size-12 sm:size-20',
+  md: 'size-14',
+  lg: 'size-12 sm:size-24',
 };
 
 interface WeaponView {
   entry: WeaponEntry;
   label: string;
   iconUrl: string;
+  rarityClass: string;
   refinement: number;
 }
 
@@ -28,6 +29,7 @@ interface MemberView {
   characterIconUrl: string;
   characterRarityClass: string;
   elementIconUrl: string;
+  elementTextClass: string;
   constellation: number;
   // Ausente quando a fonte não informou a arma do suporte
   weapon?: WeaponView;
@@ -60,26 +62,29 @@ interface MemberView {
               width="48"
               height="48"
             />
-            <img
-              class="absolute -top-1 -right-1 size-5 drop-shadow-md"
-              [src]="member.elementIconUrl"
-              alt=""
-              width="20"
-              height="20"
-            />
-            <span class="absolute -top-1 -left-1 rounded bg-surface px-1 text-[0.6875rem] leading-4 font-semibold">
-              C{{ member.constellation }}
+            <span
+              class="absolute -top-1.5 -left-2 flex items-center gap-0.5 rounded bg-surface pr-1 shadow-md shadow-black/60
+                ring-2 ring-surface {{ member.elementTextClass }}"
+            >
+              <img class="size-5" [src]="member.elementIconUrl" alt="" width="20" height="20" />
+              <span class="font-display text-xs leading-none font-semibold [text-box:trim-both_cap_alphabetic]"
+                >C{{ member.constellation }}</span
+              >
             </span>
           </span>
           @if (member.weapon; as weapon) {
             <span
-              class="absolute -right-1.5 -bottom-1 flex items-center rounded bg-surface pr-1 outline-offset-2 focus-visible:outline-2 focus-visible:outline-accent"
+              class="absolute -right-2 -bottom-1.5 flex items-center gap-0.5 rounded pr-1 shadow-md shadow-black/60 ring-2 ring-surface outline-offset-2 focus-visible:outline-2 focus-visible:outline-accent {{
+                weapon.rarityClass
+              }}"
               tabindex="0"
               [appWeaponTooltip]="weapon.entry"
               [refinement]="weapon.refinement"
             >
-              <img class="size-5" [src]="weapon.iconUrl" alt="" width="20" height="20" />
-              <span class="text-[0.6875rem] leading-4 font-semibold">R{{ weapon.refinement }}</span>
+              <img class="size-6" [src]="weapon.iconUrl" alt="" width="24" height="24" />
+              <span class="font-display text-xs leading-none font-semibold [text-box:trim-both_cap_alphabetic]"
+                >R{{ weapon.refinement }}</span
+              >
             </span>
           }
         </li>
@@ -104,6 +109,7 @@ export class TeamMembers {
       characterIconUrl: iconUrl(character.icon),
       characterRarityClass: rarityBackground(character.rarity),
       elementIconUrl: iconUrl(ELEMENT_ICONS[member.element]),
+      elementTextClass: elementTextColor(member.element),
       constellation: member.constellation,
       ...(member.weapon && { weapon: this.toWeaponView(member.weapon.weaponId, member.weapon.refinement) }),
     };
@@ -115,6 +121,7 @@ export class TeamMembers {
       entry: weapon,
       label: formatWeaponLabel(weapon.name[this.locale()], refinement),
       iconUrl: iconUrl(weapon.icon),
+      rarityClass: rarityBackground(weapon.rarity),
       refinement,
     };
   }

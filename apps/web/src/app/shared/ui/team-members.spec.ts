@@ -57,6 +57,19 @@ describe('TeamMembers', () => {
     expect(items[0].querySelector('img')?.getAttribute('src')).toBe('/images/UI_AvatarIcon_Mavuika.webp');
   });
 
+  it('pinta o selo da arma na cor da raridade dela', async () => {
+    const element = await render('pt');
+    const weaponBadge = element.querySelectorAll('li')[0]!.querySelector('[tabindex="0"]:has(img[src*="EquipIcon"])');
+    expect(weaponBadge?.classList).toContain('bg-rarity-4');
+  });
+
+  it('junta constelação e elemento num selo na cor do elemento', async () => {
+    const element = await render('pt');
+    const badge = element.querySelectorAll('li')[0]!.querySelector('span:has(> img[src*="UI_Buff_Element"])');
+    expect(badge?.textContent?.trim()).toBe('C1');
+    expect(badge?.classList).toContain('text-pyro');
+  });
+
   it('mostra o ícone do elemento do personagem', async () => {
     const element = await render('pt');
     const icons = [...element.querySelectorAll('li')[0]!.querySelectorAll('img')].map((img) => img.getAttribute('src'));
