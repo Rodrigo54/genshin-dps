@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Durin
+  en: Durin
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Durin
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: '"As Chamas Eternas"'
+    en: '"The Undying Fire"'
+  constellation:
+    pt: Draco Rubedo
+    en: Draco Rubedo
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Sociedade das Feiticeiras
+    en: Hexenzirkel
+  description:
+    pt: Um dragão que nasceu da caneta de M, e que chegou ao mundo humano. Sua história continua a se revelar.
+    en: A dragon born from M's pen, who came to alight in the human world. His "story" continues to unfold.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12430
+    atk: 347
+    def: 822
+    ascensionStat: 88.4
+  - level: 95
+    hp: 12871
+    atk: 386
+    def: 852
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13313
+    atk: 425
+    def: 881
+    ascensionStat: 88.4

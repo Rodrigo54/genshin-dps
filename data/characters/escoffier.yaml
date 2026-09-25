@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Escoffier
+  en: Escoffier
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Escoffier
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Brilho de Mil Melodias
+    en: Tasteful Excellence
+  constellation:
+    pt: Dulciaria Structura
+    en: Dulciaria Structura
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Fontaine
+    en: Fontaine
+  description:
+    pt: Uma ex-chefe do Hotel Debord, renomada por Fontaine como a Pâtissière Suprema, vanguarda da gastronomia de precisão. Possui padrões incomparavelmente rígidos na cozinha.
+    en: The ex-head chef of Hotel Debord, renowned throughout Fontaine as the Patissiere Supreme and vanguard of precision gastronomy. Has incomparably strict standards when it comes to cooking.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13348
+    atk: 347
+    def: 732
+    ascensionStat: 24.2
+  - level: 95
+    hp: 13822
+    atk: 386
+    def: 758
+    ascensionStat: 24.2
+  - level: 100
+    hp: 14297
+    atk: 425
+    def: 784
+    ascensionStat: 24.2

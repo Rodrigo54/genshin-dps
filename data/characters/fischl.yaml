@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Fischl
+  en: Fischl
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Fischl
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Princesa dos Pecados!
+    en: Prinzessin der Verurteilung!
+  constellation:
+    pt: Corvus
+    en: Corvus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Guilda de Aventureiros
+    en: Adventurers' Guild
+  description:
+    pt: Uma mulher misteriosa que se autointitula "Princesa dos Pecados" e viaja com um corvo chamado Oz.
+    en: A mysterious girl who calls herself "Prinzessin der Verurteilung" and travels with a night raven named Oz.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9189
+    atk: 244
+    def: 594
+    ascensionStat: 24
+  - level: 95
+    hp: 9507
+    atk: 275
+    def: 614
+    ascensionStat: 24
+  - level: 100
+    hp: 9825
+    atk: 307
+    def: 635
+    ascensionStat: 24

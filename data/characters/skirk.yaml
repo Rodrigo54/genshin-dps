@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Skirk
+  en: Skirk
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_SkirkNew
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Teyvat
+  en: Teyvat
+profile:
+  title:
+    pt: Astro do Vazio
+    en: Void Star
+  constellation:
+    pt: Crystallina
+    en: Crystallina
+  visionLabel:
+    pt: Serpente das Sete Transformações
+    en: The Seven-Shifting Serpent
+  affiliation:
+    pt: Calamidade Cósmica
+    en: Cosmic Calamity
+  description:
+    pt: Uma visitante que apareceu nas fendas do Abismo e no Mar Primordial. Essa guerreira solitária treinou Tartaglia em artes marciais.
+    en: A visitor who once appeared in an Abyssal rift and the Primordial Sea, this solitary warrior mentored Tartaglia in the martial arts.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12417
+    atk: 359
+    def: 806
+    ascensionStat: 88.4
+  - level: 95
+    hp: 12858
+    atk: 399
+    def: 835
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13300
+    atk: 439
+    def: 864
+    ascensionStat: 88.4

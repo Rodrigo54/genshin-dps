@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Layla
+  en: Layla
+rarity: 4
+element: cryo
+icon: UI_AvatarIcon_Layla
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Contemplações da Estrela Noturna
+    en: Fantastical Evening Star
+  constellation:
+    pt: Luscinia
+    en: Luscinia
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Rtawahist
+    en: Rtawahist
+  description:
+    pt: Estudante dos Rtawahist, especializada em astrologia teórica. Sofre de sonambulismo e insônia, ela está sempre enfrentando distúrbios de sono.
+    en: A Rtawahist student who specializes in Theoretical Astrology. Heavily prone to somnambulism and locked in a grinding war with sleep deprivation, the problem of restful slumber is a most troubling one to her.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11092
+    atk: 217
+    def: 655
+    ascensionStat: 24
+  - level: 95
+    hp: 11476
+    atk: 244
+    def: 678
+    ascensionStat: 24
+  - level: 100
+    hp: 11860
+    atk: 272
+    def: 701
+    ascensionStat: 24

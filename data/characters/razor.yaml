@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Razor
+  en: Razor
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Razor
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Lobo Jovem
+    en: Wolf Boy
+  constellation:
+    pt: Lupus Minor
+    en: Lupus Minor
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Reino dos Lobos
+    en: Wolvendom
+  description:
+    pt: Um garoto que vive entre os lobos no Reino dos Lobos em Mondstadt, longe da civilização. É ágil como um relâmpago.
+    en: A boy who lives among the wolves in Wolvendom of Mondstadt, away from human civilization. As agile as lightning.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Físico
+    en: Physical DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11962
+    atk: 234
+    def: 751
+    ascensionStat: 30
+  - level: 95
+    hp: 12376
+    atk: 263
+    def: 777
+    ascensionStat: 30
+  - level: 100
+    hp: 12790
+    atk: 293
+    def: 803
+    ascensionStat: 30

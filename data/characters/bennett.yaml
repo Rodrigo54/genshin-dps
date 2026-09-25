@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Bennett
+  en: Bennett
+rarity: 4
+element: pyro
+icon: UI_AvatarIcon_Bennett
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Julgamento por Fogo
+    en: Trial by Fire
+  constellation:
+    pt: Rota Calamitas
+    en: Rota Calamitas
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Guilda de Aventureiros
+    en: Adventurers' Guild
+  description:
+    pt: Um aventureiro de Mondstadt justo e bondoso, mas muito azarado.
+    en: A good-natured adventurer from Mondstadt who's unfortunately extremely unlucky.
+ascensionStat:
+  name:
+    pt: Recarga de Energia
+    en: Energy Recharge
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12397
+    atk: 191
+    def: 771
+    ascensionStat: 26.7
+  - level: 95
+    hp: 12826
+    atk: 216
+    def: 798
+    ascensionStat: 26.7
+  - level: 100
+    hp: 13255
+    atk: 240
+    def: 825
+    ascensionStat: 26.7

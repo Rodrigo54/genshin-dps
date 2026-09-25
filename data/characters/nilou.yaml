@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Nilou
+  en: Nilou
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Nilou
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Dança da Luz de Lótus
+    en: Dance of Lotuslight
+  constellation:
+    pt: Lotos Somno
+    en: Lotos Somno
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Teatro Zubayr
+    en: Zubayr Theater
+  description:
+    pt: A Estrela do Teatro Zubayr, ela é bondosa e inocente. Seu estilo de dança é alegre e elegante.
+    en: The star of the Zubayr Theater. She is full of warmth and innocence, and her dances are lively and elegant.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 15185
+    atk: 230
+    def: 729
+    ascensionStat: 28.8
+  - level: 95
+    hp: 15724
+    atk: 255
+    def: 754
+    ascensionStat: 28.8
+  - level: 100
+    hp: 16264
+    atk: 281
+    def: 780
+    ascensionStat: 28.8

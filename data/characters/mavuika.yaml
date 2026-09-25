@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Mavuika
+  en: Mavuika
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Mavuika
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Chama da Noite Ardente
+    en: Night-Igniting Flame
+  constellation:
+    pt: Sol Invictus
+    en: Sol Invictus
+  visionLabel:
+    pt: Gnosis
+    en: Gnosis
+  affiliation:
+    pt: Huitztlan
+    en: Huitztlan
+  description:
+    pt: A líder de Natlan que herdou o Nome Antigo de "Kiongozi". Ela fez um voto para iluminar o futuro da nação da guerra com a Chama Sagrada.
+    en: The leader of Natlan who inherited the Ancient Name of "Kiongozi." She made a vow to illuminate the future of the nation of war with the Sacred Flame.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12552
+    atk: 359
+    def: 792
+    ascensionStat: 88.4
+  - level: 95
+    hp: 12998
+    atk: 399
+    def: 820
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13444
+    atk: 439
+    def: 848
+    ascensionStat: 88.4

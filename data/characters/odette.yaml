@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Odette
+  en: Odette
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Odette
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Snezhnaya
+  en: Snezhnaya
+profile:
+  title:
+    pt: Graça Girante na Neve
+    en: Swirling Snow
+  constellation:
+    pt: Cygnus Olor
+    en: Cygnus Olor
+  visionLabel:
+    pt: Eixo Estelar
+    en: Stellar Linchpin
+  affiliation:
+    pt: Companhia Korolevskiy
+    en: Korolevskiy Troupe
+  description:
+    pt: Uma renomada bailarina de Snezhnaya, ela desabrocha em meio à paisagem congelada com uma beleza tão cortante quanto a geada.
+    en: A famed Snezhnayan ballerina who blossoms against the frozen landscape with a beauty as sharp as frost.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12981
+    atk: 335
+    def: 787
+    ascensionStat: 88.4
+  - level: 95
+    hp: 13441
+    atk: 373
+    def: 815
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13903
+    atk: 410
+    def: 843
+    ascensionStat: 88.4

@@ -14,6 +14,7 @@ import {
 } from '@genshin-dps/schema';
 import gdb, { type Artifact, type Character, Language, type QueryFunction, type Weapon } from 'genshin-db';
 import { parseGameText } from './game-text';
+import { roundStat } from './round-stat';
 import { toSlug } from './slug';
 
 export interface CatalogSource {
@@ -61,18 +62,10 @@ function joinLocales<T extends GameEntity, E extends { id: string }>(
 const LOW_RARITY_MAX = 2;
 const LOW_RARITY_MAX_LEVEL = 70;
 const MAX_LEVEL = 90;
-const PERCENT = 100;
-const PERCENT_DECIMALS = 10;
 const WEAPON_REFINEMENTS = ['r1', 'r2', 'r3', 'r4', 'r5'] as const;
 
 function isWeaponSubstatType(type: string | undefined): type is WeaponSubstatType {
   return WEAPON_SUBSTAT_TYPES.some((substatType) => substatType === type);
-}
-
-// Porcentagens com uma casa, como o jogo mostra (0.661536 → 66.2); valores planos inteiros
-function roundStat(value: number, isPercent: boolean): number {
-  if (!isPercent) return Math.round(value);
-  return Math.round(value * PERCENT * PERCENT_DECIMALS) / PERCENT_DECIMALS;
 }
 
 function toWeaponTooltipText(weapon: Weapon): WeaponTooltipText {

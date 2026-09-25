@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Yunjin
+  en: Yun Jin
+rarity: 4
+element: geo
+icon: UI_AvatarIcon_Yunjin
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Palco Lúcida
+    en: Stage Lucida
+  constellation:
+    pt: Opera Grandis
+    en: Opera Grandis
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Trupe de Ópera Yun-Han
+    en: Yun-Han Opera Troupe
+  description:
+    pt: Uma renomada cantora de ópera de Liyue, hábil tanto em dramaturgia quanto em canto. Seu estilo é único, requintado e delicado, exatamente como ela.
+    en: A renowned Liyue opera singer who is skilled in both playwriting and singing. Her style is one-of-a-kind, exquisite and delicate, much like the person herself.
+ascensionStat:
+  name:
+    pt: Recarga de Energia
+    en: Energy Recharge
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10657
+    atk: 191
+    def: 734
+    ascensionStat: 26.7
+  - level: 95
+    hp: 11026
+    atk: 216
+    def: 760
+    ascensionStat: 26.7
+  - level: 100
+    hp: 11395
+    atk: 240
+    def: 785
+    ascensionStat: 26.7

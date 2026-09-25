@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Sangonomiya Kokomi
+  en: Sangonomiya Kokomi
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Kokomi
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Pérolas de Sabedoria
+    en: Pearl of Wisdom
+  constellation:
+    pt: Dracaena Somnolenta
+    en: Dracaena Somnolenta
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Ilha Watatsumi
+    en: Watatsumi Island
+  description:
+    pt: A Sacerdotisa Divina da Ilha Watatsumi. Todos os assuntos da ilha estão na ponta dos dedos desta jovem senhorita.
+    en: The Divine Priestess of Watatsumi Island. All of the island's affairs are at this young lady's fingertips.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Hydro
+    en: Hydro DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13471
+    atk: 234
+    def: 657
+    ascensionStat: 28.8
+  - level: 95
+    hp: 13949
+    atk: 261
+    def: 680
+    ascensionStat: 28.8
+  - level: 100
+    hp: 14428
+    atk: 287
+    def: 704
+    ascensionStat: 28.8

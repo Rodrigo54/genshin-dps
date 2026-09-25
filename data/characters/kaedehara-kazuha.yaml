@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kaedehara Kazuha
+  en: Kaedehara Kazuha
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Kazuha
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Folhas Escarlates Procuram Ondas Selvagens
+    en: Scarlet Leaves Pursue Wild Waves
+  constellation:
+    pt: Acer Palmatum
+    en: Acer Palmatum
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Frota Crux
+    en: The Crux
+  description:
+    pt: Um samurai errante de Inazuma que atualmente está com a Frota Crux de Liyue. Uma alma gentil e livre cujo coração esconde muitas feridas.
+    en: A wandering samurai from Inazuma who is currently with Liyue's Crux Fleet. A gentle and carefree soul whose heart hides a great many burdens from the past.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 13348
+    atk: 297
+    def: 807
+    ascensionStat: 115
+  - level: 95
+    hp: 13822
+    atk: 330
+    def: 836
+    ascensionStat: 115
+  - level: 100
+    hp: 14297
+    atk: 363
+    def: 864
+    ascensionStat: 115

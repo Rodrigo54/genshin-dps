@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Lyney
+  en: Lyney
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Liney
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Espetáculo Fantasmagórico
+    en: Spectacle of Phantasmagoria
+  constellation:
+    pt: Felis Fuscus
+    en: Felis Fuscus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Hotel Bouffes d'ete
+    en: Hotel Bouffes d'ete
+  description:
+    pt: O famoso Mágico de Fontaine, astuto e habilidoso em atuação, atrai os corações do público com suas técnicas e palavras requintadas.
+    en: A famed Fontainian magician who possesses great stage presence as well as gift of the gab. Audiences are enthralled by his exquisite skills, and they hang on to his every clever word.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11021
+    atk: 318
+    def: 538
+    ascensionStat: 24.2
+  - level: 95
+    hp: 11413
+    atk: 354
+    def: 557
+    ascensionStat: 24.2
+  - level: 100
+    hp: 11805
+    atk: 390
+    def: 576
+    ascensionStat: 24.2

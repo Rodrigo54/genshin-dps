@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Alhaitham
+  en: Alhaitham
+rarity: 5
+element: dendro
+icon: UI_AvatarIcon_Alhatham
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Reprimenda Instrutiva
+    en: Admonishing Instruction
+  constellation:
+    pt: Vultur Volans
+    en: Vultur Volans
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Academia de Sumeru
+    en: Sumeru Akademiya
+  description:
+    pt: O atual Escriba da Academia de Sumeru, um homem de grande inteligência e talento. Vive sua vida livre e despreocupado, sendo uma pessoa muito difícil de se encontrar.
+    en: The current scribe of the Sumeru Akademiya, a man endowed with extraordinary intelligence and talent. He lives free — free from the searching eyes of ordinary people, anyway.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Dendro
+    en: Dendro DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13348
+    atk: 313
+    def: 782
+    ascensionStat: 28.8
+  - level: 95
+    hp: 13822
+    atk: 349
+    def: 809
+    ascensionStat: 28.8
+  - level: 100
+    hp: 14297
+    atk: 384
+    def: 837
+    ascensionStat: 28.8

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Mualani
+  en: Mualani
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Mualani
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Surfista Perseguidora das Ondas
+    en: Splish-Splash Wavechaser
+  constellation:
+    pt: Phoca Neomonachus
+    en: Phoca Neomonachus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Meztli
+    en: Meztli
+  description:
+    pt: Uma guia renomada em Natlan, proprietária de uma loja de esportes aquáticos e especialista em todas as formas de pegar onda.
+    en: A well-known guide in Natlan who owns a watersports shop, and expert in all forms of wave-chasing.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 15185
+    atk: 182
+    def: 570
+    ascensionStat: 24.2
+  - level: 95
+    hp: 15724
+    atk: 202
+    def: 591
+    ascensionStat: 24.2
+  - level: 100
+    hp: 16264
+    atk: 223
+    def: 611
+    ascensionStat: 24.2

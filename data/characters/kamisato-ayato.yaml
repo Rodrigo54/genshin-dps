@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kamisato Ayato
+  en: Kamisato Ayato
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Ayato
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Pilar da Fortaleza
+    en: Pillar of Fortitude
+  constellation:
+    pt: Cypressus Custos
+    en: Cypressus Custos
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Comissão Yashiro
+    en: Yashiro Commission
+  description:
+    pt: O jovem promissor e chefe atual da Comissão Yashiro, é culto e educado, e sempre tem uma forma de fazer as coisas.
+    en: The young but highly accomplished head of the Yashiro Commission's Kamisato Clan. Cultured and polite, he is a man of many ways and means.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13715
+    atk: 299
+    def: 769
+    ascensionStat: 88.4
+  - level: 95
+    hp: 14202
+    atk: 333
+    def: 796
+    ascensionStat: 88.4
+  - level: 100
+    hp: 14690
+    atk: 366
+    def: 823
+    ascensionStat: 88.4

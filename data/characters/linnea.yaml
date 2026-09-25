@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Linnea
+  en: Linnea
+rarity: 5
+element: geo
+icon: UI_AvatarIcon_Linnea
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Caçadora das Maravilhas
+    en: Augur of Wonders
+  constellation:
+    pt: Alcyon
+    en: Alcyon
+  visionLabel:
+    pt: Disco Lunar
+    en: Moon Wheel
+  affiliation:
+    pt: Guilda de Aventureiros
+    en: Adventurers' Guild
+  description:
+    pt: Consultora da Guilda de Aventureiros da Filial de Nod-Krai, Naturalista.
+    en: Naturalist and Advisor to the Nod-Krai Branch of the Adventurers' Guild.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9895
+    atk: 144
+    def: 907
+    ascensionStat: 24.2
+  - level: 95
+    hp: 10246
+    atk: 160
+    def: 939
+    ascensionStat: 24.2
+  - level: 100
+    hp: 10598
+    atk: 176
+    def: 971
+    ascensionStat: 24.2

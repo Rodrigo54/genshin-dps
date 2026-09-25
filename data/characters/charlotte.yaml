@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Charlotte
+  en: Charlotte
+rarity: 4
+element: cryo
+icon: UI_AvatarIcon_Charlotte
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Lentes em Busca da Verdade
+    en: Lens of Verity
+  constellation:
+    pt: Hualina Veritas
+    en: Hualina Veritas
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Pássaro a Vapor
+    en: The Steambird
+  description:
+    pt: A jornalista cheia de energia do Pássaro a Vapor, sempre correndo atrás da "verdade".
+    en: Indefatigable reporter of The Steambird, constantly on the hunt for the "truth."
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10766
+    atk: 173
+    def: 546
+    ascensionStat: 24
+  - level: 95
+    hp: 11138
+    atk: 195
+    def: 565
+    ascensionStat: 24
+  - level: 100
+    hp: 11511
+    atk: 217
+    def: 584
+    ascensionStat: 24

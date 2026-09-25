@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Sayu
+  en: Sayu
+rarity: 4
+element: anemo
+icon: UI_AvatarIcon_Sayu
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Mujina Ninja
+    en: Mujina Ninja
+  constellation:
+    pt: Nyctereutes Minor
+    en: Nyctereutes Minor
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Shiyuumatsu-Ban
+    en: Shuumatsuban
+  description:
+    pt: Uma ninja pertencente ao Shiyuumatsu-Ban que parece sempre não ter dormido o suficiente.
+    en: A pint-sized ninja attached to the Shuumatsuban, who always seems to be lacking sleep.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 11854
+    atk: 244
+    def: 745
+    ascensionStat: 96
+  - level: 95
+    hp: 12263
+    atk: 275
+    def: 770
+    ascensionStat: 96
+  - level: 100
+    hp: 12674
+    atk: 307
+    def: 796
+    ascensionStat: 96

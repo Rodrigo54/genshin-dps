@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Alyosha
+  en: Alyosha
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Alyosha
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Snezhnaya
+  en: Snezhnaya
+profile:
+  title:
+    pt: Lupino de Passos Ligeiros
+    en: Swift-Striding Hound
+  constellation:
+    pt: Canis Borzoides
+    en: Canis Borzoides
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Snezhnaya
+    en: Snezhnaya
+  description:
+    pt: Um "caçador profissional" que domina os campos de neve de Snezhnaya. Sob sua aparência calma, parece arder um "ideal" intenso e distinto.
+    en: A "professional hunter" and master of the Snezhnayan snowfields. A fierce, distinct "idealism" burns beneath his calm demeanor.
+ascensionStat:
+  name:
+    pt: Recarga de Energia
+    en: Energy Recharge
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11962
+    atk: 265
+    def: 703
+    ascensionStat: 26.7
+  - level: 95
+    hp: 12376
+    atk: 299
+    def: 727
+    ascensionStat: 26.7
+  - level: 100
+    hp: 12790
+    atk: 333
+    def: 752
+    ascensionStat: 26.7

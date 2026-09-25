@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Shenhe
+  en: Shenhe
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Shenhe
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Transcendência Solitária
+    en: Lonesome Transcendence
+  constellation:
+    pt: Crista Doloris
+    en: Crista Doloris
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Retentora de Nuvem
+    en: Cloud Retainer's Abode
+  description:
+    pt: Uma discípula adepti com um ar muito incomum sobre ela. Tendo passado muito tempo vivendo em isolamento nas montanhas de Liyue, ela se tornou tão fria e distante quanto os próprios adepti.
+    en: An adepti disciple with a most unusual air about her. Having spent much time cultivating in isolation in Liyue's mountains, she has become every bit as cool and distant as the adepti themselves.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12993
+    atk: 304
+    def: 830
+    ascensionStat: 28.8
+  - level: 95
+    hp: 13454
+    atk: 338
+    def: 860
+    ascensionStat: 28.8
+  - level: 100
+    hp: 13916
+    atk: 372
+    def: 889
+    ascensionStat: 28.8

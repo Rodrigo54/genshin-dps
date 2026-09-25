@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kuki Shinobu
+  en: Kuki Shinobu
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Shinobu
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Erradicadora das Preocupações
+    en: Mender of Tribulations
+  constellation:
+    pt: Tribulatio Demptio
+    en: Tribulatio Demptio
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Gangue Arataki
+    en: Arataki Gang
+  description:
+    pt: 'Uma talentosa e confiável ajudante da Gangue Arataki — Nota: Talentosa e confiável descreve a ajudante, mas não a Gangue Arataki.'
+    en: 'The capable and reliable Arataki Gang deputy leader - Please note: capable and reliable are not appellations for the "Arataki Gang," but for their deputy leader in specific.'
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12289
+    atk: 212
+    def: 751
+    ascensionStat: 24
+  - level: 95
+    hp: 12713
+    atk: 239
+    def: 777
+    ascensionStat: 24
+  - level: 100
+    hp: 13139
+    atk: 267
+    def: 803
+    ascensionStat: 24

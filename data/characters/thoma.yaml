@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Thoma
+  en: Thoma
+rarity: 4
+element: pyro
+icon: UI_AvatarIcon_Tohma
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Protetor de Longe
+    en: Protector From Afar
+  constellation:
+    pt: Rubeum Scutum
+    en: Rubeum Scutum
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Comissão Yashiro
+    en: Yashiro Commission
+  description:
+    pt: O Empregado do Clã Kamisato e animado Mediador de Inazuma.
+    en: The Kamisato Clan's housekeeper. A well-known "fixer" in Inazuma.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10331
+    atk: 202
+    def: 751
+    ascensionStat: 24
+  - level: 95
+    hp: 10688
+    atk: 228
+    def: 777
+    ascensionStat: 24
+  - level: 100
+    hp: 11046
+    atk: 253
+    def: 803
+    ascensionStat: 24

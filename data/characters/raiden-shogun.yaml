@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Shogun Raiden
+  en: Raiden Shogun
+rarity: 5
+element: electro
+icon: UI_AvatarIcon_Shougun
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Plano da Eutimia
+    en: Plane of Euthymia
+  constellation:
+    pt: Imperatrix Umbrosa
+    en: Imperatrix Umbrosa
+  visionLabel:
+    pt: Gnosis
+    en: Gnosis
+  affiliation:
+    pt: Cidade de Inazuma
+    en: Inazuma City
+  description:
+    pt: Sua Excelência, a Toda-Poderosa Narukami Ogosho, que prometeu ao povo de Inazuma uma Eternidade imutável.
+    en: Her Excellency, the Almighty Narukami Ogosho, who promised the people of Inazuma an unchanging Eternity.
+ascensionStat:
+  name:
+    pt: Recarga de Energia
+    en: Energy Recharge
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12907
+    atk: 337
+    def: 789
+    ascensionStat: 32
+  - level: 95
+    hp: 13365
+    atk: 375
+    def: 817
+    ascensionStat: 32
+  - level: 100
+    hp: 13825
+    atk: 413
+    def: 845
+    ascensionStat: 32

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Nefer
+  en: Nefer
+rarity: 5
+element: dendro
+icon: UI_AvatarIcon_Nefer
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Segredo Sob as Areias
+    en: Secret Beneath the Sands
+  constellation:
+    pt: Ludus Latrunculorum
+    en: Ludus Latrunculorum
+  visionLabel:
+    pt: Disco Lunar
+    en: Moon Wheel
+  affiliation:
+    pt: Curadoria dos Segredos
+    en: Curatorium of Secrets
+  description:
+    pt: A dona incrivelmente engenhosa da Curadoria dos Segredos.
+    en: The remarkably resourceful owner of the Curatorium of Secrets.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12704
+    atk: 344
+    def: 799
+    ascensionStat: 88.4
+  - level: 95
+    hp: 13155
+    atk: 383
+    def: 828
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13607
+    atk: 422
+    def: 856
+    ascensionStat: 88.4

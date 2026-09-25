@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Prune
+  en: Prune
+rarity: 4
+element: anemo
+icon: UI_AvatarIcon_Prune
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Sonhos Infantis Queridos
+    en: Childlike Dreams Cherished
+  constellation:
+    pt: Turris Venefica
+    en: Turris Venefica
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Mondstadt
+    en: Mondstadt
+  description:
+    pt: Uma pequena "Caçadora de Bruxas" que se aventurou desde Nod-Krai com o único intuito de perseguir uma bruxa, que, segundo ela, cometeu todos os pecados imagináveis — incluindo o de perturbar criancinhas inocentes!
+    en: A diminutive Witch Hunter who has journeyed all the way from Nod-Krai with the singular purpose of rooting out a witch who, to hear her tell it, has committed every sin imaginable — including bullying little kids!
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9679
+    atk: 221
+    def: 580
+    ascensionStat: 24
+  - level: 95
+    hp: 10013
+    atk: 249
+    def: 600
+    ascensionStat: 24
+  - level: 100
+    hp: 10348
+    atk: 277
+    def: 620
+    ascensionStat: 24

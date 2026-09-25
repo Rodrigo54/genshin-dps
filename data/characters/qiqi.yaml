@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Qiqi
+  en: Qiqi
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Qiqi
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Ressurreição Gélida
+    en: Icy Resurrection
+  constellation:
+    pt: Pristina Nola
+    en: Pristina Nola
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Chalé de Bubu
+    en: Bubu Pharmacy
+  description:
+    pt: Uma aprendiz e colhedora de ervas no Chalé de Bubu. Uma morta-viva com pele branca como osso, ela raramente tem muitas palavras ou emoções.
+    en: An apprentice and herb gatherer at Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion.
+ascensionStat:
+  name:
+    pt: Bônus de Cura
+    en: Healing Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12368
+    atk: 287
+    def: 922
+    ascensionStat: 22.2
+  - level: 95
+    hp: 12807
+    atk: 319
+    def: 955
+    ascensionStat: 22.2
+  - level: 100
+    hp: 13247
+    atk: 352
+    def: 988
+    ascensionStat: 22.2

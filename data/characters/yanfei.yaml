@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Yanfei
+  en: Yanfei
+rarity: 4
+element: pyro
+icon: UI_AvatarIcon_Feiyan
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Inocência Sábia
+    en: Wise Innocence
+  constellation:
+    pt: Bestia Iustitia
+    en: Bestia Iustitia
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Escritório de Advocacia de Yanfei
+    en: Yanfei Legal Consultancy
+  description:
+    pt: Uma Consultora Jurídica animada que vive no Porto de Liyue, é uma garota esperta com sangue da Besta Iluminada.
+    en: A well-known legal adviser active in Liyue Harbor. A brilliant young lady in whose veins runs the blood of an illuminated beast.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Pyro
+    en: Pyro DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9352
+    atk: 240
+    def: 587
+    ascensionStat: 24
+  - level: 95
+    hp: 9675
+    atk: 271
+    def: 607
+    ascensionStat: 24
+  - level: 100
+    hp: 9999
+    atk: 301
+    def: 628
+    ascensionStat: 24

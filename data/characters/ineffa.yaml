@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Ineffa
+  en: Ineffa
+rarity: 5
+element: electro
+icon: UI_AvatarIcon_Ineffa
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Estrondo Trovejante
+    en: Boom Boom Thunderwave
+  constellation:
+    pt: Vanilla Planifolia
+    en: Vanilla Planifolia
+  visionLabel:
+    pt: Disco Lunar
+    en: Moon Wheel
+  affiliation:
+    pt: Oficina de Rolinho de Ovo Trilimlim
+    en: Clink-Clank Krumkake Craftshop
+  description:
+    pt: Um robô multifuncional que contém componentes mecânicos de várias nações. O Núcleo da Fonte em seu peito persistiu a passagem de incontáveis anos.
+    en: A multifunctional robot containing integrated mechanical components from various nations. The Source Core in her chest has endured the passage of countless years.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12613
+    atk: 330
+    def: 828
+    ascensionStat: 24.2
+  - level: 95
+    hp: 13061
+    atk: 367
+    def: 857
+    ascensionStat: 24.2
+  - level: 100
+    hp: 13510
+    atk: 404
+    def: 887
+    ascensionStat: 24.2

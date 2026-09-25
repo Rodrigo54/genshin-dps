@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Furina
+  en: Furina
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Furina
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Dançarina Solitária Eterna
+    en: Endless Solo of Solitude
+  constellation:
+    pt: Animula Choragi
+    en: Animula Choragi
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Corte de Fontaine
+    en: Court of Fontaine
+  description:
+    pt: O foco absoluto em cima do palco durante um julgamento, até o momento das cortinas caírem e dos aplausos soarem.
+    en: The absolute focus of the stage of judgment, until the final applause sounds.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 15307
+    atk: 244
+    def: 696
+    ascensionStat: 24.2
+  - level: 95
+    hp: 15851
+    atk: 271
+    def: 720
+    ascensionStat: 24.2
+  - level: 100
+    hp: 16395
+    atk: 299
+    def: 745
+    ascensionStat: 24.2

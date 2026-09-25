@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Lan Yan
+  en: Lan Yan
+rarity: 4
+element: anemo
+icon: UI_AvatarIcon_Lanyan
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Jade Primaveril
+    en: Spring Woven From Jade
+  constellation:
+    pt: Hirundo Lazuli
+    en: Hirundo Lazuli
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Vale Chenyu
+    en: Chenyu Vale
+  description:
+    pt: Uma tecelã de vime do Vale Chenyu. Tem mente aberta e um bom temperamento, também é rápida como uma nascente das montanhas.
+    en: A rattan weaver from Chenyu Vale. Clear-minded and well-tempered, she is as lively as a mountain spring.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9244
+    atk: 251
+    def: 580
+    ascensionStat: 24
+  - level: 95
+    hp: 9563
+    atk: 283
+    def: 600
+    ascensionStat: 24
+  - level: 100
+    hp: 9883
+    atk: 315
+    def: 620
+    ascensionStat: 24

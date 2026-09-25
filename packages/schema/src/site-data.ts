@@ -23,6 +23,12 @@ export const ELEMENT_ICONS: Record<TeamElement, string> = {
 };
 
 export type CharacterRarity = 4 | 5;
+
+// Níveis com status gravados em data/characters: 90 é o máximo por ascensão e o padrão das builds; 95 e 100 vêm
+// do investimento extra que tira o time do Baseline
+export const CHARACTER_LEVELS = [90, 95, 100] as const;
+export type CharacterLevel = (typeof CHARACTER_LEVELS)[number];
+export const DEFAULT_CHARACTER_LEVEL: CharacterLevel = 90;
 export type WeaponRarity = 1 | 2 | 3 | 4 | 5;
 
 export interface CharacterTooltipText {

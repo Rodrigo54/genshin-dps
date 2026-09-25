@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Sethos
+  en: Sethos
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Sethos
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Medida da Sabedoria
+    en: Wisdom's Measure
+  constellation:
+    pt: Basileos Delta
+    en: Basileos Delta
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Templo do Silêncio
+    en: Temple of Silence
+  description:
+    pt: Herdeiro do Templo do Silêncio. Carrega segredos e vem das areias.
+    en: The Temple of Silence's heir. Burdened with secrets, he comes from the sands.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 9787
+    atk: 227
+    def: 560
+    ascensionStat: 96
+  - level: 95
+    hp: 10126
+    atk: 256
+    def: 579
+    ascensionStat: 96
+  - level: 100
+    hp: 10464
+    atk: 285
+    def: 598
+    ascensionStat: 96

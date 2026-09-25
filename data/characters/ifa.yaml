@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Ifa
+  en: Ifa
+rarity: 4
+element: anemo
+icon: UI_AvatarIcon_Ifa
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Brisa Espiritual
+    en: In the Wake of Wandering Winds
+  constellation:
+    pt: Catena Opele
+    en: Catena Opele
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Tlalocan
+    en: Tlalocan
+  description:
+    pt: Um veterinário do Clã das Plumas de Flores que ama profundamente viver em companhia de pessoas, animais e outras formas de vida.
+    en: A vet from the Flower-Feather Clan who cherishes the life he leads alongside all manner of living things — people, animals, you name it.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 10081
+    atk: 178
+    def: 605
+    ascensionStat: 96
+  - level: 95
+    hp: 10429
+    atk: 201
+    def: 626
+    ascensionStat: 96
+  - level: 100
+    hp: 10778
+    atk: 224
+    def: 647
+    ascensionStat: 96

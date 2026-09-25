@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Ningguang
+  en: Ningguang
+rarity: 4
+element: geo
+icon: UI_AvatarIcon_Ningguang
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Estrela em Eclipse
+    en: Eclipsing Star
+  constellation:
+    pt: Opus Aequilibrium
+    en: Opus Aequilibrium
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Qixing de Liyue
+    en: Liyue Qixing
+  description:
+    pt: '"Tianquan" dos "Qixing de Liyue". Sua fortuna é insuperável em todo Teyvat.'
+    en: The Tianquan of the Liyue Qixing. Her wealth is unsurpassed in all of Teyvat.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Geo
+    en: Geo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9787
+    atk: 212
+    def: 573
+    ascensionStat: 24
+  - level: 95
+    hp: 10126
+    atk: 239
+    def: 593
+    ascensionStat: 24
+  - level: 100
+    hp: 10464
+    atk: 267
+    def: 613
+    ascensionStat: 24

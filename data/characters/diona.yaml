@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Diona
+  en: Diona
+rarity: 4
+element: cryo
+icon: UI_AvatarIcon_Diona
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Coquetel da Cauda do Gato
+    en: Kätzlein Cocktail
+  constellation:
+    pt: Feles
+    en: Feles
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: A Cauda do Gato
+    en: The Cat's Tail
+  description:
+    pt: Uma jovem que herdou pequenas quantidades de sangue não humano. Ela é a Barmaid incrivelmente popular da taverna da Cauda do Gato.
+    en: A young lady who has inherited trace amounts of non-human blood. She is the incredibly popular bartender of the Cat's Tail tavern.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Cryo
+    en: Cryo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9570
+    atk: 212
+    def: 601
+    ascensionStat: 24
+  - level: 95
+    hp: 9901
+    atk: 239
+    def: 621
+    ascensionStat: 24
+  - level: 100
+    hp: 10232
+    atk: 267
+    def: 642
+    ascensionStat: 24

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Neuvillette
+  en: Neuvillette
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Neuvillette
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Ordenador das Marés
+    en: Ordainer of Inexorable Judgment
+  constellation:
+    pt: Leviathan Judicator
+    en: Leviathan Judicator
+  visionLabel:
+    pt: Autoridade do Antigo Dragão
+    en: Ancient Dragon's Authority
+  affiliation:
+    pt: Corte de Fontaine
+    en: Court of Fontaine
+  description:
+    pt: O Juiz Supremo de Fontaine, conhecido como Iudex, é renomado por sua imparcialidade inabalável.
+    en: The Chief Justice of Fontaine, known as the Iudex, is renowned for his unassailable impartiality.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 14695
+    atk: 208
+    def: 576
+    ascensionStat: 88.4
+  - level: 95
+    hp: 15217
+    atk: 232
+    def: 597
+    ascensionStat: 88.4
+  - level: 100
+    hp: 15740
+    atk: 255
+    def: 617
+    ascensionStat: 88.4

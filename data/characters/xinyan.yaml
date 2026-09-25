@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Xinyan
+  en: Xinyan
+rarity: 4
+element: pyro
+icon: UI_AvatarIcon_Xinyan
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Melodia Incandescente
+    en: Blazing Riff
+  constellation:
+    pt: Fila Ignium
+    en: Fila Ignium
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Corda Vermelha
+    en: '"The Red Strings"'
+  description:
+    pt: A única roqueira do Porto de Liyue, ela usa sua música e canções apaixonadas para resistir aos preconceitos.
+    en: Liyue's sole rock 'n' roll musician. She rebels against ossified prejudices using her music and passionate singing.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11201
+    atk: 249
+    def: 799
+    ascensionStat: 24
+  - level: 95
+    hp: 11588
+    atk: 280
+    def: 826
+    ascensionStat: 24
+  - level: 100
+    hp: 11976
+    atk: 312
+    def: 854
+    ascensionStat: 24

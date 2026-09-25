@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Candace
+  en: Candace
+rarity: 4
+element: hydro
+icon: UI_AvatarIcon_Candace
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Promessa Dourada
+    en: Golden Vow
+  constellation:
+    pt: Sagitta Scutum
+    en: Sagitta Scutum
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Vila Aaru
+    en: Aaru Village
+  description:
+    pt: Guardiã da Vila Aaru, descendente do Rei Deshret, seu olho esquerdo é da cor do âmbar.
+    en: A descendant of King Deshret with an amber left eye. The defender of Aaru Village.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10875
+    atk: 212
+    def: 683
+    ascensionStat: 24
+  - level: 95
+    hp: 11251
+    atk: 239
+    def: 706
+    ascensionStat: 24
+  - level: 100
+    hp: 11627
+    atk: 267
+    def: 730
+    ascensionStat: 24

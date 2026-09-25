@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kamisato Ayaka
+  en: Kamisato Ayaka
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Ayaka
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Garça da Geada
+    en: Frostflake Heron
+  constellation:
+    pt: Grus Nivis
+    en: Grus Nivis
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Comissão de Yashiro
+    en: Yashiro Commission
+  description:
+    pt: Filha do Clã Kamisato da Comissão Yashiro. Solene e elegante, bem como sábia e forte.
+    en: Daughter of the Yashiro Commission's Kamisato Clan. Dignified and elegant, as well as wise and strong.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12858
+    atk: 342
+    def: 784
+    ascensionStat: 88.4
+  - level: 95
+    hp: 13315
+    atk: 381
+    def: 812
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13772
+    atk: 419
+    def: 840
+    ascensionStat: 88.4

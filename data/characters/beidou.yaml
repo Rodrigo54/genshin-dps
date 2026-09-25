@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Beidou
+  en: Beidou
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Beidou
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Rainha do Mar Sem Coroa
+    en: Uncrowned Lord of the Ocean
+  constellation:
+    pt: Victor Mare
+    en: Victor Mare
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Frota Crux
+    en: The Crux
+  description:
+    pt: Líder da frota armada Crux. Ela é uma chefe sem limites e franca.
+    en: Captain of her crew, The Crux. She's quite an unbound and forthright woman.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Electro
+    en: Electro DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13050
+    atk: 225
+    def: 648
+    ascensionStat: 24
+  - level: 95
+    hp: 13501
+    atk: 254
+    def: 671
+    ascensionStat: 24
+  - level: 100
+    hp: 13953
+    atk: 283
+    def: 693
+    ascensionStat: 24

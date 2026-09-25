@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Clorinde
+  en: Clorinde
+rarity: 5
+element: electro
+icon: UI_AvatarIcon_Clorinde
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Segurando a Vela, Espreitando as Sombras
+    en: Candlebearer, Shadowhunter
+  constellation:
+    pt: Rapperia
+    en: Rapperia
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Câmara do Julgamento
+    en: Trial Court
+  description:
+    pt: Uma Duelista Representante invicta. Espada em mão, ela defende a justiça na Corte de Fontaine.
+    en: An undefeated Champion Duelist. Sword in hand, she defends justice in the Court of Fontaine.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12956
+    atk: 337
+    def: 784
+    ascensionStat: 24.2
+  - level: 95
+    hp: 13416
+    atk: 375
+    def: 812
+    ascensionStat: 24.2
+  - level: 100
+    hp: 13877
+    atk: 413
+    def: 840
+    ascensionStat: 24.2

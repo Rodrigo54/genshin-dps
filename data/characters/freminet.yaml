@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Freminet
+  en: Freminet
+rarity: 4
+element: cryo
+icon: UI_AvatarIcon_Freminet
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Ansioso por Sonhos Profundos
+    en: Yearning for Unseen Depths
+  constellation:
+    pt: Automaton
+    en: Automaton
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Hotel Bouffes d'ete
+    en: Hotel Bouffes d'ete
+  description:
+    pt: Um jovem reservado muito habilidoso em mergulho. Sob seu comportamento distante e frio, há um coração puro isento de qualquer falha.
+    en: A reserved young man who is well-versed in diving. Beneath his distant, icy demeanor lies a pure heart bereft of all flaws.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12071
+    atk: 255
+    def: 708
+    ascensionStat: 24
+  - level: 95
+    hp: 12488
+    atk: 287
+    def: 733
+    ascensionStat: 24
+  - level: 100
+    hp: 12906
+    atk: 320
+    def: 757
+    ascensionStat: 24

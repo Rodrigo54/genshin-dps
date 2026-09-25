@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Ganyu
+  en: Ganyu
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Ganyu
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Defensora Devota
+    en: Plenilune Gaze
+  constellation:
+    pt: Sinae Unicornis
+    en: Sinae Unicornis
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Pavilhão Yuehai
+    en: Yuehai Pavilion
+  description:
+    pt: Secretária do Pavilhão Yuehai. O sangue da besta iluminada Qilin flui nas suas veias.
+    en: The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9797
+    atk: 335
+    def: 630
+    ascensionStat: 88.4
+  - level: 95
+    hp: 10144
+    atk: 373
+    def: 653
+    ascensionStat: 88.4
+  - level: 100
+    hp: 10493
+    atk: 410
+    def: 675
+    ascensionStat: 88.4

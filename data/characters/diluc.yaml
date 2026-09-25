@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Diluc
+  en: Diluc
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Diluc
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: O Lado Negro do Alvorecer
+    en: Dark Side of Dawn
+  constellation:
+    pt: Noctua
+    en: Noctua
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Adega do Alvorecer
+    en: Dawn Winery
+  description:
+    pt: O magnata do império de vinhedos em Mondstadt, inigualável em todos os sentidos.
+    en: The tycoon of a winery empire in Mondstadt, unmatched in every possible way.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12981
+    atk: 335
+    def: 784
+    ascensionStat: 24.2
+  - level: 95
+    hp: 13441
+    atk: 373
+    def: 812
+    ascensionStat: 24.2
+  - level: 100
+    hp: 13903
+    atk: 410
+    def: 840
+    ascensionStat: 24.2

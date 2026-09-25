@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Yaoyao
+  en: Yaoyao
+rarity: 4
+element: dendro
+icon: UI_AvatarIcon_Yaoyao
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Graça Florescente
+    en: Burgeoning Grace
+  constellation:
+    pt: Osmanthus
+    en: Osmanthus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Paraíso Mágico da Adeptus Corista
+    en: Streetward Rambler's Abode
+  description:
+    pt: A discípula mais jovem da Adeptus Corista. Uma "pequena adulta" carinhosa e gentil.
+    en: Streetward Rambler's youngest disciple. A gentle and caring "little adult."
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12289
+    atk: 212
+    def: 751
+    ascensionStat: 24
+  - level: 95
+    hp: 12713
+    atk: 239
+    def: 777
+    ascensionStat: 24
+  - level: 100
+    hp: 13139
+    atk: 267
+    def: 803
+    ascensionStat: 24

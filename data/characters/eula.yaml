@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Eula
+  en: Eula
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Eula
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Dança da Onda Quebradora
+    en: Dance of the Shimmering Wave
+  constellation:
+    pt: Aphros Delos
+    en: Aphros Delos
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: A Cavaleira das Ondas, uma descendente da antiga aristocracia, e a Capitã de Reconhecimento dos Cavaleiros de Favonius. A razão pela qual uma descendente dos antigos nobres poderia se juntar aos Cavaleiros permanece um grande mistério em Mondstadt até os dias de hoje.
+    en: The Spindrift Knight, a scion of the old aristocracy, and the Captain of the Knights of Favonius Reconnaissance Company. The reason for which a descendant of the ancient nobles might join the Knights remains a great mystery in Mondstadt to this very day.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13226
+    atk: 342
+    def: 751
+    ascensionStat: 88.4
+  - level: 95
+    hp: 13695
+    atk: 381
+    def: 778
+    ascensionStat: 88.4
+  - level: 100
+    hp: 14166
+    atk: 419
+    def: 804
+    ascensionStat: 88.4

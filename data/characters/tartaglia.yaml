@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Tartaglia
+  en: Tartaglia
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Tartaglia
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Snezhnaya
+  en: Snezhnaya
+profile:
+  title:
+    pt: Childe
+    en: Childe
+  constellation:
+    pt: Monoceros Caeli
+    en: Monoceros Caeli
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Fatui
+    en: Fatui
+  description:
+    pt: O N.° 11 dos Mensageiros dos Fatui, também conhecido como "Childe". O seu nome é bastante temido nos campos de batalha.
+    en: No. 11 of The Harbingers, also known as "Childe." His name is highly feared on the battlefield.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Hydro
+    en: Hydro DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13103
+    atk: 301
+    def: 815
+    ascensionStat: 28.8
+  - level: 95
+    hp: 13568
+    atk: 335
+    def: 844
+    ascensionStat: 28.8
+  - level: 100
+    hp: 14034
+    atk: 369
+    def: 873
+    ascensionStat: 28.8

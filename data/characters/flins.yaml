@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Flins
+  en: Flins
+rarity: 5
+element: electro
+icon: UI_AvatarIcon_Flins
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Sombra da Luz Ominosa
+    en: Shadowy Lights, Stranger Wights
+  constellation:
+    pt: Laterna Vigilis
+    en: Laterna Vigilis
+  visionLabel:
+    pt: Disco Lunar
+    en: Moon Wheel
+  affiliation:
+    pt: Portadores da Lâmpada
+    en: Lightkeepers
+  description:
+    pt: Um Ratniki de Nod-Krai que guarda o farol e o cemitério na ilha ao norte. Um cavalheiro misterioso e educado.
+    en: A Lightkeeper of Nod-Krai, guardian of a lighthouse and graveyard on a northern isle. An enigmatic gentleman, cultured and courtly.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12491
+    atk: 352
+    def: 809
+    ascensionStat: 88.4
+  - level: 95
+    hp: 12934
+    atk: 391
+    def: 837
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13379
+    atk: 431
+    def: 866
+    ascensionStat: 88.4

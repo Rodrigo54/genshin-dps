@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Baizhu
+  en: Baizhu
+rarity: 5
+element: dendro
+icon: UI_AvatarIcon_Baizhuer
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Além da Mortalidade
+    en: Beyond Mortality
+  constellation:
+    pt: Lagenaria
+    en: Lagenaria
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Chalé de Bubu
+    en: Bubu Pharmacy
+  description:
+    pt: O dono do Chalé de Bubu, sempre com uma cobra branca chamada Changsheng pendurada no pescoço. Um grande conhecedor de medicina, suas verdadeiras intenções são um grande mistério.
+    en: The owner of Bubu Pharmacy, who is rarely seen without the white snake named Changsheng. His medicinal knowledge is encyclopedic, and his personal intrigues subtle.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13348
+    atk: 193
+    def: 500
+    ascensionStat: 28.8
+  - level: 95
+    hp: 13822
+    atk: 214
+    def: 517
+    ascensionStat: 28.8
+  - level: 100
+    hp: 14297
+    atk: 236
+    def: 535
+    ascensionStat: 28.8

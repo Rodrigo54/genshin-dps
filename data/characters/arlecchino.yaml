@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Arlecchino
+  en: Arlecchino
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Arlecchino
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Snezhnaya
+  en: Snezhnaya
+profile:
+  title:
+    pt: Lua Solitária da Escuridão
+    en: Dire Balemoon
+  constellation:
+    pt: Ignis Purgatorius
+    en: Ignis Purgatorius
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Fatui
+    en: Fatui
+  description:
+    pt: A Serva, a Quarta Mensageira dos Fatui. Uma diplomata calma e implacável, o "Pai" que todas as crianças da Casa da Lareira temem e a quem reverenciam.
+    en: '"The Knave," Fourth of the Fatui Harbingers. A poised, ruthless diplomat. To the children in the House of the Hearth, she is their feared yet dependable "Father."'
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13103
+    atk: 342
+    def: 765
+    ascensionStat: 88.4
+  - level: 95
+    hp: 13568
+    atk: 381
+    def: 792
+    ascensionStat: 88.4
+  - level: 100
+    hp: 14034
+    atk: 419
+    def: 819
+    ascensionStat: 88.4

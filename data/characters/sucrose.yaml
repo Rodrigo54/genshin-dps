@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Sucrose
+  en: Sucrose
+rarity: 4
+element: anemo
+icon: UI_AvatarIcon_Sucrose
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Doçura Inofensiva
+    en: Harmless Sweetie
+  constellation:
+    pt: Ampulla
+    en: Ampulla
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: Uma alquimista cheia de curiosidade sobre todas as coisas e que pesquisa Bioalquimia.
+    en: An alchemist filled with curiosity about all things. She researches bio-alchemy.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Anemo
+    en: Anemo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9244
+    atk: 170
+    def: 703
+    ascensionStat: 24
+  - level: 95
+    hp: 9563
+    atk: 192
+    def: 727
+    ascensionStat: 24
+  - level: 100
+    hp: 9883
+    atk: 213
+    def: 752
+    ascensionStat: 24
