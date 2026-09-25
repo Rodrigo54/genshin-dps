@@ -1,4 +1,5 @@
 import {
+  type CharacterTooltipData,
   FLAT_WEAPON_SUBSTAT,
   type Locale,
   type MemberStats,
@@ -40,4 +41,9 @@ export function formatStat(stat: keyof MemberStats, value: number, locale: Local
 // Secundário da arma: só a Proficiência Elemental é plana
 export function formatWeaponSubstat(type: WeaponSubstatType, value: number, locale: Locale): string {
   return type === FLAT_WEAPON_SUBSTAT ? formatFlatStat(value, locale) : formatPercentStat(value, locale);
+}
+
+// Atributo de ascensão do personagem: porcentagem com uma casa, ou inteiro na Proficiência Elemental
+export function formatAscensionStat(stat: CharacterTooltipData['ascensionStat'], locale: Locale): string {
+  return stat.isPercent ? formatPercentStat(stat.value, locale) : formatFlatStat(stat.value, locale);
 }

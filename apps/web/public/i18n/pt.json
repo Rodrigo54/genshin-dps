@@ -66,8 +66,11 @@
     "summary": "{{character}} C{{constellation}} com {{weapon}}",
     "unknownWeapon": "arma não informada"
   },
-  "weapon": {
-    "level": "Nível {{level}}"
+  "tooltip": {
+    "level": "Nível {{level}}",
+    "baseHp": "Vida base",
+    "baseAtk": "ATQ base",
+    "baseDef": "DEF base"
   },
   "stats": {
     "hp": "Vida",

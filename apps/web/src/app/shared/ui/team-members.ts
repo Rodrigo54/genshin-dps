@@ -1,11 +1,18 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { type Catalog, ELEMENT_ICONS, type TeamMember, type WeaponEntry } from '@genshin-dps/schema/site-data';
+import {
+  type Catalog,
+  type CharacterEntry,
+  ELEMENT_ICONS,
+  type TeamElement,
+  type TeamMember,
+  type WeaponEntry,
+} from '@genshin-dps/schema/site-data';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { iconUrl } from '../../core/data/site-data';
 import { injectActiveLocale } from '../../core/i18n/active-locale';
 import { formatWeaponLabel } from '../format/weapon-label';
+import { CharacterTooltip } from './character-tooltip';
 import { elementTextColor, rarityBackground } from './game-colors';
-import { Tooltip } from './tooltip';
 import { WeaponTooltip } from './weapon-tooltip';
 
 type TeamMembersSize = 'md' | 'lg';
@@ -25,6 +32,8 @@ interface WeaponView {
 }
 
 interface MemberView {
+  character: CharacterEntry;
+  element: TeamElement;
   characterName: string;
   characterIconUrl: string;
   characterRarityClass: string;
@@ -35,24 +44,27 @@ interface MemberView {
   weapon?: WeaponView;
 }
 
-// Os 4 membros do time: ícone com constelação e arma com refinamento; o resumo aparece no tooltip
+// Os 4 membros do time: ícone com constelação e arma com refinamento, cada um com o próprio tooltip
 @Component({
   selector: 'app-team-members',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Tooltip, TranslocoPipe, WeaponTooltip],
+  imports: [CharacterTooltip, TranslocoPipe, WeaponTooltip],
   template: `
-    <ul class="flex gap-2">
+    <ul class="flex gap-4">
       @for (member of memberViews(); track $index) {
         @let weaponText = member.weapon?.label ?? ('member.unknownWeapon' | transloco);
         @let summary =
           'member.summary'
             | transloco: { character: member.characterName, constellation: member.constellation, weapon: weaponText };
-        <!-- O resumo fica no retrato e o tooltip da arma no selo dela, para os dois não abrirem juntos -->
+        <!-- O card do personagem fica no retrato e o da arma no selo dela, para os dois não abrirem juntos; o resumo
+          em texto continua para leitores de tela -->
         <li class="relative">
           <span
             class="block rounded-md outline-offset-2 focus-visible:outline-2 focus-visible:outline-accent"
             tabindex="0"
-            [appTooltip]="summary"
+            [appCharacterTooltip]="member.character"
+            [constellation]="member.constellation"
+            [element]="member.element"
           >
             <span class="sr-only">{{ summary }}</span>
             <img
@@ -105,6 +117,8 @@ export class TeamMembers {
   private toMemberView(member: TeamMember): MemberView {
     const character = this.catalog().characters[member.characterId];
     return {
+      character,
+      element: member.element,
       characterName: character.name[this.locale()],
       characterIconUrl: iconUrl(character.icon),
       characterRarityClass: rarityBackground(character.rarity),

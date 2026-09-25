@@ -66,8 +66,11 @@
     "summary": "{{character}} C{{constellation}} with {{weapon}}",
     "unknownWeapon": "unknown weapon"
   },
-  "weapon": {
-    "level": "Lv. {{level}}"
+  "tooltip": {
+    "level": "Lv. {{level}}",
+    "baseHp": "Base HP",
+    "baseAtk": "Base ATK",
+    "baseDef": "Base DEF"
   },
   "stats": {
     "hp": "HP",
