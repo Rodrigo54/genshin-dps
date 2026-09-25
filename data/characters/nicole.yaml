@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Nicole
+  en: Nicole
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Nicole
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Clamor Interior
+    en: Clamor Within
+  constellation:
+    pt: Reliquiarium
+    en: Reliquiarium
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Sociedade das Feiticeiras
+    en: Hexenzirkel
+  description:
+    pt: A "Bruxa" Silenciosa, O "Anjo" Sem Voz
+    en: The Silent "Mage," the Voiceless "Angel."
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10409
+    atk: 342
+    def: 563
+    ascensionStat: 28.8
+  - level: 95
+    hp: 10779
+    atk: 381
+    def: 583
+    ascensionStat: 28.8
+  - level: 100
+    hp: 11149
+    atk: 419
+    def: 603
+    ascensionStat: 28.8

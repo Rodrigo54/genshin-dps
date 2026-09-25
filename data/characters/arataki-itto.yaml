@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Arataki Itto
+  en: Arataki Itto
+rarity: 5
+element: geo
+icon: UI_AvatarIcon_Itto
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Heroísmo de Hanamizaka
+    en: Hanamizaka Heroics
+  constellation:
+    pt: Taurus Iracundus
+    en: Taurus Iracundus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Gangue Arataki
+    en: Arataki Gang
+  description:
+    pt: O primeiro e maior chefe da Gangue Arataki, famosa em Hanamizaka, na cidade de Inazuma... Espere, o quê? Nunca ouviu falar deles? Sério?
+    en: The first and greatest head of the Arataki Gang, famed throughout Inazuma City's Hanamizaka... Wait, what? You've never heard of them? Are you trying to be funny here?
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12858
+    atk: 227
+    def: 959
+    ascensionStat: 24.2
+  - level: 95
+    hp: 13315
+    atk: 253
+    def: 993
+    ascensionStat: 24.2
+  - level: 100
+    hp: 13772
+    atk: 278
+    def: 1027
+    ascensionStat: 24.2

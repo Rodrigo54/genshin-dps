@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Nahida
+  en: Nahida
+rarity: 5
+element: dendro
+icon: UI_AvatarIcon_Nahida
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Pureza Restauradora
+    en: Physic of Purity
+  constellation:
+    pt: Sapientia Oromasdis
+    en: Sapientia Oromasdis
+  visionLabel:
+    pt: Gnosis
+    en: Gnosis
+  affiliation:
+    pt: Cidade de Sumeru
+    en: Sumeru City
+  description:
+    pt: Um pássaro enjaulado no Santuário de Surasthana, que só pode contemplar o mundo através de seus sonhos.
+    en: A caged bird secluded within the confines of the Sanctuary of Surasthana who can only see the world in her dreams.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 10360
+    atk: 299
+    def: 630
+    ascensionStat: 115
+  - level: 95
+    hp: 10728
+    atk: 333
+    def: 653
+    ascensionStat: 115
+  - level: 100
+    hp: 11096
+    atk: 366
+    def: 675
+    ascensionStat: 115

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Xiao
+  en: Xiao
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Xiao
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Guardião Yaksha
+    en: Vigilant Yaksha
+  constellation:
+    pt: Alatus Nemeseos
+    en: Alatus Nemeseos
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Adepti de Liyue
+    en: Liyue Adeptus
+  description:
+    pt: Um Yaksha, um ser imortal que protege Liyue. Também chamado de "Conquistador de Demônios" ou "Guardião Yaksha".
+    en: A yaksha adeptus who defends Liyue. Also heralded as the "Conqueror of Demons" and "Vigilant Yaksha."
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12736
+    atk: 349
+    def: 799
+    ascensionStat: 24.2
+  - level: 95
+    hp: 13188
+    atk: 388
+    def: 828
+    ascensionStat: 24.2
+  - level: 100
+    hp: 13641
+    atk: 428
+    def: 856
+    ascensionStat: 24.2

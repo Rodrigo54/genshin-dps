@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kujou Sara
+  en: Kujou Sara
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Sara
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Flecha de Penas de Corvo
+    en: Crowfeather Kaburaya
+  constellation:
+    pt: Flabellum
+    en: Flabellum
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Comissão Tenryou
+    en: Tenryou Commission
+  description:
+    pt: General da Comissão Tenryou. Audaciosa, decisiva e habilidosa em batalha.
+    en: A general of the Tenryou Commission. Bold, decisive, and skilled in battle.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9570
+    atk: 195
+    def: 628
+    ascensionStat: 24
+  - level: 95
+    hp: 9901
+    atk: 220
+    def: 650
+    ascensionStat: 24
+  - level: 100
+    hp: 10232
+    atk: 245
+    def: 671
+    ascensionStat: 24

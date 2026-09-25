@@ -23,7 +23,47 @@ export const ELEMENT_ICONS: Record<TeamElement, string> = {
 };
 
 export type CharacterRarity = 4 | 5;
+
+// Níveis com status gravados em data/characters: 90 é o máximo por ascensão e o padrão das builds; 95 e 100 vêm
+// do investimento extra que tira o time do Baseline
+export const CHARACTER_LEVELS = [90, 95, 100] as const;
+export type CharacterLevel = (typeof CHARACTER_LEVELS)[number];
+export const DEFAULT_CHARACTER_LEVEL: CharacterLevel = 90;
 export type WeaponRarity = 1 | 2 | 3 | 4 | 5;
+
+export interface CharacterTooltipText {
+  // Viajante e Manequins não têm título; a afiliação é opcional porque o jogo pode deixar vazia
+  title?: string;
+  // Nação do personagem; quem não pertence a uma fica em "Teyvat"
+  region: string;
+  affiliation?: string;
+  // Nome da constelação do personagem (ex.: "Dulciaria Structura")
+  constellation: string;
+  // Rótulo do campo de elemento na aba Perfil ("Visão", "Gnosis", "Eixo Estelar"…)
+  visionLabel: string;
+  weaponType: string;
+  // Nome do atributo de ascensão como o jogo mostra (ex.: "Dano Crítico", "Bônus de Dano Pyro")
+  ascensionStatName: string;
+  description: string;
+}
+
+// Status base num nível, depois da última ascensão; porcentagens já multiplicadas por 100
+export interface CharacterLevelStats {
+  level: CharacterLevel;
+  hp: number;
+  atk: number;
+  def: number;
+  ascensionStat: number;
+}
+
+// O card mostra os status no nível do membro no time
+export interface CharacterTooltipData {
+  // Um por nível de CHARACTER_LEVELS
+  stats: CharacterLevelStats[];
+  // Só a Proficiência Elemental é plana; os outros atributos de ascensão são porcentagem
+  isAscensionStatPercent: boolean;
+  text: Record<Locale, CharacterTooltipText>;
+}
 
 export interface CharacterEntry {
   id: string;
@@ -31,6 +71,8 @@ export interface CharacterEntry {
   rarity: CharacterRarity;
   element: Element;
   icon: string;
+  // Ausente em personagem cadastrado à mão no overrides
+  tooltip?: CharacterTooltipData;
 }
 
 // Atributo secundário da arma, com o nome interno do jogo
@@ -145,6 +187,8 @@ export interface TeamMember {
   characterId: string;
   element: TeamElement;
   constellation: number;
+  // Sempre preenchido: 90 quando o benchmark não informa
+  level: CharacterLevel;
   // Ausente quando a fonte não informou a arma do suporte
   weapon?: MemberWeapon;
   sets?: MemberArtifactSet[];

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Aloy
+  en: Aloy
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Aloy
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Teyvat
+  en: Teyvat
+profile:
+  title:
+    pt: Salvadora de Outro Mundo
+    en: Savior From Another World
+  constellation:
+    pt: Norta Fortis
+    en: Nora Fortis
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiro Errante
+    en: Wandering Heroine
+  description:
+    pt: Era uma pária, agora uma caçadora de uma avidez inigualável. Pronta para fazer a coisa certa com seu arco, a qualquer momento.
+    en: Formerly an outcast, now a hunter of unparalleled skill. Ready to do the right thing at any time.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Cryo
+    en: Cryo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10899
+    atk: 234
+    def: 676
+    ascensionStat: 28.8
+  - level: 95
+    hp: 11286
+    atk: 260
+    def: 700
+    ascensionStat: 28.8
+  - level: 100
+    hp: 11673
+    atk: 287
+    def: 724
+    ascensionStat: 28.8

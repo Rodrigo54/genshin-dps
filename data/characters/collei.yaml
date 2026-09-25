@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Collei
+  en: Collei
+rarity: 4
+element: dendro
+icon: UI_AvatarIcon_Collei
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Broto de Renascimento
+    en: Sprout of Rebirth
+  constellation:
+    pt: Leptailurus Cervarius
+    en: Leptailurus Cervarius
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Vila Gandharva
+    en: Gandharva Ville
+  description:
+    pt: Uma Guarda-Florestal em Treinamento que patrulha a Floresta Avidya. Por trás de seu entusiasmo, encontra-se uma personalidade bastante introvertida.
+    en: A trainee ranger active in Avidya Forest. Behind her enthusiastic words and actions hides a slightly introverted personality.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9787
+    atk: 200
+    def: 601
+    ascensionStat: 24
+  - level: 95
+    hp: 10126
+    atk: 225
+    def: 621
+    ascensionStat: 24
+  - level: 100
+    hp: 10464
+    atk: 251
+    def: 642
+    ascensionStat: 24

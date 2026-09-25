@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Vesna
+  en: Vesna
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Vesna
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Snezhnaya
+  en: Snezhnaya
+profile:
+  title:
+    pt: Lâmina do Banquete de Neve
+    en: Snowy Banquet's Sharp Blade
+  constellation:
+    pt: Amentum Vernum
+    en: Amentum Vernum
+  visionLabel:
+    pt: Eixo Estelar
+    en: Stellar Linchpin
+  affiliation:
+    pt: Druzhna
+    en: Druzhna
+  description:
+    pt: Comandante dos Druzhnas e lâmina da Tsaritsa.
+    en: Commander of the Druzhna and the Tsaritsa's keen blade.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13262
+    atk: 354
+    def: 730
+    ascensionStat: 24.2
+  - level: 95
+    hp: 13733
+    atk: 394
+    def: 756
+    ascensionStat: 24.2
+  - level: 100
+    hp: 14205
+    atk: 434
+    def: 782
+    ascensionStat: 24.2

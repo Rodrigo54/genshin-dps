@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Chasca
+  en: Chasca
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Chasca
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Exploradora Celestial
+    en: Skyborne Arbiter
+  constellation:
+    pt: Vultur Gryphus
+    en: Vultur Gryphus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Tlalocan
+    en: Tlalocan
+  description:
+    pt: A Pacificadora de Tlalocan, a finalizadora de todas as disputas.
+    en: The Peacemaker of the Tlalocan, the ender of all disputes.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9797
+    atk: 347
+    def: 615
+    ascensionStat: 24.2
+  - level: 95
+    hp: 10144
+    atk: 386
+    def: 637
+    ascensionStat: 24.2
+  - level: 100
+    hp: 10493
+    atk: 425
+    def: 659
+    ascensionStat: 24.2

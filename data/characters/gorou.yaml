@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Gorou
+  en: Gorou
+rarity: 4
+element: geo
+icon: UI_AvatarIcon_Gorou
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Guerreiro Canino
+    en: Canine Warrior
+  constellation:
+    pt: Canis Bellatoris
+    en: Canis Bellatoris
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Ilha Watatsumi
+    en: Watatsumi Island
+  description:
+    pt: O grande general das tropas da Ilha Watatsumi. Seus subordinados acreditam profundamente nele.
+    en: The great general of Watatsumi Island's forces. He is deeply trusted by his subordinates.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Geo
+    en: Geo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9570
+    atk: 183
+    def: 648
+    ascensionStat: 24
+  - level: 95
+    hp: 9901
+    atk: 206
+    def: 671
+    ascensionStat: 24
+  - level: 100
+    hp: 10232
+    atk: 229
+    def: 693
+    ascensionStat: 24

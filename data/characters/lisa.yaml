@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Lisa
+  en: Lisa
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Lisa
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Bruxa das Rosas
+    en: Witch of Purple Rose
+  constellation:
+    pt: Tempus Fugit
+    en: Tempus Fugit
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: Preguiçosa, mas conhecida como bibliotecária dos Cavaleiros de Favonius, na verdade foi considerada pela Academia Sumeru como a graduada mais distinguida dos últimos dois séculos.
+    en: The languid but knowledgeable Librarian of the Knights of Favonius, deemed by Sumeru Akademiya to be their most distinguished graduate in the past two centuries.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 9570
+    atk: 232
+    def: 573
+    ascensionStat: 96
+  - level: 95
+    hp: 9901
+    atk: 261
+    def: 593
+    ascensionStat: 96
+  - level: 100
+    hp: 10232
+    atk: 291
+    def: 613
+    ascensionStat: 96

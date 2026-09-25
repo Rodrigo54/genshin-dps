@@ -1,0 +1,48 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Viajante
+  en: Traveler
+rarity: 5
+element: none
+icon: UI_AvatarIcon_PlayerBoy
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Teyvat
+  en: Teyvat
+profile:
+  constellation:
+    pt: Viator
+    en: Viator
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Melhor amigo de Paimon
+    en: Paimon's Best Friend
+  description:
+    pt: Um Viajante de outro mundo que teve seu ente querido levado e foi forçado a embarcar em uma jornada em busca dos Sete.
+    en: A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10875
+    atk: 212
+    def: 683
+    ascensionStat: 24
+  - level: 95
+    hp: 11251
+    atk: 239
+    def: 706
+    ascensionStat: 24
+  - level: 100
+    hp: 11627
+    atk: 267
+    def: 730
+    ascensionStat: 24

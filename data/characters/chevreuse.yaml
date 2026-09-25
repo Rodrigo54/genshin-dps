@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Chevreuse
+  en: Chevreuse
+rarity: 4
+element: pyro
+icon: UI_AvatarIcon_Chevreuse
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Executora da Justiça
+    en: Executor of Justice
+  constellation:
+    pt: Sclopetum Ensiferum
+    en: Sclopetum Ensiferum
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Patrulha de Segurança e Monitoramento Especial
+    en: Special Security and Surveillance Patrol
+  description:
+    pt: A capitã da Patrulha de Segurança e Monitoramento Especial, que tem a justiça como uma insígnia eterna em seu coração. Seu mosquete só aponta contra os culpados.
+    en: The captain of the Special Security and Surveillance Patrol, who wears justice as an ever-present seal upon her heart. Her musket shall only ever point at the guilty.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11962
+    atk: 193
+    def: 605
+    ascensionStat: 24
+  - level: 95
+    hp: 12376
+    atk: 218
+    def: 626
+    ascensionStat: 24
+  - level: 100
+    hp: 12790
+    atk: 243
+    def: 647
+    ascensionStat: 24

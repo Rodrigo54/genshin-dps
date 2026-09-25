@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Columbina
+  en: Columbina
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Columbina
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Retorno da Lua Nova
+    en: Welkin Moon's Homecoming
+  constellation:
+    pt: Columbina Hyposelenia
+    en: Columbina Hyposelenia
+  visionLabel:
+    pt: Convergência Tri-lunar
+    en: Tri-Lunar Convergence
+  affiliation:
+    pt: Lua Gelada
+    en: Frost Moon
+  description:
+    pt: A Dama da Lua nascida em Nod-Krai, além de ser a lua nova retornando para casa.
+    en: The Moon Maiden born in Nod-Krai, and also the welkin moon returning home.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 14695
+    atk: 96
+    def: 515
+    ascensionStat: 24.2
+  - level: 95
+    hp: 15217
+    atk: 106
+    def: 533
+    ascensionStat: 24.2
+  - level: 100
+    hp: 15740
+    atk: 117
+    def: 552
+    ascensionStat: 24.2

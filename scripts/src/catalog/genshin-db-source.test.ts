@@ -5,17 +5,7 @@ import { loadGenshinDbCatalog } from './genshin-db-source';
 
 // Integração com o pacote real: garante que a versão instalada continua no formato esperado
 describe('loadGenshinDbCatalog', () => {
-  const { catalog } = buildCatalog(loadGenshinDbCatalog(), emptyOverrides);
-
-  it('traz personagens com nome PT, raridade, elemento e ícone da Enka', () => {
-    expect(catalog.characters.resolve('Mavuika')).toEqual({
-      id: 'mavuika',
-      name: { en: 'Mavuika', pt: 'Mavuika' },
-      rarity: 5,
-      element: 'pyro',
-      icon: 'UI_AvatarIcon_Mavuika',
-    });
-  });
+  const { catalog } = buildCatalog({ characters: [], ...loadGenshinDbCatalog() }, emptyOverrides);
 
   it('resolve armas e sets pelo nome em português', () => {
     expect(catalog.weapons.resolve('Farpa').id).toBe('wolf-fang');
@@ -40,6 +30,6 @@ describe('loadGenshinDbCatalog', () => {
   });
 
   it('não herda a busca aproximada do genshin-db', () => {
-    expect(() => catalog.characters.resolve('Mavuka')).toThrow();
+    expect(() => catalog.weapons.resolve('Wolf Fang')).toThrow();
   });
 });

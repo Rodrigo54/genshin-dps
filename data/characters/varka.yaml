@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Varka
+  en: Varka
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Varka
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Cavaleiro de Boreas
+    en: Knight of Boreas
+  constellation:
+    pt: Lupus Majoris
+    en: Lupus Majoris
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: Grande Mestre dos Cavaleiros de Favonius. Cavaleiro de Boreas, protetor de Mondstadt.
+    en: Grand Master of the Knights of Favonius. Knight of Boreas, protector of Mondstadt.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12613
+    atk: 353
+    def: 795
+    ascensionStat: 88.4
+  - level: 95
+    hp: 13061
+    atk: 392
+    def: 824
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13510
+    atk: 432
+    def: 852
+    ascensionStat: 88.4

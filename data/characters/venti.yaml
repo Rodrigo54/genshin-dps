@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Venti
+  en: Venti
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Venti
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Bardo Itinerante
+    en: Windborne Bard
+  constellation:
+    pt: Carmen Dei
+    en: Carmen Dei
+  visionLabel:
+    pt: Gnosis
+    en: Gnosis
+  affiliation:
+    pt: Mondstadt
+    en: Mondstadt City
+  description:
+    pt: Um dos muitos bardos de Mondstadt que vagueia livremente pelas ruas e becos da cidade.
+    en: One of the many bards of Mondstadt, who freely wanders the city's streets and alleys.
+ascensionStat:
+  name:
+    pt: Recarga de Energia
+    en: Energy Recharge
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10531
+    atk: 263
+    def: 669
+    ascensionStat: 32
+  - level: 95
+    hp: 10905
+    atk: 293
+    def: 692
+    ascensionStat: 32
+  - level: 100
+    hp: 11280
+    atk: 322
+    def: 716
+    ascensionStat: 32

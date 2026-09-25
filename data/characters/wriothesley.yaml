@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Wriothesley
+  en: Wriothesley
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Wriothesley
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Emissário da Culpa Incógnita
+    en: Emissary of Solitary Iniquity
+  constellation:
+    pt: Cerberus
+    en: Cerberus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Fortaleza Meropide
+    en: Fortress of Meropide
+  description:
+    pt: Duque da Fortaleza Meropide, Lorde Incógnito das profundezas obscuras.
+    en: Duke of the Fortress of Meropide, Lord Incognito of the murky depths.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13593
+    atk: 311
+    def: 763
+    ascensionStat: 88.4
+  - level: 95
+    hp: 14075
+    atk: 346
+    def: 790
+    ascensionStat: 88.4
+  - level: 100
+    hp: 14559
+    atk: 381
+    def: 817
+    ascensionStat: 88.4

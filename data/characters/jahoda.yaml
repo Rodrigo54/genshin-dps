@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Jahoda
+  en: Jahoda
+rarity: 4
+element: anemo
+icon: UI_AvatarIcon_Jahoda
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Sombras da Ventania
+    en: Windthreading Shadow
+  constellation:
+    pt: Fragum
+    en: Fragum
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Curadoria dos Segredos
+    en: Curatorium of Secrets
+  description:
+    pt: A faz-tudo extremamente confiável (segundo ela) da Curadoria dos Segredos.
+    en: The Curatorium of Secrets' extremely reliable, do-it-all super employee (or so she claims).
+ascensionStat:
+  name:
+    pt: Bônus de Cura
+    en: Healing Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9646
+    atk: 223
+    def: 580
+    ascensionStat: 18.5
+  - level: 95
+    hp: 9979
+    atk: 251
+    def: 600
+    ascensionStat: 18.5
+  - level: 100
+    hp: 10313
+    atk: 280
+    def: 620
+    ascensionStat: 18.5

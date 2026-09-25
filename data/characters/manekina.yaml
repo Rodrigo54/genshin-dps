@@ -1,0 +1,48 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Manequina
+  en: Manekina
+rarity: 5
+element: none
+icon: UI_AvatarIcon_MannequinGirl
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Teyvat
+  en: Teyvat
+profile:
+  constellation:
+    pt: ——
+    en: ——
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: ——
+    en: ——
+  description:
+    pt: Um Manequim presenteado a você e Paimon por uma bruxa sob o pseudônimo "Octavia". É especialista em explorar os mistérios selados dentro do Miliastra Arcanum.
+    en: A Manekin gifted to you and Paimon by a witch who uses the pseudonym "Octavia." They are gifted at exploring the mysteries sealed within the Miliastra Wonderland.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10875
+    atk: 212
+    def: 683
+    ascensionStat: 24
+  - level: 95
+    hp: 11251
+    atk: 239
+    def: 706
+    ascensionStat: 24
+  - level: 100
+    hp: 11627
+    atk: 267
+    def: 730
+    ascensionStat: 24

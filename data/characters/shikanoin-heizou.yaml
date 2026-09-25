@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Shikanoin Heizou
+  en: Shikanoin Heizou
+rarity: 4
+element: anemo
+icon: UI_AvatarIcon_Heizo
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Mente Condizente
+    en: Analytical Harmony
+  constellation:
+    pt: Cervus Minor
+    en: Cervus Minor
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Comissão Tenryou
+    en: Tenryou Commission
+  description:
+    pt: Um jovem e talentoso detetive da Comissão Tenryou. Tem uma intuição astuta e aguçada.
+    en: A young prodigy detective from the Tenryou Commission. His senses are sharp and his thoughts are clear.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Anemo
+    en: Anemo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10657
+    atk: 225
+    def: 684
+    ascensionStat: 24
+  - level: 95
+    hp: 11026
+    atk: 254
+    def: 708
+    ascensionStat: 24
+  - level: 100
+    hp: 11395
+    atk: 283
+    def: 731
+    ascensionStat: 24

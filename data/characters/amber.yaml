@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Amber
+  en: Amber
+rarity: 4
+element: pyro
+icon: UI_AvatarIcon_Ambor
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Campeã Voadora
+    en: Gliding Champion
+  constellation:
+    pt: Lepus
+    en: Lepus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: Sempre energética e cheia de vida, a Amber é a melhor, mas também a última Aventureira dos Cavaleiros de Favonius.
+    en: Always energetic and full of life, Amber's the best — albeit only — Outrider of the Knights of Favonius.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9461
+    atk: 223
+    def: 601
+    ascensionStat: 24
+  - level: 95
+    hp: 9788
+    atk: 251
+    def: 621
+    ascensionStat: 24
+  - level: 100
+    hp: 10116
+    atk: 280
+    def: 642
+    ascensionStat: 24

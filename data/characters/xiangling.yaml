@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Xiangling
+  en: Xiangling
+rarity: 4
+element: pyro
+icon: UI_AvatarIcon_Xiangling
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Mestre da Culinária
+    en: Exquisite Delicacy
+  constellation:
+    pt: Trulla
+    en: Trulla
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Restaurante Wanmin
+    en: Wanmin Restaurant
+  description:
+    pt: Uma renomada chef de Liyue. Ela é extremamente apaixonada por cozinhar e se destaca em fazer seus pratos quentes e picantes.
+    en: A renowned chef from Liyue. She's extremely passionate about cooking and excels at making her signature hot and spicy dishes.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 10875
+    atk: 225
+    def: 669
+    ascensionStat: 96
+  - level: 95
+    hp: 11251
+    atk: 254
+    def: 692
+    ascensionStat: 96
+  - level: 100
+    hp: 11627
+    atk: 283
+    def: 715
+    ascensionStat: 96

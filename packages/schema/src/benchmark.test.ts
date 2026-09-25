@@ -52,6 +52,14 @@ describe('benchmarkSchema', () => {
     expect(isValid({ ...validBenchmark, supports: [r0, ...validBenchmark.supports.slice(1)] })).toBe(false);
   });
 
+  it('aceita nível 90, 95 ou 100 por membro e recusa qualquer outro', () => {
+    const withLevel = (level: number) => ({ ...validBenchmark, main: { ...validBenchmark.main, level } });
+    [90, 95, 100].forEach((level) => expect(isValid(withLevel(level))).toBe(true));
+    [80, 91, 110].forEach((level) => expect(isValid(withLevel(level))).toBe(false));
+    const [citlali, ...others] = validBenchmark.supports;
+    expect(isValid({ ...validBenchmark, supports: [{ ...citlali, level: 100 }, ...others] })).toBe(true);
+  });
+
   it('aceita principais válidos para cada peça e recusa atributo que a peça não tem', () => {
     const mainStats = { sands: 'atkPercent', goblet: 'pyroDmgBonus', circlet: 'critDamage' };
     expect(isValid({ ...validBenchmark, main: { ...validBenchmark.main, mainStats } })).toBe(true);

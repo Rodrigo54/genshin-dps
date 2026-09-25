@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kaveh
+  en: Kaveh
+rarity: 4
+element: dendro
+icon: UI_AvatarIcon_Kaveh
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Refletor Empíreo
+    en: Empyrean Reflection
+  constellation:
+    pt: Paradisaea
+    en: Paradisaea
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Estúdio independente de design
+    en: Independent Design Studio
+  description:
+    pt: Um arquiteto renomado de Sumeru, é preocupado demais com muitas coisas. Um esteta perturbado pela realidade.
+    en: A renowned architect from Sumeru who perhaps cares a bit too much about too many things. He is an aesthete troubled by reality.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 11962
+    atk: 234
+    def: 751
+    ascensionStat: 96
+  - level: 95
+    hp: 12376
+    atk: 263
+    def: 777
+    ascensionStat: 96
+  - level: 100
+    hp: 12790
+    atk: 293
+    def: 803
+    ascensionStat: 96

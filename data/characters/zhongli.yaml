@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Zhongli
+  en: Zhongli
+rarity: 5
+element: geo
+icon: UI_AvatarIcon_Zhongli
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Andarilho do Reino Mortal
+    en: Vago Mundo
+  constellation:
+    pt: Lapis Dei
+    en: Lapis Dei
+  visionLabel:
+    pt: Gnosis
+    en: Gnosis
+  affiliation:
+    pt: Porto de Liyue
+    en: Liyue Harbor
+  description:
+    pt: Um convidado misterioso da Funerária de Wangsheng. É um erudito que tem um profundo conhecimento sobre todos os tipos de coisa.
+    en: A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Geo
+    en: Geo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 14695
+    atk: 251
+    def: 738
+    ascensionStat: 28.8
+  - level: 95
+    hp: 15217
+    atk: 279
+    def: 764
+    ascensionStat: 28.8
+  - level: 100
+    hp: 15740
+    atk: 308
+    def: 790
+    ascensionStat: 28.8

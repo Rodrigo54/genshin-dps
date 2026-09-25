@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Chiori
+  en: Chiori
+rarity: 5
+element: geo
+icon: UI_AvatarIcon_Chiori
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Costureira Trovejante
+    en: The Thundering Seamstress
+  constellation:
+    pt: Cisoria
+    en: Cisoria
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Corte de Fontaine
+    en: Court of Fontaine
+  description:
+    pt: A dona da Boutique Chioriya. É uma costureira renomada em Fontaine.
+    en: The owner of Chioriya Boutique. A tailor renowned throughout Fontaine.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11438
+    atk: 323
+    def: 953
+    ascensionStat: 24.2
+  - level: 95
+    hp: 11844
+    atk: 359
+    def: 987
+    ascensionStat: 24.2
+  - level: 100
+    hp: 12251
+    atk: 396
+    def: 1021
+    ascensionStat: 24.2

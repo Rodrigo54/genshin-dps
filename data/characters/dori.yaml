@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Dori
+  en: Dori
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Dori
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Tesouro do Jardim dos Sonhos
+    en: Treasure of Dream Garden
+  constellation:
+    pt: Magicae Lucerna
+    en: Magicae Lucerna
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Palácio de Alcazarzaray
+    en: The Palace of Alcazarzaray
+  description:
+    pt: Uma comerciante viajante imprevisível, cuja maior paixão é a Mora brilhante.
+    en: An elusive merchant who has a fondness for glittering Mora.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12397
+    atk: 223
+    def: 723
+    ascensionStat: 24
+  - level: 95
+    hp: 12826
+    atk: 251
+    def: 748
+    ascensionStat: 24
+  - level: 100
+    hp: 13255
+    atk: 280
+    def: 774
+    ascensionStat: 24

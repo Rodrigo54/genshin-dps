@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Keqing
+  en: Keqing
+rarity: 5
+element: electro
+icon: UI_AvatarIcon_Keqing
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Trovão Condutor
+    en: Driving Thunder
+  constellation:
+    pt: Trulla Cementarii
+    en: Trulla Cementarii
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Qixing de Liyue
+    en: Liyue Qixing
+  description:
+    pt: A Yuheng dos Qixing de Liyue. Tem muito a dizer sobre o Rex Lapis governando Liyue com apenas uma palavra, mas na verdade, esse deus admira muito esses céticos.
+    en: The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis's unilateral approach to policymaking in Liyue — but in truth, gods admire skeptics such as her quite a lot.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13103
+    atk: 323
+    def: 799
+    ascensionStat: 88.4
+  - level: 95
+    hp: 13568
+    atk: 359
+    def: 828
+    ascensionStat: 88.4
+  - level: 100
+    hp: 14034
+    atk: 396
+    def: 856
+    ascensionStat: 88.4

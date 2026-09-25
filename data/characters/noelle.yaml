@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Noelle
+  en: Noelle
+rarity: 4
+element: geo
+icon: UI_AvatarIcon_Noel
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Flor da Cavalaria
+    en: Chivalric Blossom
+  constellation:
+    pt: Parma Cordis
+    en: Parma Cordis
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: Uma empregada em serviço dos Cavaleiros de Favonius que sonha em se juntar aos cavaleiros um dia.
+    en: A maid who faithfully serves the Knights of Favonius. She dreams of joining their ranks someday.
+ascensionStat:
+  name:
+    pt: DEF
+    en: DEF
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12071
+    atk: 191
+    def: 799
+    ascensionStat: 30
+  - level: 95
+    hp: 12488
+    atk: 216
+    def: 826
+    ascensionStat: 30
+  - level: 100
+    hp: 12906
+    atk: 240
+    def: 854
+    ascensionStat: 30

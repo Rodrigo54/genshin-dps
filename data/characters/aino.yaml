@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Aino
+  en: Aino
+rarity: 4
+element: hydro
+icon: UI_AvatarIcon_Aino
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Máquinas Milagrosas Trim-Trim-Bum
+    en: Clinky-Clank Gadgets-A-Gogo
+  constellation:
+    pt: Cistellula Mira
+    en: Cistellula Mira
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Oficina de Rolinho de Ovo Trilimlim
+    en: Clink-Clank Krumkake Craftshop
+  description:
+    pt: Uma gênio mecânica de Nod-Krai, gosta muito de máquinas divertidas e doces.
+    en: A genius mechanic and inventor from Nod-Krai who loves interesting machines and sweet treats.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 11201
+    atk: 242
+    def: 607
+    ascensionStat: 96
+  - level: 95
+    hp: 11588
+    atk: 273
+    def: 628
+    ascensionStat: 96
+  - level: 100
+    hp: 11976
+    atk: 304
+    def: 649
+    ascensionStat: 96

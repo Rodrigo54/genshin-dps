@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Xilonen
+  en: Xilonen
+rarity: 5
+element: geo
+icon: UI_AvatarIcon_Xilonen
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Fogo Ardente Forja a Alma
+    en: Ardent Flames Forge the Soul
+  constellation:
+    pt: Panthera Ocelota
+    en: Panthera Ocelota
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Nanatzcayan
+    en: Nanatzcayan
+  description:
+    pt: Uma Forjadora de Nome de Nanatzcayan, ela é especialmente habilidosa em encontrar um bom equilíbrio entre as pesadas responsabilidades de seu trabalho e viver bem.
+    en: A Name Engraver of the Nanatzcayan, she is especially skilled at finding a good balance between the heavy responsibilities of her job and living well.
+ascensionStat:
+  name:
+    pt: DEF
+    en: DEF
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12405
+    atk: 275
+    def: 930
+    ascensionStat: 36
+  - level: 95
+    hp: 12845
+    atk: 306
+    def: 963
+    ascensionStat: 36
+  - level: 100
+    hp: 13287
+    atk: 337
+    def: 996
+    ascensionStat: 36

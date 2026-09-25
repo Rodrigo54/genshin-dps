@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Vodyanitsa
+  en: Vodyanitsa
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Vodyanitsa
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Snezhnaya
+  en: Snezhnaya
+profile:
+  title:
+    pt: Canção de Sereia que Perdura
+    en: Lingering Siren-Song
+  constellation:
+    pt: Piscicula Aurea
+    en: Piscicula Aurea
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Companhia Korolevskiy
+    en: Korolevskiy Troupe
+  description:
+    pt: Prima donna da Companhia Korolevskiy e uma Sereia que deixou seu bando.
+    en: Prima Donna of the Korolevskiy Troupe and a Water Imp who has parted from her kin.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 14818
+    atk: 108
+    def: 484
+    ascensionStat: 28.8
+  - level: 95
+    hp: 15344
+    atk: 120
+    def: 501
+    ascensionStat: 28.8
+  - level: 100
+    hp: 15871
+    atk: 132
+    def: 519
+    ascensionStat: 28.8

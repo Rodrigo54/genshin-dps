@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Mona
+  en: Mona
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Mona
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Reflexão Astral
+    en: Astral Reflection
+  constellation:
+    pt: Astrolabos
+    en: Astrolabos
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Mondstadt
+    en: Mondstadt
+  description:
+    pt: Uma jovem astróloga misteriosa que proclama a si mesma como a "Grande Astróloga Mona Megistus" e que possui as habilidades para o título. Uma pessoa erudita, mas orgulhosa.
+    en: A mysterious young astrologer who proclaims herself to be "Astrologist Mona Megistus," and who possesses abilities to match the title. Erudite, but prideful.
+ascensionStat:
+  name:
+    pt: Recarga de Energia
+    en: Energy Recharge
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10409
+    atk: 287
+    def: 653
+    ascensionStat: 32
+  - level: 95
+    hp: 10779
+    atk: 319
+    def: 676
+    ascensionStat: 32
+  - level: 100
+    hp: 11149
+    atk: 352
+    def: 700
+    ascensionStat: 32

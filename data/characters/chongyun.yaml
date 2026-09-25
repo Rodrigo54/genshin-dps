@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Chongyun
+  en: Chongyun
+rarity: 4
+element: cryo
+icon: UI_AvatarIcon_Chongyun
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Pegadas na Neve
+    en: Frozen Ardor
+  constellation:
+    pt: Nubis Caesor
+    en: Nubis Caesor
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Exorcista de Tianheng
+    en: Tianheng Thaumaturges
+  description:
+    pt: Um jovem exorcista de uma família de exorcistas. Ele faz de tudo para suprimir seu Psíquico Yang Puro.
+    en: A young exorcist from a family of exorcists. He does everything he can to suppress his abundance of yang energy.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10984
+    atk: 223
+    def: 648
+    ascensionStat: 24
+  - level: 95
+    hp: 11363
+    atk: 251
+    def: 671
+    ascensionStat: 24
+  - level: 100
+    hp: 11743
+    atk: 280
+    def: 693
+    ascensionStat: 24

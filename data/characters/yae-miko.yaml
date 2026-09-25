@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Yae Miko
+  en: Yae Miko
+rarity: 5
+element: electro
+icon: UI_AvatarIcon_Yae
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Diversão Astuta
+    en: Astute Amusement
+  constellation:
+    pt: Divina Vulpes
+    en: Divina Vulpes
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Grande Santuário Narukami
+    en: Grand Narukami Shrine
+  description:
+    pt: A Senhorita Guuji do Grande Santuário Narukami, e também a Editora-Chefe da Editora Yae. Por trás de sua bela aparência escondem-se sabedoria e astúcia inimagináveis.
+    en: Lady Guuji of the Grand Narukami Shrine. Also serves as the editor-in-chief of Yae Publishing House. Unimaginable intelligence and cunning are hidden under her beautiful appearance.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10372
+    atk: 340
+    def: 569
+    ascensionStat: 24.2
+  - level: 95
+    hp: 10740
+    atk: 378
+    def: 589
+    ascensionStat: 24.2
+  - level: 100
+    hp: 11109
+    atk: 416
+    def: 609
+    ascensionStat: 24.2

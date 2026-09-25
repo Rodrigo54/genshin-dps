@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kachina
+  en: Kachina
+rarity: 4
+element: geo
+icon: UI_AvatarIcon_Kachina
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Minério de Ouro Não Fundido
+    en: Mottled Gold Yet Unsmelted
+  constellation:
+    pt: Ochotona Princeps
+    en: Ochotona Princeps
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Nanatzcayan
+    en: Nanatzcayan
+  description:
+    pt: Uma jovem guerreira dos Filhos dos Ecos, condecorada com o Nome Antigo "Uthabiti". É uma jovem garota gentil e com uma persistência insaciável que nunca para de crescer no meio das adversidades.
+    en: A young warrior of the Nanatzcayan, given the Ancient Name of "Uthabiti." Kind-hearted and insatiably persistent, she grows stronger and more capable with each setback she faces.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Geo
+    en: Geo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11799
+    atk: 217
+    def: 792
+    ascensionStat: 24
+  - level: 95
+    hp: 12207
+    atk: 244
+    def: 820
+    ascensionStat: 24
+  - level: 100
+    hp: 12615
+    atk: 272
+    def: 847
+    ascensionStat: 24

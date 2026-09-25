@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Klee
+  en: Klee
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Klee
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Sol Fugitivo
+    en: Fleeing Sunlight
+  constellation:
+    pt: Trifolium
+    en: Trifolium
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: Uma visitante frequente da sala de confinamento dos Cavaleiros de Favonius, também conhecida como "Sol Fugitivo".
+    en: An explosives expert and a regular at the Knights of Favonius's confinement room. Also known as Fleeing Sunlight.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Pyro
+    en: Pyro DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10287
+    atk: 311
+    def: 615
+    ascensionStat: 28.8
+  - level: 95
+    hp: 10652
+    atk: 346
+    def: 637
+    ascensionStat: 28.8
+  - level: 100
+    hp: 11018
+    atk: 381
+    def: 659
+    ascensionStat: 28.8

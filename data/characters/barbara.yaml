@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Barbara
+  en: Barbara
+rarity: 4
+element: hydro
+icon: UI_AvatarIcon_Barbara
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Ídolo Radiante
+    en: Shining Idol
+  constellation:
+    pt: Cratera
+    en: Crater
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Igreja Favonius
+    en: Church of Favonius
+  description:
+    pt: Todos os habitantes de Mondstadt adoram a Barbara. Contudo, ela viu a palavra "ídolo" pela primeira vez em uma revista.
+    en: Every citizen of Mondstadt adores Barbara. She learned the word "idol" from a magazine.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9787
+    atk: 159
+    def: 669
+    ascensionStat: 24
+  - level: 95
+    hp: 10126
+    atk: 180
+    def: 692
+    ascensionStat: 24
+  - level: 100
+    hp: 10464
+    atk: 200
+    def: 715
+    ascensionStat: 24

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Jean
+  en: Jean
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Qin
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Cavaleira de Dandelion
+    en: Dandelion Knight
+  constellation:
+    pt: Leo Menor
+    en: Leo Minor
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: A justa e rigorosa Cavaleira de Dandelion, a Grande Mestre Intendente dos Cavaleiros de Favonius em Mondstadt.
+    en: The righteous and rigorous Dandelion Knight, and Acting Grand Master of Mondstadt's Knights of Favonius.
+ascensionStat:
+  name:
+    pt: Bônus de Cura
+    en: Healing Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 14695
+    atk: 239
+    def: 769
+    ascensionStat: 22.2
+  - level: 95
+    hp: 15217
+    atk: 266
+    def: 796
+    ascensionStat: 22.2
+  - level: 100
+    hp: 15740
+    atk: 293
+    def: 823
+    ascensionStat: 22.2

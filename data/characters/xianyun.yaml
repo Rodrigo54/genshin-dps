@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Xianyun
+  en: Xianyun
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Liuyun
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Mensageira Celestial
+    en: Passerine Herald
+  constellation:
+    pt: Grus Serena
+    en: Grus Serena
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Montanha Aozang
+    en: Mt. Aocang
+  description:
+    pt: Uma dos Adepti Poderosos e Iluminados de Jueyun, conhecida como Retentora de Nuvem. Domina as artes mecânicas, seu coração percorre o mundo efêmero dos mortais, e seu nome entre eles é Xianyun.
+    en: One of the Mighty and Illuminated Adepti of Jueyun, known as "Cloud Retainer." Expert in all kinds of mechanical contraptions, her heart now turns towards the affairs of the mortal world, through which she walks under the name "Xianyun."
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10409
+    atk: 335
+    def: 573
+    ascensionStat: 28.8
+  - level: 95
+    hp: 10779
+    atk: 373
+    def: 593
+    ascensionStat: 28.8
+  - level: 100
+    hp: 11149
+    atk: 410
+    def: 613
+    ascensionStat: 28.8

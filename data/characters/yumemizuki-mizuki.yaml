@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Yumemizuki Mizuki
+  en: Yumemizuki Mizuki
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Mizuki
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Sonhos Entrelaçados
+    en: Embrace of Enchanting Dreams
+  constellation:
+    pt: Tapirus Somniator
+    en: Tapirus Somniator
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Inazuma
+    en: Inazuma
+  description:
+    pt: Acionista da Banhos de Aisa, psicóloga da tribo Yumekui-baku, dedicada a dissipar pesadelos e trazer paz mental às pessoas.
+    en: A shareholder of Aisa Bathhouse, a baku, and a clinical psychologist. Dedicated to the dispersal of nightmares, and to bringing people peace of mind.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 12736
+    atk: 215
+    def: 757
+    ascensionStat: 115
+  - level: 95
+    hp: 13188
+    atk: 239
+    def: 784
+    ascensionStat: 115
+  - level: 100
+    hp: 13641
+    atk: 264
+    def: 811
+    ascensionStat: 115

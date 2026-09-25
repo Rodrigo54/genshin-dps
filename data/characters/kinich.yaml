@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kinich
+  en: Kinich
+rarity: 5
+element: dendro
+icon: UI_AvatarIcon_Kinich
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Caçador da Têmpera
+    en: Turnfire Hunt
+  constellation:
+    pt: Chimaera Alebriius
+    en: Chimaera Alebriius
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Huitztlan
+    en: Huitztlan
+  description:
+    pt: Um Caçador de Saurianos de Huitztlan, é habilidoso em contar custos.
+    en: A Huitztlan Saurian Hunter skilled at counting costs.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12858
+    atk: 332
+    def: 802
+    ascensionStat: 88.4
+  - level: 95
+    hp: 13315
+    atk: 370
+    def: 830
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13772
+    atk: 407
+    def: 859
+    ascensionStat: 88.4

@@ -5,18 +5,26 @@ const fiveStarC0R1: BaselineMember = {
   characterId: 'mavuika',
   characterRarity: 5,
   constellation: 0,
+  level: 90,
   weapon: { weaponId: 'a-thousand-blazing-suns', rarity: 5, refinement: 1 },
 };
 const fourStarC6R5: BaselineMember = {
   characterId: 'bennett',
   characterRarity: 4,
   constellation: 6,
+  level: 90,
   weapon: { weaponId: 'favonius-sword', rarity: 4, refinement: 5 },
 };
 
 describe('isBaselineMember', () => {
   it('aceita 5★ em C0 com arma 5★ R1', () => {
     expect(isBaselineMember(fiveStarC0R1)).toBe(true);
+  });
+
+  it('recusa qualquer personagem acima do nível 90, inclusive 4★ e a Viajante', () => {
+    expect(isBaselineMember({ ...fiveStarC0R1, level: 95 })).toBe(false);
+    expect(isBaselineMember({ ...fourStarC6R5, level: 100 })).toBe(false);
+    expect(isBaselineMember({ ...fiveStarC0R1, characterId: 'traveler', level: 95 })).toBe(false);
   });
 
   it('recusa 5★ acima de C0', () => {
@@ -68,11 +76,11 @@ describe('isBaselineMember com investimento gratuito', () => {
 
 describe('isBaselineMember com dado ausente', () => {
   it('não tira do baseline quando a fonte omite a arma', () => {
-    expect(isBaselineMember({ characterId: 'mavuika', characterRarity: 5, constellation: 0 })).toBe(true);
+    expect(isBaselineMember({ characterId: 'mavuika', characterRarity: 5, constellation: 0, level: 90 })).toBe(true);
   });
 
   it('continua exigindo C0 do 5★ mesmo sem arma informada', () => {
-    expect(isBaselineMember({ characterId: 'mavuika', characterRarity: 5, constellation: 1 })).toBe(false);
+    expect(isBaselineMember({ characterId: 'mavuika', characterRarity: 5, constellation: 1, level: 90 })).toBe(false);
   });
 });
 

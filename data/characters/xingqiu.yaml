@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Xingqiu
+  en: Xingqiu
+rarity: 4
+element: hydro
+icon: UI_AvatarIcon_Xingqiu
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Galante Juvenil
+    en: Juvenile Galant
+  constellation:
+    pt: Fabulae Textile
+    en: Fabulae Textile
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Guilda de Comerciantes de Feiyun
+    en: Feiyun Commerce Guild
+  description:
+    pt: Um jovem carregando uma espada longa que é frequentemente visto em estantes de livros. Ele tem um coração de ouro e anseia por justiça e equidade para todos.
+    en: A young man carrying a longsword who is frequently seen at book booths. He has a chivalrous heart and yearns for justice and fairness for all.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10222
+    atk: 202
+    def: 758
+    ascensionStat: 24
+  - level: 95
+    hp: 10576
+    atk: 228
+    def: 784
+    ascensionStat: 24
+  - level: 100
+    hp: 10930
+    atk: 253
+    def: 810
+    ascensionStat: 24

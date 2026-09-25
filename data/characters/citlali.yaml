@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Citlali
+  en: Citlali
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_Citlali
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Obsidiana da Estrela Branca
+    en: Obsidian Opalstar
+  constellation:
+    pt: Patina Anavatlaca
+    en: Patina Anavatlaca
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Mictlan
+    en: Mictlan
+  description:
+    pt: A grande xamã dos Mestres do Vento Noturno, a universalmente reverenciada Vovó Itztli.
+    en: The great shaman from the Masters of the Night-Wind, the universally-revered Granny Itztli.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 11634
+    atk: 127
+    def: 763
+    ascensionStat: 115
+  - level: 95
+    hp: 12047
+    atk: 141
+    def: 790
+    ascensionStat: 115
+  - level: 100
+    hp: 12460
+    atk: 155
+    def: 817
+    ascensionStat: 115

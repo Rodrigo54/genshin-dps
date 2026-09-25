@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Rosaria
+  en: Rosaria
+rarity: 4
+element: cryo
+icon: UI_AvatarIcon_Rosaria
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Benevolência Espinhosa
+    en: Thorny Benevolence
+  constellation:
+    pt: Spinea Corona
+    en: Spinea Corona
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Igreja Favonius
+    en: Church of Favonius
+  description:
+    pt: Uma freira que, além das suas vestes, não se parece em nada com uma pessoa do clero. Conhecida por seus modos e palavras diretos e frios, ela costuma trabalhar sozinha.
+    en: A sister of the church, though you wouldn't know it if it weren't for her attire. Known for her sharp, cold words and manner, she often works alone.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12289
+    atk: 240
+    def: 710
+    ascensionStat: 24
+  - level: 95
+    hp: 12713
+    atk: 271
+    def: 734
+    ascensionStat: 24
+  - level: 100
+    hp: 13139
+    atk: 301
+    def: 759
+    ascensionStat: 24

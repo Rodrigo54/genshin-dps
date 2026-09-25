@@ -7,6 +7,7 @@ const WEB_PUBLIC = join(WEB_ROOT, 'public');
 export const PATHS = {
   benchmarks: join(REPO_ROOT, 'data', 'benchmarks'),
   catalogOverrides: join(REPO_ROOT, 'data', 'catalog-overrides.yaml'),
+  characters: join(REPO_ROOT, 'data', 'characters'),
   webPublic: WEB_PUBLIC,
   translations: join(WEB_PUBLIC, 'i18n'),
   // Saída do `ng build` com outputMode static

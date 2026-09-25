@@ -3,7 +3,7 @@ import { mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { DataValidationError } from './build-site-data';
-import { loadBenchmarkFiles, loadCatalogOverrides } from './load-data';
+import { loadBenchmarkFiles, loadCatalogOverrides, loadCharacterFiles } from './load-data';
 
 const validYaml = `
 - teamDps: 252000
@@ -41,6 +41,19 @@ describe('load-data', () => {
     expect(error).toBeInstanceOf(DataValidationError);
     expect((error as DataValidationError).message).toContain('data/benchmarks/mavuika.yaml');
     expect((error as DataValidationError).message).toContain('patch');
+  });
+
+  it('lê os personagens com o id vindo do nome do arquivo e aponta o arquivo inválido', async () => {
+    const mavuika = await Bun.file(
+      join(import.meta.dir, '..', '..', '..', 'data', 'characters', 'mavuika.yaml'),
+    ).text();
+    await Bun.write(join(directory, 'mavuika.yaml'), mavuika);
+    expect(Object.keys(await loadCharacterFiles(directory))).toEqual(['mavuika']);
+
+    await Bun.write(join(directory, 'citlali.yaml'), mavuika.replace('rarity: 5', 'rarity: 3'));
+    const error = await loadCharacterFiles(directory).catch((caught: unknown) => caught);
+    expect(error).toBeInstanceOf(DataValidationError);
+    expect((error as DataValidationError).message).toContain('data/characters/citlali.yaml');
   });
 
   it('aceita arquivo de overrides vazio', async () => {

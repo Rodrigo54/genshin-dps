@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Dahlia
+  en: Dahlia
+rarity: 4
+element: hydro
+icon: UI_AvatarIcon_Dahlia
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Diácono da Ode Divina
+    en: Ode and Oblation
+  constellation:
+    pt: Cantus Choralis
+    en: Cantus Choralis
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Igreja Favonius
+    en: Church of Favonius
+  description:
+    pt: Diácono da Igreja Favonius e representante do Arconte Anemo na igreja.
+    en: Deacon of the Church of Favonius and the Anemo Archon's representative in the church.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12506
+    atk: 189
+    def: 560
+    ascensionStat: 24
+  - level: 95
+    hp: 12938
+    atk: 213
+    def: 579
+    ascensionStat: 24
+  - level: 100
+    hp: 13371
+    atk: 237
+    def: 598
+    ascensionStat: 24

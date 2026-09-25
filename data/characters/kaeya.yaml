@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kaeya
+  en: Kaeya
+rarity: 4
+element: cryo
+icon: UI_AvatarIcon_Kaeya
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Espadachim do Vento Congelante
+    en: Frostwind Swordsman
+  constellation:
+    pt: Pavo Ocellus
+    en: Pavo Ocellus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: Um espadachim dos Cavaleiros de Favonius com uma aparência única.
+    en: An accomplished swordsman and a strategic thinker in the Knights of Favonius, rumored to hail from beyond Mondstadt.
+ascensionStat:
+  name:
+    pt: Recarga de Energia
+    en: Energy Recharge
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11636
+    atk: 223
+    def: 792
+    ascensionStat: 26.7
+  - level: 95
+    hp: 12038
+    atk: 251
+    def: 819
+    ascensionStat: 26.7
+  - level: 100
+    hp: 12441
+    atk: 280
+    def: 846
+    ascensionStat: 26.7

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Albedo
+  en: Albedo
+rarity: 5
+element: geo
+icon: UI_AvatarIcon_Albedo
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Príncipe do Giz
+    en: Kreideprinz
+  constellation:
+    pt: Princeps Cretaceous
+    en: Princeps Cretaceus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: Um gênio conhecido como Príncipe do Giz, ele é o Chefe Alquimista e Capitão da Equipe de Investigação dos Cavaleiros de Favonius.
+    en: A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Geo
+    en: Geo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13226
+    atk: 251
+    def: 876
+    ascensionStat: 28.8
+  - level: 95
+    hp: 13695
+    atk: 279
+    def: 907
+    ascensionStat: 28.8
+  - level: 100
+    hp: 14166
+    atk: 308
+    def: 938
+    ascensionStat: 28.8

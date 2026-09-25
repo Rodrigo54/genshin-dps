@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Sandrone
+  en: Sandrone
+rarity: 5
+element: cryo
+icon: UI_AvatarIcon_MarionetteNew
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Snezhnaya
+  en: Snezhnaya
+profile:
+  title:
+    pt: Análise Espelhada
+    en: Mirrored Analysis
+  constellation:
+    pt: Narcissorolegium
+    en: Narcissorolegium
+  visionLabel:
+    pt: Eixo Estelar
+    en: Stellar Linchpin
+  affiliation:
+    pt: Fatui
+    en: Fatui
+  description:
+    pt: A sétima dos Mensageiros Fatui, "Marionette". Uma estudiosa que analisa os fenômenos do mundo através da matemática e das ciências, e uma dama elegante que nunca falta a uma festa do chá.
+    en: The Seventh of the Fatui Harbingers, "Marionette." Interprets all phenomena through the prism of mathematics, and is an elegant lady who is never absent from a tea party.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13226
+    atk: 342
+    def: 752
+    ascensionStat: 24.2
+  - level: 95
+    hp: 13695
+    atk: 381
+    def: 779
+    ascensionStat: 24.2
+  - level: 100
+    hp: 14166
+    atk: 419
+    def: 806
+    ascensionStat: 24.2

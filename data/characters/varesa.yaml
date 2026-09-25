@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Varesa
+  en: Varesa
+rarity: 5
+element: electro
+icon: UI_AvatarIcon_Varesa
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Ócio Vigoroso
+    en: Strength in Serenity
+  constellation:
+    pt: Mascara Luctatori
+    en: Mascara Luctatori
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Teteocan
+    en: Teteocan
+  description:
+    pt: Uma guerreira e também dona de um pomar no relaxado e tranquilo Coletivo da Fartura, que adora heróis poderosos e um monte de comida!
+    en: A laid-back orchard manager and warrior of the Collective of Plenty. An aspiring hero who hungers for justice... and lots and lots of food!
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12699
+    atk: 356
+    def: 782
+    ascensionStat: 24.2
+  - level: 95
+    hp: 13150
+    atk: 396
+    def: 809
+    ascensionStat: 24.2
+  - level: 100
+    hp: 13602
+    atk: 437
+    def: 837
+    ascensionStat: 24.2

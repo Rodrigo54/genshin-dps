@@ -58,7 +58,7 @@ describe('buildSiteData', () => {
     const benchmark = benchmarkFixture({ supports: [citlaliWithoutWeapon, bennett, xilonen] });
     const { characterTeams } = buildSiteData(catalog, [{ ...mavuikaFile, benchmarks: [benchmark] }]);
     const [team] = characterTeams[0]!.teams;
-    expect(team!.members[1]).toEqual({ characterId: 'citlali', element: 'cryo', constellation: 0 });
+    expect(team!.members[1]).toEqual({ characterId: 'citlali', element: 'cryo', constellation: 0, level: 90 });
     expect(team!.isBaseline).toBe(true);
   });
 
@@ -123,6 +123,29 @@ describe('buildSiteData', () => {
         ref: { author: 'Lunnoa', url: 'https://example.com/outra' },
       }),
     ).toBe(baselineId);
+  });
+
+  it('leva o nível de cada membro para o JSON, com 90 quando o benchmark não informa', () => {
+    const [citlali, bennett, xilonen] = baselineTeam.supports;
+    const benchmark: typeof baselineTeam = { ...baselineTeam, supports: [{ ...citlali, level: 95 }, bennett, xilonen] };
+    const { characterTeams } = buildSiteData(catalog, [{ ...mavuikaFile, benchmarks: [benchmark] }]);
+    expect(characterTeams[0]!.teams[0]!.members.map((member) => member.level)).toEqual([90, 95, 90, 90]);
+  });
+
+  it('tira do baseline o time com um membro acima do nível 90', () => {
+    const [citlali, bennett, xilonen] = baselineTeam.supports;
+    const benchmark: typeof baselineTeam = { ...baselineTeam, supports: [citlali, { ...bennett, level: 95 }, xilonen] };
+    const { characterTeams } = buildSiteData(catalog, [{ ...mavuikaFile, benchmarks: [benchmark] }]);
+    expect(characterTeams[0]!.teams[0]!.isBaseline).toBe(false);
+  });
+
+  it('mantém o id no nível 90, informado ou não, e muda acima dele', () => {
+    const [citlali, bennett, xilonen] = baselineTeam.supports;
+    const baselineId = teamIdOf(baselineTeam);
+    expect(teamIdOf({ ...baselineTeam, main: { ...baselineTeam.main, level: 90 } })).toBe(baselineId);
+    expect(teamIdOf({ ...baselineTeam, supports: [{ ...citlali, level: 100 }, bennett, xilonen] })).not.toBe(
+      baselineId,
+    );
   });
 
   it('muda o id quando muda o investimento do DPS principal ou de um suporte', () => {

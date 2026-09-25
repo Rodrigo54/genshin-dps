@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Faruzan
+  en: Faruzan
+rarity: 4
+element: anemo
+icon: UI_AvatarIcon_Faruzan
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Maquinista Enigmática
+    en: Enigmatic Machinist
+  constellation:
+    pt: Flosculi Implexi
+    en: Flosculi Implexi
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Haravatat
+    en: Haravatat
+  description:
+    pt: Uma pesquisadora de "cem anos atrás". Ela gosta de se identificar como a mais velha de todas, com um conhecimento significativo de escrituras antigas e máquinas de todos os tipos.
+    en: A researcher from "one hundred years ago." She enjoys self-identifying as everyone's senior, and has significant knowledge of ancient scripts and machines of all kinds.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9570
+    atk: 196
+    def: 628
+    ascensionStat: 24
+  - level: 95
+    hp: 9901
+    atk: 222
+    def: 650
+    ascensionStat: 24
+  - level: 100
+    hp: 10232
+    atk: 247
+    def: 671
+    ascensionStat: 24

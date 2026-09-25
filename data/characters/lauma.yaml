@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Lauma
+  en: Lauma
+rarity: 5
+element: dendro
+icon: UI_AvatarIcon_Lauma
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Eterna Canção Lunar
+    en: Evermoon's Sacrament Song
+  constellation:
+    pt: Cerva Nivea
+    en: Cerva Nivea
+  visionLabel:
+    pt: Disco Lunar
+    en: Moon Wheel
+  affiliation:
+    pt: Filhos da Lua Gelada
+    en: Frostmoon Scions
+  description:
+    pt: A santa que recebeu a bênção da luz do luar e da floresta, a esperança nascida dos Filhos da Lua Gelada.
+    en: A Maiden blessed by moonlight and the grove alike, hope born to the Frostmoon Scions.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 10654
+    atk: 255
+    def: 669
+    ascensionStat: 115
+  - level: 95
+    hp: 11032
+    atk: 284
+    def: 692
+    ascensionStat: 115
+  - level: 100
+    hp: 11411
+    atk: 312
+    def: 716
+    ascensionStat: 115

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Ororon
+  en: Ororon
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Olorun
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Sombra do Vento Noturno
+    en: Shadow of the Night-Wind
+  constellation:
+    pt: Vampyrum Spectrum
+    en: Vampyrum Spectrum
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Mictlan
+    en: Mictlan
+  description:
+    pt: Um jovem vindo dos Mestres do Vento Noturno, mas que vive nos campos com milhares de criaturas vivas.
+    en: A young man from the Masters of the Night-Wind who instead lives in the wild alongside all manner of life.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 9244
+    atk: 244
+    def: 587
+    ascensionStat: 24
+  - level: 95
+    hp: 9563
+    atk: 275
+    def: 607
+    ascensionStat: 24
+  - level: 100
+    hp: 9883
+    atk: 307
+    def: 628
+    ascensionStat: 24

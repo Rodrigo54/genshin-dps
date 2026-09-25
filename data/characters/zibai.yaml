@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Zibai
+  en: Zibai
+rarity: 5
+element: geo
+icon: UI_AvatarIcon_Zibai
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Primavera Efêmera do Cavalo Branco
+    en: White Horse's Fleeting Spring
+  constellation:
+    pt: Equa Alba
+    en: Equa Alba
+  visionLabel:
+    pt: Disco Lunar
+    en: Moon Wheel
+  affiliation:
+    pt: Porto de Liyue
+    en: Liyue Harbor
+  description:
+    pt: A Adeptus Cavalo Branco das lendas de Liyue, conhecida como Zibai, ela é a figura mais misteriosa da mitologia de Liyue.
+    en: The White Horse Adeptus from Liyue's legends, known as Zibai. The most mysterious figure in Liyue's myths.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12919
+    atk: 225
+    def: 957
+    ascensionStat: 88.4
+  - level: 95
+    hp: 13378
+    atk: 250
+    def: 991
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13838
+    atk: 275
+    def: 1025
+    ascensionStat: 88.4

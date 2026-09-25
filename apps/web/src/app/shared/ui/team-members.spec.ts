@@ -33,8 +33,14 @@ const catalog: Catalog = {
 };
 
 const members: TeamMember[] = [
-  { characterId: 'mavuika', element: 'pyro', constellation: 1, weapon: { weaponId: 'wolf-fang', refinement: 5 } },
-  { characterId: 'bennett', element: 'pyro', constellation: 6 },
+  {
+    characterId: 'mavuika',
+    element: 'pyro',
+    constellation: 1,
+    level: 90,
+    weapon: { weaponId: 'wolf-fang', refinement: 5 },
+  },
+  { characterId: 'bennett', element: 'pyro', constellation: 6, level: 90 },
 ];
 
 async function render(locale: 'pt' | 'en') {
@@ -55,6 +61,19 @@ describe('TeamMembers', () => {
     expect(items[0].textContent).toContain('C1');
     expect(items[0].textContent).toContain('R5');
     expect(items[0].querySelector('img')?.getAttribute('src')).toBe('/images/UI_AvatarIcon_Mavuika.webp');
+  });
+
+  it('pinta o selo da arma na cor da raridade dela', async () => {
+    const element = await render('pt');
+    const weaponBadge = element.querySelectorAll('li')[0]!.querySelector('[tabindex="0"]:has(img[src*="EquipIcon"])');
+    expect(weaponBadge?.classList).toContain('bg-rarity-4');
+  });
+
+  it('junta constelação e elemento num selo na cor do elemento', async () => {
+    const element = await render('pt');
+    const badge = element.querySelectorAll('li')[0]!.querySelector('span:has(> img[src*="UI_Buff_Element"])');
+    expect(badge?.textContent?.trim()).toBe('C1');
+    expect(badge?.classList).toContain('text-pyro');
   });
 
   it('mostra o ícone do elemento do personagem', async () => {

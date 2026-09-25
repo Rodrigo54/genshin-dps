@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Sigewinne
+  en: Sigewinne
+rarity: 5
+element: hydro
+icon: UI_AvatarIcon_Sigewinne
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: A Filha Transmutada do Dragão
+    en: Wondrous Dragonheir
+  constellation:
+    pt: Nereides
+    en: Nereides
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Fortaleza Meropide
+    en: Fortress of Meropide
+  description:
+    pt: Uma Melusine e a Enfermeira-Chefe da Fortaleza Meropide. Ela cuida igualmente de todo presidiário da prisão submarina.
+    en: A Melusine and the Fortress of Meropide's head nurse. She cares equally for every convict locked in the undersea prison.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13348
+    atk: 193
+    def: 500
+    ascensionStat: 28.8
+  - level: 95
+    hp: 13822
+    atk: 214
+    def: 517
+    ascensionStat: 28.8
+  - level: 100
+    hp: 14297
+    atk: 236
+    def: 535
+    ascensionStat: 28.8

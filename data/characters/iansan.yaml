@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Iansan
+  en: Iansan
+rarity: 4
+element: electro
+icon: UI_AvatarIcon_Iansan
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Natlan
+  en: Natlan
+profile:
+  title:
+    pt: Forjada na Pedra Ardente
+    en: Tempered in Molten Stone
+  constellation:
+    pt: Carnotaurus
+    en: Carnotaurus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Teteocan
+    en: Teteocan
+  description:
+    pt: Treinadora-chefe do Clube de Condicionamento Físico, nutricionista renomada em Natlan.
+    en: Head coach of the fitness club at the Collective of Plenty, and a renowned Natlanese nutritionist.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10657
+    atk: 257
+    def: 638
+    ascensionStat: 24
+  - level: 95
+    hp: 11026
+    atk: 290
+    def: 660
+    ascensionStat: 24
+  - level: 100
+    hp: 11395
+    atk: 323
+    def: 682
+    ascensionStat: 24

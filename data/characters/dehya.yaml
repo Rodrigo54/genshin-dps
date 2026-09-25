@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Dehya
+  en: Dehya
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Dehya
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Leoa Flamejante
+    en: Flame-Mane
+  constellation:
+    pt: Mantichora
+    en: Mantichora
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Eremitas
+    en: The Eremites
+  description:
+    pt: Membro dos "Eremitas", uma organização mercenária que vaga pelos desertos de Sumeru. Ela é corajosa, poderosa e tem uma excelente reputação entre os seus colegas Eremitas.
+    en: A member of the Eremites, a mercenary organization that roams the sands of Sumeru. Valiant and powerful, she enjoys great fame amongst her fellow Eremites.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 15675
+    atk: 265
+    def: 628
+    ascensionStat: 28.8
+  - level: 95
+    hp: 16231
+    atk: 295
+    def: 650
+    ascensionStat: 28.8
+  - level: 100
+    hp: 16789
+    atk: 325
+    def: 673
+    ascensionStat: 28.8

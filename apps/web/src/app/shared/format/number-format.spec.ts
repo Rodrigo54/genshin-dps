@@ -1,4 +1,4 @@
-import { formatSeconds, formatStat, formatTeamDps, formatWeaponSubstat } from './number-format';
+import { formatAscensionStat, formatSeconds, formatStat, formatTeamDps, formatWeaponSubstat } from './number-format';
 
 describe('formatTeamDps', () => {
   it('mostra milhares com uma casa decimal no separador de cada idioma', () => {
@@ -27,5 +27,12 @@ describe('formatWeaponSubstat', () => {
     expect(formatWeaponSubstat('FIGHT_PROP_CRITICAL_HURT', 66.2, 'pt')).toBe('66,2%');
     expect(formatWeaponSubstat('FIGHT_PROP_ATTACK_PERCENT', 49.6, 'en')).toBe('49.6%');
     expect(formatWeaponSubstat('FIGHT_PROP_ELEMENT_MASTERY', 221, 'pt')).toBe('221');
+  });
+});
+
+describe('formatAscensionStat', () => {
+  it('mostra porcentagem com uma casa e valor plano como inteiro', () => {
+    expect(formatAscensionStat(88.4, true, 'pt')).toBe('88,4%');
+    expect(formatAscensionStat(115, false, 'en')).toBe('115');
   });
 });

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Hutao
+  en: Hu Tao
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Hutao
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Fragrância de Ameixa Descongelada
+    en: Fragrance in Thaw
+  constellation:
+    pt: Papilio Charontis
+    en: Papilio Charontis
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Funerária de Wangsheng
+    en: Wangsheng Funeral Parlor
+  description:
+    pt: A 77.ª diretora da Funerária de Wangsheng. Apesar de ser jovem, já está encarregada de todos os assuntos funerários de Liyue.
+    en: The 77th Director of the Wangsheng Funeral Parlor. She took over the business at a rather young age.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 15552
+    atk: 106
+    def: 876
+    ascensionStat: 88.4
+  - level: 95
+    hp: 16104
+    atk: 118
+    def: 907
+    ascensionStat: 88.4
+  - level: 100
+    hp: 16658
+    atk: 130
+    def: 938
+    ascensionStat: 88.4

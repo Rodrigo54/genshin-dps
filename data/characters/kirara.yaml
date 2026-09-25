@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Kirara
+  en: Kirara
+rarity: 4
+element: dendro
+icon: UI_AvatarIcon_Momoka
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Gatinha dos Beirais
+    en: Cat Upon the Eaves
+  constellation:
+    pt: Arcella
+    en: Arcella
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Komaniya Express
+    en: Komaniya Express
+  description:
+    pt: Uma entregadora do Komaniya Express, empresa de entregas em Inazuma. Uma Nekomata que ama seu trabalho e a sociedade humana.
+    en: A courier for Komaniya Express, a delivery company in Inazuma. A nekomata who loves her job and human society.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12180
+    atk: 223
+    def: 546
+    ascensionStat: 24
+  - level: 95
+    hp: 12601
+    atk: 251
+    def: 565
+    ascensionStat: 24
+  - level: 100
+    hp: 13022
+    atk: 280
+    def: 584
+    ascensionStat: 24

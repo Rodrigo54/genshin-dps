@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Andarilho
+  en: Wanderer
+rarity: 5
+element: anemo
+icon: UI_AvatarIcon_Wanderer
+weaponType:
+  pt: Catalisador
+  en: Catalyst
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Caminhante Eterno
+    en: Eons Adrift
+  constellation:
+    pt: Peregrinus
+    en: Peregrinus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Nenhuma
+    en: None
+  description:
+    pt: Um jovem andarilho de identidade misteriosa. Se veste como um shugenja, mas com certeza não age como um.
+    en: A wayfaring figure whose identity is a mystery. He dresses like a mountain ascetic, but he certainly does not act the part.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10164
+    atk: 328
+    def: 607
+    ascensionStat: 24.2
+  - level: 95
+    hp: 10525
+    atk: 365
+    def: 629
+    ascensionStat: 24.2
+  - level: 100
+    hp: 10887
+    atk: 401
+    def: 650
+    ascensionStat: 24.2

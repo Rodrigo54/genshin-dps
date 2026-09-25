@@ -1,7 +1,5 @@
 import {
   type ArtifactSetEntry,
-  type CharacterEntry,
-  type Element,
   FLAT_WEAPON_SUBSTAT,
   WEAPON_SUBSTAT_TYPES,
   type WeaponEntry,
@@ -9,12 +7,13 @@ import {
   type WeaponTooltipData,
   type WeaponTooltipText,
 } from '@genshin-dps/schema';
-import gdb, { type Artifact, type Character, Language, type QueryFunction, type Weapon } from 'genshin-db';
+import gdb, { type Artifact, Language, type QueryFunction, type Weapon } from 'genshin-db';
 import { parseGameText } from './game-text';
+import { roundStat } from './round-stat';
 import { toSlug } from './slug';
 
-export interface CatalogSource {
-  characters: CharacterEntry[];
+// Armas e sets ainda vêm do genshin-db; os personagens vêm de data/characters
+export interface GenshinDbCatalog {
   weapons: WeaponEntry[];
   artifactSets: ArtifactSetEntry[];
 }
@@ -23,17 +22,6 @@ interface GameEntity {
   id: number;
   name: string;
 }
-
-const ELEMENT_BY_TYPE: Record<Character['elementType'], Element> = {
-  ELEMENT_PYRO: 'pyro',
-  ELEMENT_HYDRO: 'hydro',
-  ELEMENT_ANEMO: 'anemo',
-  ELEMENT_ELECTRO: 'electro',
-  ELEMENT_DENDRO: 'dendro',
-  ELEMENT_CRYO: 'cryo',
-  ELEMENT_GEO: 'geo',
-  ELEMENT_NONE: 'none',
-};
 
 function fetchAll<T extends GameEntity>(query: QueryFunction<T>, language: Language): T[] {
   return query('names', { matchCategories: true, verboseCategories: true, resultLanguage: language });
@@ -54,32 +42,14 @@ function joinLocales<T extends GameEntity, E extends { id: string }>(
   return [...entries.values()];
 }
 
-function toCharacterEntry(character: Character, portuguese: Character): CharacterEntry {
-  return {
-    id: toSlug(character.name),
-    name: { en: character.name, pt: portuguese.name },
-    rarity: character.rarity,
-    element: ELEMENT_BY_TYPE[character.elementType],
-    icon: character.images.filename_icon,
-  };
-}
-
 // Armas 1★ e 2★ param no nível 70; as outras, no 90
 const LOW_RARITY_MAX = 2;
 const LOW_RARITY_MAX_LEVEL = 70;
 const MAX_LEVEL = 90;
-const PERCENT = 100;
-const PERCENT_DECIMALS = 10;
 const WEAPON_REFINEMENTS = ['r1', 'r2', 'r3', 'r4', 'r5'] as const;
 
 function isWeaponSubstatType(type: string | undefined): type is WeaponSubstatType {
   return WEAPON_SUBSTAT_TYPES.some((substatType) => substatType === type);
-}
-
-// Porcentagens com uma casa, como o jogo mostra (0.661536 → 66.2); Proficiência Elemental inteira
-function roundSubstat(type: WeaponSubstatType, value: number): number {
-  if (type === FLAT_WEAPON_SUBSTAT) return Math.round(value);
-  return Math.round(value * PERCENT * PERCENT_DECIMALS) / PERCENT_DECIMALS;
 }
 
 function toWeaponTooltipText(weapon: Weapon): WeaponTooltipText {
@@ -106,7 +76,7 @@ function toWeaponTooltip(english: Weapon, portuguese: Weapon): WeaponTooltipData
     baseAtk: Math.round(attack),
     ...(isWeaponSubstatType(substatType) &&
       specialized !== undefined && {
-        substat: { type: substatType, value: roundSubstat(substatType, specialized) },
+        substat: { type: substatType, value: roundStat(specialized, substatType !== FLAT_WEAPON_SUBSTAT) },
       }),
     text: { en: toWeaponTooltipText(english), pt: toWeaponTooltipText(portuguese) },
   };
@@ -127,9 +97,8 @@ function toArtifactSetEntry(artifact: Artifact, portuguese: Artifact): ArtifactS
   return { id: toSlug(artifact.name), name: { en: artifact.name, pt: portuguese.name } };
 }
 
-export function loadGenshinDbCatalog(): CatalogSource {
+export function loadGenshinDbCatalog(): GenshinDbCatalog {
   return {
-    characters: joinLocales(gdb.characters, toCharacterEntry),
     weapons: joinLocales(gdb.weapons, toWeaponEntry),
     artifactSets: joinLocales(gdb.artifacts, toArtifactSetEntry),
   };

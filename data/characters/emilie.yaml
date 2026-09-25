@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Emilie
+  en: Emilie
+rarity: 5
+element: dendro
+icon: UI_AvatarIcon_Emilie
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Vislumbres de Mil Aromas
+    en: A Thousand Scents Traced
+  constellation:
+    pt: Pomum de Ambra
+    en: Pomum de Ambra
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Corte de Fontaine
+    en: Court of Fontaine
+  description:
+    pt: Uma perfumista de Fontaine que engarrafa segredos.
+    en: A Fontainian perfumer, one who bottles secrets.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 13568
+    atk: 335
+    def: 730
+    ascensionStat: 88.4
+  - level: 95
+    hp: 14050
+    atk: 373
+    def: 756
+    ascensionStat: 88.4
+  - level: 100
+    hp: 14533
+    atk: 410
+    def: 782
+    ascensionStat: 88.4

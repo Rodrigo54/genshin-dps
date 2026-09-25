@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Yoimiya
+  en: Yoimiya
+rarity: 5
+element: pyro
+icon: UI_AvatarIcon_Yoimiya
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Inazuma
+  en: Inazuma
+profile:
+  title:
+    pt: Dança das Chamas
+    en: Frolicking Flames
+  constellation:
+    pt: Carassius Auratus
+    en: Carassius Auratus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Fogos de Artifício Naganohara
+    en: Naganohara Fireworks
+  description:
+    pt: Dona da Fogos de Artifício Naganohara. Conhecida como "Rainha do Festival de Verão", ela é excelente na criação de fogos de artifício que simbolizam a esperança e sonhos das pessoas.
+    en: Owner of Naganohara Fireworks. Known as the "Queen of the Summer Festival," she excels in her craft of creating fireworks that symbolize people's hopes and dreams.
+ascensionStat:
+  name:
+    pt: Taxa Crítica
+    en: CRIT Rate
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10164
+    atk: 323
+    def: 615
+    ascensionStat: 24.2
+  - level: 95
+    hp: 10525
+    atk: 359
+    def: 637
+    ascensionStat: 24.2
+  - level: 100
+    hp: 10887
+    atk: 396
+    def: 659
+    ascensionStat: 24.2

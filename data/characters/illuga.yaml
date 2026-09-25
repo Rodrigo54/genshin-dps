@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Illuga
+  en: Illuga
+rarity: 4
+element: geo
+icon: UI_AvatarIcon_Illuga
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Nod-Krai
+  en: Nod-Krai
+profile:
+  title:
+    pt: Coração em Chamas do Pesadelo
+    en: Nightmare's Burning Heart
+  constellation:
+    pt: Oriolus
+    en: Oriolus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Portadores da Lâmpada
+    en: Lightkeepers
+  description:
+    pt: Membro da Divisão de Investigação "Pássaro da Noite Assombrada". É o mais jovem capitão dos Portadores da Lâmpada.
+    en: Member of the investigation squad, the Nightmare Orioles. The youngest squad leader among the Lightkeepers.
+ascensionStat:
+  name:
+    pt: Proficiência Elemental
+    en: Elemental Mastery
+  isPercent: false
+stats:
+  - level: 90
+    hp: 11962
+    atk: 191
+    def: 814
+    ascensionStat: 96
+  - level: 95
+    hp: 12376
+    atk: 216
+    def: 842
+    ascensionStat: 96
+  - level: 100
+    hp: 12790
+    atk: 240
+    def: 870
+    ascensionStat: 96

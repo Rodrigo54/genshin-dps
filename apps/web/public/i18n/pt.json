@@ -21,7 +21,7 @@
     "label": "Investimento",
     "baseline": "Baseline",
     "all": "Sem baseline",
-    "baselineHint": "Personagens 5★ em C0 e armas 5★ em R1, exceto o que o jogo dá de graça: C1 dos 5★ do evento Controlar-se e Viajar Para Longe, constelações da Viajante e armas 5★ gratuitas. Personagens 4★ e armas 4★ ou 3★ entram com qualquer investimento."
+    "baselineHint": "Personagens até o nível 90, 5★ em C0 e armas 5★ em R1, exceto o que o jogo dá de graça: C1 dos 5★ do evento Controlar-se e Viajar Para Longe, constelações da Viajante e armas 5★ gratuitas. Personagens 4★ e armas 4★ ou 3★ entram em qualquer constelação e refinamento."
   },
   "ranking": {
     "title": "Ranking de DPS",
@@ -66,8 +66,23 @@
     "summary": "{{character}} C{{constellation}} com {{weapon}}",
     "unknownWeapon": "arma não informada"
   },
-  "weapon": {
-    "level": "Nível {{level}}"
+  "tooltip": {
+    "title": "Título",
+    "constellation": "Constelação",
+    "affiliation": "Afiliação",
+    "level": "Nível {{level}}",
+    "baseHp": "Vida base",
+    "baseAtk": "ATQ base",
+    "baseDef": "DEF base"
+  },
+  "elements": {
+    "pyro": "Pyro",
+    "hydro": "Hydro",
+    "anemo": "Anemo",
+    "electro": "Electro",
+    "dendro": "Dendro",
+    "cryo": "Cryo",
+    "geo": "Geo"
   },
   "stats": {
     "hp": "Vida",

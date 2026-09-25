@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Tighnari
+  en: Tighnari
+rarity: 5
+element: dendro
+icon: UI_AvatarIcon_Tighnari
+weaponType:
+  pt: Arco
+  en: Bow
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Andarilho Verdejante
+    en: Verdant Strider
+  constellation:
+    pt: Vulpes Zerda
+    en: Vulpes Zerda
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Vila Gandharva
+    en: Gandharva Ville
+  description:
+    pt: Um jovem pesquisador que conhece bastante de botânica e que atualmente trabalha como um Patrulheiro Florestal na Floresta Avidya. Ele é extremamente sincero com um bom coração — e muito bom na orientação até mesmo dos alunos mais ingênuos.
+    en: A young researcher well-versed in botany who currently serves as a Forest Watcher in Avidya Forest. He is a straight shooter with a warm heart — and a dab hand at guiding even the dullest of pupils.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Dendro
+    en: Dendro DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 10850
+    atk: 268
+    def: 630
+    ascensionStat: 28.8
+  - level: 95
+    hp: 11235
+    atk: 298
+    def: 653
+    ascensionStat: 28.8
+  - level: 100
+    hp: 11621
+    atk: 328
+    def: 675
+    ascensionStat: 28.8

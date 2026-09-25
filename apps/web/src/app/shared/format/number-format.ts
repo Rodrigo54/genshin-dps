@@ -41,3 +41,8 @@ export function formatStat(stat: keyof MemberStats, value: number, locale: Local
 export function formatWeaponSubstat(type: WeaponSubstatType, value: number, locale: Locale): string {
   return type === FLAT_WEAPON_SUBSTAT ? formatFlatStat(value, locale) : formatPercentStat(value, locale);
 }
+
+// Atributo de ascensão do personagem: porcentagem com uma casa, ou inteiro na Proficiência Elemental
+export function formatAscensionStat(value: number, isPercent: boolean, locale: Locale): string {
+  return isPercent ? formatPercentStat(value, locale) : formatFlatStat(value, locale);
+}

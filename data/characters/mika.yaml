@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Mika
+  en: Mika
+rarity: 4
+element: cryo
+icon: UI_AvatarIcon_Mika
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Mondstadt
+  en: Mondstadt
+profile:
+  title:
+    pt: Topógrafo da Geada Translúcida
+    en: Coordinates of Clear Frost
+  constellation:
+    pt: Palumbus
+    en: Palumbus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Cavaleiros de Favonius
+    en: Knights of Favonius
+  description:
+    pt: Um jovem cavaleiro nascido em uma família comum. Ele serve como Topógrafo da Linha de Frente na sua companhia. É tímido e cauteloso.
+    en: A young knight born to an ordinary family. He serves as a Front-Line Surveyor in his Company. He is a low-key and cautious character.
+ascensionStat:
+  name:
+    pt: Vida
+    en: HP
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12506
+    atk: 223
+    def: 713
+    ascensionStat: 24
+  - level: 95
+    hp: 12938
+    atk: 251
+    def: 738
+    ascensionStat: 24
+  - level: 100
+    hp: 13371
+    atk: 280
+    def: 763
+    ascensionStat: 24

@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Gaming
+  en: Gaming
+rarity: 4
+element: pyro
+icon: UI_AvatarIcon_Gaming
+weaponType:
+  pt: Espadão
+  en: Claymore
+region:
+  pt: Liyue
+  en: Liyue
+profile:
+  title:
+    pt: Olhar Leonino
+    en: Leonine Vanguard
+  constellation:
+    pt: Leo Expergiscens
+    en: Leo Expergiscens
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Agência de Transporte Seguro Espada & Caixa
+    en: Sword and Strongbox Secure Transport Agency
+  description:
+    pt: Guarda de aluguel da Agência de Transporte Seguro Espada & Caixa, líder do grupo Bestas Místicas Poderosas.
+    en: Guard of the Sword and Strongbox Secure Transport Agency, and the head of the "Mighty Mythical Beasts" Wushou troupe.
+ascensionStat:
+  name:
+    pt: ATQ
+    en: ATK
+  isPercent: true
+stats:
+  - level: 90
+    hp: 11419
+    atk: 302
+    def: 703
+    ascensionStat: 24
+  - level: 95
+    hp: 11813
+    atk: 340
+    def: 727
+    ascensionStat: 24
+  - level: 100
+    hp: 12208
+    atk: 379
+    def: 752
+    ascensionStat: 24

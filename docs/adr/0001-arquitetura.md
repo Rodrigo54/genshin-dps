@@ -1,7 +1,7 @@
 # ADR-0001: Arquitetura do site de ranking de DPS de times do Genshin Impact
 
 **Status:** Aceito
-**Data:** 2026-09-23
+**Data:** 2026-09-23 (revisado em 2026-09-25: catálogo de personagens e nível por membro)
 **Decisor:** Rodrigo
 
 ## Contexto
@@ -24,6 +24,8 @@ Site-infográfico que reúne benchmarks de DPS de times do Genshin Impact, em po
 - **Home:** ranking geral, com uma linha por DPS principal mostrando o melhor time dele dentro do filtro.
 - **Filtro de investimento**, com dois estados, cada um numa rota própria para o prerender:
   - **Baseline** (padrão): o time inteiro respeita a regra abaixo.
+    - Todo personagem até o **nível 90**, o máximo por ascensão. 95 e 100 são investimento extra, com qualquer
+      raridade.
     - Personagem 5★ (limitado ou permanente) em **C0**.
     - Personagem 4★ em **C6**.
     - Arma 5★ em **R1**.
@@ -54,16 +56,23 @@ Site-infográfico que reúne benchmarks de DPS de times do Genshin Impact, em po
   (constelação, arma e refinamento do DPS principal, que vem do nome do arquivo) e `supports` (os outros 3 membros,
   cada um com personagem, constelação, arma e refinamento). Nos suportes, a arma é opcional porque as fontes da
   comunidade às vezes a omitem, e arma ausente não tira o time do Baseline; arma informada sempre leva refinamento.
-- **Campos opcionais:** `rotationTime`, `rotation`, `notes`, `obsolete`, e por membro `sets`, `talents`,
+- **Campos opcionais:** `rotationTime`, `rotation`, `notes`, `obsolete`, e por membro `level`, `sets`, `talents`,
   `stats` e `mainStats`.
+  - `level` aceita 90, 95 ou 100, com 90 quando ausente. Fora do 90, entra no id do time; no 90, não, para os times
+    anteriores ao campo manterem a URL.
   - `mainStats` guarda os principais de relógio, cálice e tiara, validados contra uma lista fechada por peça.
   - A recomendação do personagem sai do melhor time medido, não de um arquivo de opinião.
   - Substatus peça a peça ficam de fora até existir o card estilo Artifacter, porque o `genshin-db` só cataloga
     os sets.
-- **Catálogo:** vem do pacote `genshin-db`, consumido no build, com nomes em PT e EN.
-  - `data/catalog-overrides.yaml` acrescenta entradas que o pacote ainda não tem e aliases (ex.: `Bennet`
-    → `Bennett`).
-  - O build avisa quando um override ficou redundante.
+- **Catálogo de personagens:** `data/characters/<id>.yaml`, um por personagem jogável já lançado, gerado por
+  `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2) e nunca editado à mão.
+  - Traz nome, raridade, elemento, ícone, região, tipo de arma, a aba Perfil (título, constelação, rótulo do
+    elemento, afiliação e descrição, no estado depois da revelação da história) e os status nos níveis 90, 95 e 100. É a base da aba Overview.
+  - A Viajante é uma entrada só, a do Aether (ícone e texto no masculino), com afiliação "Melhor amigo de Paimon".
+  - Roda à mão a cada patch; o diff do commit mostra o que o patch mudou.
+- **Catálogo de armas e sets:** vem do pacote `genshin-db`, consumido no build, com nomes em PT e EN.
+- **Overrides:** `data/catalog-overrides.yaml` acrescenta entradas que a fonte ainda não tem e aliases (ex.: `Bennet`
+  → `Bennett`, `Lumine` → `Traveler`). O build avisa quando um override ficou redundante.
 - **Banners:** `data/banners.yaml`, com seed inicial por script a partir de uma fonte pública, revisado
   no commit e mantido à mão depois.
 - **Imagens:** um script baixa no build só os ícones usados, converte para WebP com `sharp` e o próprio
@@ -156,6 +165,10 @@ genshin-dps/
 - **Campo de método com selo** (`simulation` / `dummy`): descartado porque os métodos tendem a se multiplicar.
 - **Cadastro central de fontes:** descartado porque qualquer perfil da comunidade é uma fonte em potencial; cada
   benchmark carrega a própria `ref`.
+- **Personagens do `genshin-db`:** trocado pelas tabelas do jogo. O pacote não tem o rótulo do elemento da aba
+  Perfil (Visão, Gnosis, Eixo Estelar…), deixa sem região os tipos de afiliação novos e demora a receber os
+  personagens novos. As tabelas também guardam alguns campos com nome ofuscado, que podem mudar a cada versão; o
+  gerador falha com a causa em vez de gravar dado errado.
 
 ## Consequências
 

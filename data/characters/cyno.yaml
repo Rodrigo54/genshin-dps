@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Cyno
+  en: Cyno
+rarity: 5
+element: electro
+icon: UI_AvatarIcon_Cyno
+weaponType:
+  pt: Lança
+  en: Polearm
+region:
+  pt: Sumeru
+  en: Sumeru
+profile:
+  title:
+    pt: Juiz dos Segredos
+    en: Judicator of Secrets
+  constellation:
+    pt: Lupus Aureus
+    en: Lupus Aureus
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Templo do Silêncio
+    en: Temple of Silence
+  description:
+    pt: O General Mahamatra responsável por supervisionar os pesquisadores da Academia.\nDizem que quando ele está trabalhando, o General Mahamatra é ainda mais eficiente do que o "Grande Vayuvyastra" feito pelo Kshahrewar.
+    en: The General Mahamatra in charge of supervising the researchers of the Akademiya. It is said that when he gets down to work, the General Mahamatra is even more efficient than the "Great Vayuvyastra" made by the Kshahrewar.
+ascensionStat:
+  name:
+    pt: Dano Crítico
+    en: CRIT DMG
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12491
+    atk: 318
+    def: 859
+    ascensionStat: 88.4
+  - level: 95
+    hp: 12934
+    atk: 354
+    def: 890
+    ascensionStat: 88.4
+  - level: 100
+    hp: 13379
+    atk: 390
+    def: 920
+    ascensionStat: 88.4

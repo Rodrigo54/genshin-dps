@@ -1,0 +1,51 @@
+# Gerado por `bun run characters` a partir das tabelas do jogo (Dimbreath/animegamedata2).
+# Não edite à mão: rode o comando de novo a cada patch.
+name:
+  pt: Lynette
+  en: Lynette
+rarity: 4
+element: anemo
+icon: UI_AvatarIcon_Linette
+weaponType:
+  pt: Espada
+  en: Sword
+region:
+  pt: Fontaine
+  en: Fontaine
+profile:
+  title:
+    pt: Elegância nas Sombras
+    en: Elegance in the Shadows
+  constellation:
+    pt: Felis Alba
+    en: Felis Alba
+  visionLabel:
+    pt: Visão
+    en: Vision
+  affiliation:
+    pt: Hotel Bouffes d'ete
+    en: Hotel Bouffes d'ete
+  description:
+    pt: Uma assistente de mágico de poucas palavras. Sua personalidade é tão difícil de adivinhar como um gato.
+    en: A magic assistant of few words, her emotions are as inscrutable as any cat's.
+ascensionStat:
+  name:
+    pt: Bônus de Dano Anemo
+    en: Anemo DMG Bonus
+  isPercent: true
+stats:
+  - level: 90
+    hp: 12397
+    atk: 232
+    def: 712
+    ascensionStat: 24
+  - level: 95
+    hp: 12826
+    atk: 261
+    def: 736
+    ascensionStat: 24
+  - level: 100
+    hp: 13255
+    atk: 291
+    def: 761
+    ascensionStat: 24
