@@ -1,7 +1,8 @@
 # Fonte: planilha de testes da comunidade (feita pela April, Discord), aba Mavuika.
 # Critérios de transcrição:
 # - "Mavuika R1" = arma assinatura R1, com a Mavuika em C0 (regra da capa: uma R1 ou uma C1 por time).
-# - Constelação omitida na fonte = C0 (inclusive o Bennett); arma dos suportes só quando a fonte cita.
+# - Constelação omitida na fonte = C0; arma dos suportes só quando a fonte cita.
+# - Bennett em C6: omitido na planilha, confirmado com a April.
 # - Refinamento omitido na fonte, confirmado na revisão: Thrilling Tales of Dragon Slayers da Citlali em R5.
 
 - teamDps: 180000
@@ -15,7 +16,7 @@
   main: { constellation: 0, weapon: { name: A Thousand Blazing Suns, refinement: 1 } }
   supports:
     - { character: Iansan, constellation: 6 }
-    - { character: Bennett, constellation: 0 }
+    - { character: Bennett, constellation: 6 }
     - { character: Citlali, constellation: 0, weapon: { name: Thrilling Tales of Dragon Slayers, refinement: 5 } }
 
 # Lunnoa (X/Twitter), ranking de DPS corrigido, simulado no LUNABASE Simulator.
