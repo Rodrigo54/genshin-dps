@@ -1,5 +1,11 @@
 import { basename, join } from 'node:path';
-import { benchmarkFileSchema, type CatalogOverrides, catalogOverridesSchema } from '@genshin-dps/schema';
+import {
+  benchmarkFileSchema,
+  type CatalogOverrides,
+  catalogOverridesSchema,
+  type VisionLabels,
+  visionLabelsSchema,
+} from '@genshin-dps/schema';
 import { parse } from 'yaml';
 import { z } from 'zod';
 import { type BenchmarkFile, DataValidationError } from './build-site-data';
@@ -16,6 +22,12 @@ function describeZodError(path: string, error: z.ZodError): string {
 
 export async function loadCatalogOverrides(path: string): Promise<CatalogOverrides> {
   const result = catalogOverridesSchema.safeParse((await readYaml(path)) ?? {});
+  if (!result.success) throw new DataValidationError([describeZodError(path, result.error)]);
+  return result.data;
+}
+
+export async function loadVisionLabels(path: string): Promise<VisionLabels> {
+  const result = visionLabelsSchema.safeParse((await readYaml(path)) ?? {});
   if (!result.success) throw new DataValidationError([describeZodError(path, result.error)]);
   return result.data;
 }

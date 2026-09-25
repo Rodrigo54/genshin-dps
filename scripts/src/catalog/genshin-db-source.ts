@@ -3,6 +3,7 @@ import {
   type CharacterEntry,
   type CharacterTooltipData,
   type CharacterTooltipText,
+  type VisionLabels,
   type Element,
   FLAT_WEAPON_SUBSTAT,
   WEAPON_SUBSTAT_TYPES,
@@ -104,15 +105,24 @@ function toWeaponTooltip(english: Weapon, portuguese: Weapon): WeaponTooltipData
   };
 }
 
-function toCharacterTooltipText(character: Character): CharacterTooltipText {
+function toCharacterTooltipText(character: Character, visionLabel: string | undefined): CharacterTooltipText {
   return {
     ...(character.title && { title: character.title }),
+    ...(character.region && { region: character.region }),
+    ...(character.affiliation && { affiliation: character.affiliation }),
+    constellation: character.constellation,
+    ...(visionLabel && { visionLabel }),
+    weaponType: character.weaponText,
     ascensionStatName: character.substatText,
     description: character.description,
   };
 }
 
-function toCharacterTooltip(english: Character, portuguese: Character): CharacterTooltipData {
+function toCharacterTooltip(
+  english: Character,
+  portuguese: Character,
+  visionLabel: VisionLabels[string] | undefined,
+): CharacterTooltipData {
   const { hp, attack, defense, specialized } = english.stats(MAX_LEVEL);
   if (hp === undefined || attack === undefined || defense === undefined || specialized === undefined) {
     throw new Error(`genshin-db sem status base para "${english.name}" no nível ${MAX_LEVEL}`);
@@ -125,18 +135,22 @@ function toCharacterTooltip(english: Character, portuguese: Character): Characte
     baseAtk: Math.round(attack),
     baseDef: Math.round(defense),
     ascensionStat: { value: roundStat(specialized, isPercent), isPercent },
-    text: { en: toCharacterTooltipText(english), pt: toCharacterTooltipText(portuguese) },
+    text: {
+      en: toCharacterTooltipText(english, visionLabel?.en),
+      pt: toCharacterTooltipText(portuguese, visionLabel?.pt),
+    },
   };
 }
 
-function toCharacterEntry(character: Character, portuguese: Character): CharacterEntry {
+function toCharacterEntry(character: Character, portuguese: Character, visionLabels: VisionLabels): CharacterEntry {
+  const id = toSlug(character.name);
   return {
-    id: toSlug(character.name),
+    id,
     name: { en: character.name, pt: portuguese.name },
     rarity: character.rarity,
     element: ELEMENT_BY_TYPE[character.elementType],
     icon: character.images.filename_icon,
-    tooltip: toCharacterTooltip(character, portuguese),
+    tooltip: toCharacterTooltip(character, portuguese, visionLabels[id]),
   };
 }
 
@@ -155,9 +169,12 @@ function toArtifactSetEntry(artifact: Artifact, portuguese: Artifact): ArtifactS
   return { id: toSlug(artifact.name), name: { en: artifact.name, pt: portuguese.name } };
 }
 
-export function loadGenshinDbCatalog(): CatalogSource {
+// Os rótulos da aba Perfil vêm de data/vision-labels.yaml, gerado das tabelas do jogo
+export function loadGenshinDbCatalog(visionLabels: VisionLabels): CatalogSource {
   return {
-    characters: joinLocales(gdb.characters, toCharacterEntry),
+    characters: joinLocales(gdb.characters, (english, portuguese) =>
+      toCharacterEntry(english, portuguese, visionLabels),
+    ),
     weapons: joinLocales(gdb.weapons, toWeaponEntry),
     artifactSets: joinLocales(gdb.artifacts, toArtifactSetEntry),
   };

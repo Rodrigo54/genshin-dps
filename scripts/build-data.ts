@@ -1,7 +1,7 @@
 import { buildCatalog } from './src/catalog/build-catalog';
 import { loadGenshinDbCatalog } from './src/catalog/genshin-db-source';
 import { buildSiteData } from './src/data/build-site-data';
-import { loadBenchmarkFiles, loadCatalogOverrides } from './src/data/load-data';
+import { loadBenchmarkFiles, loadCatalogOverrides, loadVisionLabels } from './src/data/load-data';
 import { writeSiteData } from './src/data/write-site-data';
 import { PATHS } from './src/paths';
 import { reportFailure, reportWarning } from './src/report';
@@ -9,7 +9,8 @@ import { reportFailure, reportWarning } from './src/report';
 // data/*.yaml → validação (Zod + catálogo) → apps/web/public/data/*.json
 async function buildData(): Promise<void> {
   const overrides = await loadCatalogOverrides(PATHS.catalogOverrides);
-  const { catalog, warnings } = buildCatalog(loadGenshinDbCatalog(), overrides);
+  const visionLabels = await loadVisionLabels(PATHS.visionLabels);
+  const { catalog, warnings } = buildCatalog(loadGenshinDbCatalog(visionLabels), overrides);
   warnings.forEach(reportWarning);
 
   const siteData = buildSiteData(catalog, await loadBenchmarkFiles(PATHS.benchmarks));

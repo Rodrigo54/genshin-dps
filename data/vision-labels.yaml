@@ -1,0 +1,42 @@
+# Gerado por `bun run vision-labels` a partir das tabelas do jogo (Dimbreath/animegamedata2). Não edite à mão:
+# rode o script de novo a cada patch. Rótulo do campo de elemento na aba Perfil, por id de personagem; quem não
+# aparece aqui não tem rótulo próprio no jogo.
+columbina:
+  pt: Convergência Tri-lunar
+  en: Tri-Lunar Convergence
+flins:
+  pt: Disco Lunar
+  en: Moon Wheel
+furina:
+  pt: Visão
+  en: Vision
+ineffa:
+  pt: Disco Lunar
+  en: Moon Wheel
+lauma:
+  pt: Disco Lunar
+  en: Moon Wheel
+linnea:
+  pt: Disco Lunar
+  en: Moon Wheel
+nefer:
+  pt: Disco Lunar
+  en: Moon Wheel
+neuvillette:
+  pt: Autoridade do Antigo Dragão
+  en: Ancient Dragon's Authority
+odette:
+  pt: Eixo Estelar
+  en: Stellar Linchpin
+sandrone:
+  pt: Eixo Estelar
+  en: Stellar Linchpin
+skirk:
+  pt: Serpente das Sete Transformações
+  en: The Seven-Shifting Serpent
+vesna:
+  pt: Eixo Estelar
+  en: Stellar Linchpin
+zibai:
+  pt: Disco Lunar
+  en: Moon Wheel

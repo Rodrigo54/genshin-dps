@@ -3,7 +3,7 @@ import { ELEMENTS } from './site-data';
 
 const nonEmptyText = z.string().trim().min(1);
 
-const localizedNameSchema = z.strictObject({ pt: nonEmptyText, en: nonEmptyText });
+export const localizedNameSchema = z.strictObject({ pt: nonEmptyText, en: nonEmptyText });
 
 // Nome do arquivo do ícone no CDN da Enka (ex.: UI_AvatarIcon_Mavuika)
 const iconSchema = z.string().regex(/^UI_[A-Za-z0-9_]+$/, 'ícone no formato UI_...');

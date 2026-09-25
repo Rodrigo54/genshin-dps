@@ -12,6 +12,7 @@ Sempre Bun, nunca npm/yarn/pnpm.
 | `bun install`                                                 | instala o monorepo inteiro                                    |
 | `bun run data`                                                | valida `data/**/*.yaml` e gera `apps/web/public/data/*.json`  |
 | `bun run images`                                              | baixa só os ícones que faltam (Enka e Project Amber), em WebP |
+| `bun run vision-labels`                                       | a cada patch: regrava `data/vision-labels.yaml` (aba Perfil)  |
 | `bun run start`                                               | dados + ícones + `ng serve`                                   |
 | `bun run build`                                               | dados + ícones + `ng build` com prerender                     |
 | `bun run check:i18n`                                          | depois do build: falha se algum HTML tiver chave sem tradução |
@@ -22,6 +23,8 @@ Sempre Bun, nunca npm/yarn/pnpm.
 
 - `data/benchmarks/<id-do-personagem>.yaml`: benchmarks de um DPS principal (fonte da verdade).
 - `data/catalog-overrides.yaml`: aliases e entradas que o `genshin-db` ainda não tem.
+- `data/vision-labels.yaml`: rótulo do elemento na aba Perfil ("Eixo Estelar", "Disco Lunar"…), gerado das tabelas
+  do jogo (Dimbreath/animegamedata2). Não edite à mão.
 - `packages/schema`: schemas Zod da entrada e tipos do JSON gerado. O app importa só `@genshin-dps/schema/site-data`,
   que não puxa o Zod para o bundle.
 - `scripts/`: `build-data.ts`, `build-images.ts` e `check-i18n.ts`, com a lógica testável em `scripts/src/`.

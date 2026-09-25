@@ -26,8 +26,15 @@ export type CharacterRarity = 4 | 5;
 export type WeaponRarity = 1 | 2 | 3 | 4 | 5;
 
 export interface CharacterTooltipText {
-  // Viajante e Manequins não têm título no jogo
+  // Viajante e Manequins não têm título; Viajante, Aloy e outros não têm região nem afiliação no jogo
   title?: string;
+  region?: string;
+  affiliation?: string;
+  // Nome da constelação do personagem (ex.: "Dulciaria Structura")
+  constellation: string;
+  // Rótulo do campo de elemento na aba Perfil ("Eixo Estelar", "Disco Lunar"…); ausente em quem não tem no jogo
+  visionLabel?: string;
+  weaponType: string;
   // Nome do atributo de ascensão como o jogo mostra (ex.: "Dano Crítico", "Bônus de Dano Pyro")
   ascensionStatName: string;
   description: string;
