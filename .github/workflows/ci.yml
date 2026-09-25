@@ -64,7 +64,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
-          url=$(bunx netlify-cli@27 deploy --dir="$SITE_DIRECTORY" --alias="pr-${{ github.event.number }}" --json | jq -r .deploy_url)
+          url=$(bunx netlify-cli@27 deploy --filter @genshin-dps/web --no-build --dir="$SITE_DIRECTORY" --alias="pr-${{ github.event.number }}" --json | jq -r .deploy_url)
           echo "Preview: $url" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Deploy de produção (main)
@@ -72,4 +72,4 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: bunx netlify-cli@27 deploy --prod --dir="$SITE_DIRECTORY"
+        run: bunx netlify-cli@27 deploy --filter @genshin-dps/web --no-build --prod --dir="$SITE_DIRECTORY"
