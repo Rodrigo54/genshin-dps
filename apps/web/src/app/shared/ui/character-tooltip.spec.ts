@@ -18,8 +18,25 @@ const mavuika: CharacterEntry = {
     baseDef: 792,
     ascensionStat: { value: 88.4, isPercent: true },
     text: {
-      pt: { title: 'Chama da Noite Ardente', ascensionStatName: 'Dano Crítico', description: 'A líder de Natlan.' },
-      en: { title: 'Ablaze in the Night', ascensionStatName: 'CRIT DMG', description: 'The leader of Natlan.' },
+      pt: {
+        title: 'Chama da Noite Ardente',
+        region: 'Natlan',
+        affiliation: 'Huitztlan',
+        constellation: 'Sol Invictus',
+        visionLabel: 'Eixo Estelar',
+        weaponType: 'Espadão',
+        ascensionStatName: 'Dano Crítico',
+        description: 'A líder de Natlan.',
+      },
+      en: {
+        title: 'Night-Igniting Flame',
+        region: 'Natlan',
+        affiliation: 'Huitztlan',
+        constellation: 'Sol Invictus',
+        weaponType: 'Claymore',
+        ascensionStatName: 'CRIT DMG',
+        description: 'The leader of Natlan.',
+      },
     },
   },
 };
@@ -53,13 +70,23 @@ async function openTooltip(configure: (host: CharacterTooltipHost) => void = () 
 describe('CharacterTooltip', () => {
   afterEach(() => document.querySelectorAll('[role="tooltip"]').forEach((card) => card.remove()));
 
-  it('mostra nome, título, nível, constelação do time e status no nível 90', async () => {
+  it('mostra nome, elemento, estrelas, etiquetas, status no nível 90 e descrição', async () => {
     const { trigger, card } = await openTooltip();
     const text = card?.textContent ?? '';
     expect(text).toContain('Mavuika');
-    expect(text).toContain('Chama da Noite Ardente');
-    expect(text).toContain('Nível 90');
-    expect(text).toContain('C2');
+    const tags = [...card!.querySelectorAll('.whitespace-nowrap')].map((tag) => tag.textContent?.trim());
+    expect(tags).toEqual(['Nível 90', 'Natlan', 'Espadão', 'C2']);
+    expect(card?.querySelectorAll('[header] svg')).toHaveLength(5);
+    const profile = [...card!.querySelectorAll('dl')[0]!.querySelectorAll('div')].map((row) => [
+      row.querySelector('dt')?.textContent?.trim(),
+      row.querySelector('dd')?.textContent?.trim(),
+    ]);
+    expect(profile).toEqual([
+      ['Título', 'Chama da Noite Ardente'],
+      ['Constelação', 'Sol Invictus'],
+      ['Eixo Estelar', 'Pyro'],
+      ['Afiliação', 'Huitztlan'],
+    ]);
     expect(text).toContain('Vida base');
     expect(text).toContain('12.552');
     expect(text).toContain('Dano Crítico');
@@ -67,6 +94,31 @@ describe('CharacterTooltip', () => {
     expect(text).toContain('A líder de Natlan.');
     expect(card?.querySelector('img[src$="UI_Buff_Element_Fire.webp"]')).not.toBeNull();
     expect(trigger.getAttribute('aria-describedby')).toBe(card?.id);
+  });
+
+  it('omite região, título e afiliação de quem não tem, e usa "Visão" sem rótulo próprio', async () => {
+    const { card } = await openTooltip((host) =>
+      host.character.update((character) => ({
+        ...character,
+        tooltip: {
+          ...character.tooltip!,
+          text: {
+            ...character.tooltip!.text,
+            pt: {
+              ...character.tooltip!.text.pt,
+              region: undefined,
+              title: undefined,
+              affiliation: undefined,
+              visionLabel: undefined,
+            },
+          },
+        },
+      })),
+    );
+    const tags = [...card!.querySelectorAll('.whitespace-nowrap')].map((tag) => tag.textContent?.trim());
+    expect(tags).toEqual(['Nível 90', 'Espadão', 'C2']);
+    const profileLabels = [...card!.querySelectorAll('dl')[0]!.querySelectorAll('dt')].map((dt) => dt.textContent);
+    expect(profileLabels).toEqual(['Constelação', 'Visão']);
   });
 
   it('não abre para personagem sem dados de tooltip', async () => {

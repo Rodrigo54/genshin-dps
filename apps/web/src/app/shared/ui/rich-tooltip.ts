@@ -64,7 +64,8 @@ export interface RichTooltipTag {
 }
 
 // Moldura dos cards no visual do tooltip do Ambr (usado por Akasha e Enka): ícone saltado, nome e etiquetas no
-// topo; o que vem abaixo é projetado por quem usa. Um atributo `header` no conteúdo o põe logo abaixo do nome.
+// topo; o que vem abaixo é projetado por quem usa. No conteúdo, o atributo `nameSuffix` põe o elemento ao lado do
+// nome e `header` o põe logo abaixo dele.
 @Component({
   selector: 'app-rich-tooltip-card',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -83,14 +84,18 @@ export interface RichTooltipTag {
       >
         <img class="absolute top-1/2 left-1/2 h-full -translate-1/2" [src]="iconUrl()" alt="" width="96" height="96" />
       </div>
-      <p class="relative left-[0.15em] text-[1.25em]">{{ name() }}</p>
+      <p class="relative left-[0.15em] flex items-center gap-[0.3em] text-[1.25em]">
+        {{ name() }}
+        <ng-content select="[nameSuffix]" />
+      </p>
       <ng-content select="[header]" />
-      <!-- As etiquetas ficam numa linha só: na fonte do jogo, "Nível 90 · 674 · 66,2%" mede 16,9em no tamanho normal
-        e cabem 15,5em ao lado do ícone, por isso elas ficam em 0,85em -->
-      <div class="flex gap-[0.6em] pt-[0.3em] text-[0.85em]">
+      <!-- As etiquetas ficam numa linha só, em 0,85em. Medido na fonte do jogo, o pior caso da arma ("Nível 90 · 674 ·
+        66,2%") dá 13,5em e cabe nos 15,5em ao lado do ícone; o do personagem ("Nível 90 · Mondstadt · Catalisador ·
+        C6") dá 19em e só cabe abaixo do ícone, nos 20em da largura toda -->
+      <div class="flex gap-[0.4em] pt-[0.3em] text-[0.85em] {{ tagsBelowIcon() ? 'clear-left' : '' }}">
         @for (tag of tags(); track $index) {
           <span
-            class="flex items-center gap-[0.5em] rounded-[0.3em] bg-black/20 px-[0.5em] py-[0.1em] whitespace-nowrap
+            class="flex items-center gap-[0.5em] rounded-[0.3em] bg-black/20 px-[0.4em] py-[0.1em] whitespace-nowrap
               {{ tag.colorClass ?? 'text-white/90' }}"
           >
             @if (tag.icon; as icon) {
@@ -116,6 +121,7 @@ export class RichTooltipCard {
   readonly iconUrl = input.required<string>();
   readonly name = input.required<string>();
   readonly tags = input.required<RichTooltipTag[]>();
+  readonly tagsBelowIcon = input(false);
 
   protected readonly statIcons = STAT_ICONS;
   protected readonly statIconViewBox = STAT_ICON_VIEW_BOX;
