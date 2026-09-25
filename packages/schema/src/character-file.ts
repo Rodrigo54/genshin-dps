@@ -5,11 +5,12 @@ import { CHARACTER_LEVELS, ELEMENTS } from './site-data';
 // data/characters/<id>.yaml: gerado por `bun run characters` a partir das tabelas do jogo, nunca editado à mão.
 // É a fonte do catálogo de personagens; o nome do arquivo é o id.
 
-const levelSchema = z.union(CHARACTER_LEVELS.map((level) => z.literal(level)));
+// Nível com status gravado: 90, 95 ou 100
+export const characterLevelSchema = z.union(CHARACTER_LEVELS.map((level) => z.literal(level)));
 
 // Status base no nível, depois da última ascensão; o atributo de ascensão já em porcentagem quando isPercent
 const statsAtLevelSchema = z.strictObject({
-  level: levelSchema,
+  level: characterLevelSchema,
   hp: z.number().positive(),
   atk: z.number().positive(),
   def: z.number().positive(),

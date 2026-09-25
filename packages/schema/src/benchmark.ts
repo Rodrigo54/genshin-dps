@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { characterLevelSchema } from './character-file';
 import { ELEMENTS, MAIN_STATS_BY_SLOT } from './site-data';
 
 const MAX_CONSTELLATION = 6;
@@ -48,6 +49,8 @@ export const memberBuildSchema = z.strictObject({
   // Só para quem não tem elemento fixo (Viajante, Manequins): o elemento usado na build
   element: z.enum(ELEMENTS).exclude(['none']).optional(),
   constellation: z.int().min(0).max(MAX_CONSTELLATION),
+  // Ausente vale 90, o máximo por ascensão; 95 e 100 tiram o time do Baseline
+  level: characterLevelSchema.optional(),
   weapon: weaponSchema,
   sets: z.array(artifactSetSchema).min(1).max(2).optional(),
   talents: z.tuple([talentLevel, talentLevel, talentLevel]).optional(),

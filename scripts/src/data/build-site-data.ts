@@ -4,6 +4,7 @@ import {
   type BenchmarkInput,
   type Catalog,
   type CharacterEntry,
+  DEFAULT_CHARACTER_LEVEL,
   type CharacterTeams,
   isBaselineTeam,
   type Ranking,
@@ -81,6 +82,7 @@ function resolveMember(catalog: ResolvedCatalog, character: CharacterEntry, inpu
     characterId: character.id,
     element: resolveElement(character, input.element),
     constellation: input.constellation,
+    level: input.level ?? DEFAULT_CHARACTER_LEVEL,
     ...(weapon && { weapon: { weaponId: weapon.entry.id, refinement: weapon.refinement } }),
     ...(input.sets && {
       sets: input.sets.map((set) => ({ artifactSetId: catalog.artifactSets.resolve(set.name).id, pieces: set.pieces })),
@@ -118,10 +120,12 @@ const toMemberIdentity = (member: TeamMember) =>
     member.constellation,
     member.weapon?.weaponId ?? '',
     member.weapon?.refinement ?? '',
+    // Só o nível fora do padrão entra, para os times no nível 90 manterem a URL de antes do campo existir
+    ...(member.level === DEFAULT_CHARACTER_LEVEL ? [] : [member.level]),
   ].join(':');
 
-// O id identifica time + investimento: DPS principal e, sem importar a ordem, os três suportes com elemento, C/R
-// e arma.
+// O id identifica time + investimento: DPS principal e, sem importar a ordem, os três suportes com elemento, C/R,
+// arma e nível.
 // DPS, patch e ref ficam de fora para a URL sobreviver a uma nova medição do mesmo time.
 function createTeamId(members: TeamMember[]): string {
   const mainIdentity = members.slice(0, 1).map(toMemberIdentity);

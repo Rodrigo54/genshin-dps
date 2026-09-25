@@ -33,8 +33,14 @@ const catalog: Catalog = {
 };
 
 const members: TeamMember[] = [
-  { characterId: 'mavuika', element: 'pyro', constellation: 1, weapon: { weaponId: 'wolf-fang', refinement: 5 } },
-  { characterId: 'bennett', element: 'pyro', constellation: 6 },
+  {
+    characterId: 'mavuika',
+    element: 'pyro',
+    constellation: 1,
+    level: 90,
+    weapon: { weaponId: 'wolf-fang', refinement: 5 },
+  },
+  { characterId: 'bennett', element: 'pyro', constellation: 6, level: 90 },
 ];
 
 async function render(locale: 'pt' | 'en') {

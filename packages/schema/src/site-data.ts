@@ -180,6 +180,8 @@ export interface TeamMember {
   characterId: string;
   element: TeamElement;
   constellation: number;
+  // Sempre preenchido: 90 quando o benchmark não informa
+  level: CharacterLevel;
   // Ausente quando a fonte não informou a arma do suporte
   weapon?: MemberWeapon;
   sets?: MemberArtifactSet[];
