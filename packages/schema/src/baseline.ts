@@ -1,4 +1,4 @@
-import type { CharacterRarity, WeaponRarity } from './site-data';
+import { type CharacterLevel, type CharacterRarity, DEFAULT_CHARACTER_LEVEL, type WeaponRarity } from './site-data';
 
 const FIVE_STAR = 5;
 const MAX_CONSTELLATION = 6;
@@ -60,6 +60,7 @@ export interface BaselineMember {
   characterId: string;
   characterRarity: CharacterRarity;
   constellation: number;
+  level: CharacterLevel;
   // Ausente quando a fonte não informou a arma do suporte
   weapon?: BaselineWeapon;
 }
@@ -79,13 +80,15 @@ function isWeaponWithinBaseline(weapon: BaselineWeapon): boolean {
   );
 }
 
-// Baseline é um teto de investimento: 5★ até C0 com arma 5★ até R1, mais o que o jogo dá de graça
-// (C1 do evento de treino, constelações da Viajante e armas 5★ gratuitas).
-// 4★ em C6 e armas 4★/3★ em R5 são o máximo do jogo, então nunca estouram o teto.
+// Baseline é um teto de investimento: nível até 90 e 5★ até C0 com arma 5★ até R1, mais o que o jogo dá de
+// graça (C1 do evento de treino, constelações da Viajante e armas 5★ gratuitas).
+// 4★ em C6 e armas 4★/3★ em R5 são o máximo do jogo, então nunca estouram o teto de constelação e refinamento.
+// Acima do nível 90 é investimento extra para qualquer raridade.
 // Arma ausente não estoura o teto: a fonte já limita cada time a uma R1 ou uma C1.
 export function isBaselineMember(member: BaselineMember): boolean {
   const isWeaponOk = member.weapon === undefined || isWeaponWithinBaseline(member.weapon);
-  return member.constellation <= getFreeConstellationCap(member) && isWeaponOk;
+  const isLevelOk = member.level <= DEFAULT_CHARACTER_LEVEL;
+  return member.constellation <= getFreeConstellationCap(member) && isWeaponOk && isLevelOk;
 }
 
 export function isBaselineTeam(members: readonly BaselineMember[]): boolean {

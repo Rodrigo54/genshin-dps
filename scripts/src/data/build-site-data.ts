@@ -95,6 +95,7 @@ function resolveMember(catalog: ResolvedCatalog, character: CharacterEntry, inpu
     characterId: character.id,
     characterRarity: character.rarity,
     constellation: input.constellation,
+    level: member.level,
     ...(weapon && {
       weapon: { weaponId: weapon.entry.id, rarity: weapon.entry.rarity, refinement: weapon.refinement },
     }),

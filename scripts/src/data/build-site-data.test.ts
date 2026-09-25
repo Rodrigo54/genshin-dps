@@ -132,6 +132,13 @@ describe('buildSiteData', () => {
     expect(characterTeams[0]!.teams[0]!.members.map((member) => member.level)).toEqual([90, 95, 90, 90]);
   });
 
+  it('tira do baseline o time com um membro acima do nível 90', () => {
+    const [citlali, bennett, xilonen] = baselineTeam.supports;
+    const benchmark: typeof baselineTeam = { ...baselineTeam, supports: [citlali, { ...bennett, level: 95 }, xilonen] };
+    const { characterTeams } = buildSiteData(catalog, [{ ...mavuikaFile, benchmarks: [benchmark] }]);
+    expect(characterTeams[0]!.teams[0]!.isBaseline).toBe(false);
+  });
+
   it('mantém o id no nível 90, informado ou não, e muda acima dele', () => {
     const [citlali, bennett, xilonen] = baselineTeam.supports;
     const baselineId = teamIdOf(baselineTeam);
