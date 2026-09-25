@@ -105,9 +105,13 @@ function fillPassiveValues(text: string, values: readonly string[]): string {
         />
       </div>
       <p class="relative left-[0.15em] text-[1.25em]">{{ weapon().name[locale()] }}</p>
-      <div class="flex flex-wrap gap-x-[0.6em] gap-y-[0.2em] pt-[0.3em]">
+      <!-- Nível, ataque base e secundário numa linha só: na fonte do jogo, "Nível 90 · 674 · 66,2%" mede 16,9em no
+        tamanho normal e cabem 15,5em ao lado do ícone, por isso as etiquetas ficam em 0,85em -->
+      <div class="flex gap-[0.6em] pt-[0.3em] text-[0.85em]">
         @for (tag of tags(); track $index) {
-          <span class="flex items-center gap-[0.5em] rounded-[0.3em] bg-black/20 px-[0.5em] py-[0.1em] text-white/90">
+          <span
+            class="flex items-center gap-[0.5em] rounded-[0.3em] bg-black/20 px-[0.5em] py-[0.1em] whitespace-nowrap text-white/90"
+          >
             @if (tag.icon; as icon) {
               <svg class="w-[1em]" [attr.viewBox]="statIconViewBox" aria-hidden="true">
                 @for (path of statIcons[icon]; track $index) {
