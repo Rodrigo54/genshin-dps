@@ -25,12 +25,33 @@ export const ELEMENT_ICONS: Record<TeamElement, string> = {
 export type CharacterRarity = 4 | 5;
 export type WeaponRarity = 1 | 2 | 3 | 4 | 5;
 
+export interface CharacterTooltipText {
+  // Viajante e Manequins não têm título no jogo
+  title?: string;
+  // Nome do atributo de ascensão como o jogo mostra (ex.: "Dano Crítico", "Bônus de Dano Pyro")
+  ascensionStatName: string;
+  description: string;
+}
+
+// Status no nível máximo, como o tooltip de arma; porcentagens já multiplicadas por 100
+export interface CharacterTooltipData {
+  level: number;
+  baseHp: number;
+  baseAtk: number;
+  baseDef: number;
+  // Só a Proficiência Elemental é plana; os outros atributos de ascensão são porcentagem
+  ascensionStat: { value: number; isPercent: boolean };
+  text: Record<Locale, CharacterTooltipText>;
+}
+
 export interface CharacterEntry {
   id: string;
   name: LocalizedText;
   rarity: CharacterRarity;
   element: Element;
   icon: string;
+  // Ausente em personagem cadastrado à mão no overrides
+  tooltip?: CharacterTooltipData;
 }
 
 // Atributo secundário da arma, com o nome interno do jogo

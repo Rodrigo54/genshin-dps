@@ -1,6 +1,8 @@
 import {
   type ArtifactSetEntry,
   type CharacterEntry,
+  type CharacterTooltipData,
+  type CharacterTooltipText,
   type Element,
   FLAT_WEAPON_SUBSTAT,
   WEAPON_SUBSTAT_TYPES,
@@ -54,16 +56,6 @@ function joinLocales<T extends GameEntity, E extends { id: string }>(
   return [...entries.values()];
 }
 
-function toCharacterEntry(character: Character, portuguese: Character): CharacterEntry {
-  return {
-    id: toSlug(character.name),
-    name: { en: character.name, pt: portuguese.name },
-    rarity: character.rarity,
-    element: ELEMENT_BY_TYPE[character.elementType],
-    icon: character.images.filename_icon,
-  };
-}
-
 // Armas 1★ e 2★ param no nível 70; as outras, no 90
 const LOW_RARITY_MAX = 2;
 const LOW_RARITY_MAX_LEVEL = 70;
@@ -76,9 +68,9 @@ function isWeaponSubstatType(type: string | undefined): type is WeaponSubstatTyp
   return WEAPON_SUBSTAT_TYPES.some((substatType) => substatType === type);
 }
 
-// Porcentagens com uma casa, como o jogo mostra (0.661536 → 66.2); Proficiência Elemental inteira
-function roundSubstat(type: WeaponSubstatType, value: number): number {
-  if (type === FLAT_WEAPON_SUBSTAT) return Math.round(value);
+// Porcentagens com uma casa, como o jogo mostra (0.661536 → 66.2); valores planos inteiros
+function roundStat(value: number, isPercent: boolean): number {
+  if (!isPercent) return Math.round(value);
   return Math.round(value * PERCENT * PERCENT_DECIMALS) / PERCENT_DECIMALS;
 }
 
@@ -106,9 +98,45 @@ function toWeaponTooltip(english: Weapon, portuguese: Weapon): WeaponTooltipData
     baseAtk: Math.round(attack),
     ...(isWeaponSubstatType(substatType) &&
       specialized !== undefined && {
-        substat: { type: substatType, value: roundSubstat(substatType, specialized) },
+        substat: { type: substatType, value: roundStat(specialized, substatType !== FLAT_WEAPON_SUBSTAT) },
       }),
     text: { en: toWeaponTooltipText(english), pt: toWeaponTooltipText(portuguese) },
+  };
+}
+
+function toCharacterTooltipText(character: Character): CharacterTooltipText {
+  return {
+    ...(character.title && { title: character.title }),
+    ascensionStatName: character.substatText,
+    description: character.description,
+  };
+}
+
+function toCharacterTooltip(english: Character, portuguese: Character): CharacterTooltipData {
+  const { hp, attack, defense, specialized } = english.stats(MAX_LEVEL);
+  if (hp === undefined || attack === undefined || defense === undefined || specialized === undefined) {
+    throw new Error(`genshin-db sem status base para "${english.name}" no nível ${MAX_LEVEL}`);
+  }
+  // A Proficiência Elemental é o único atributo plano, tanto na arma quanto na ascensão
+  const isPercent = english.substatType !== FLAT_WEAPON_SUBSTAT;
+  return {
+    level: MAX_LEVEL,
+    baseHp: Math.round(hp),
+    baseAtk: Math.round(attack),
+    baseDef: Math.round(defense),
+    ascensionStat: { value: roundStat(specialized, isPercent), isPercent },
+    text: { en: toCharacterTooltipText(english), pt: toCharacterTooltipText(portuguese) },
+  };
+}
+
+function toCharacterEntry(character: Character, portuguese: Character): CharacterEntry {
+  return {
+    id: toSlug(character.name),
+    name: { en: character.name, pt: portuguese.name },
+    rarity: character.rarity,
+    element: ELEMENT_BY_TYPE[character.elementType],
+    icon: character.images.filename_icon,
+    tooltip: toCharacterTooltip(character, portuguese),
   };
 }
 

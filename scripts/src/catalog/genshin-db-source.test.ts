@@ -8,13 +8,26 @@ describe('loadGenshinDbCatalog', () => {
   const { catalog } = buildCatalog(loadGenshinDbCatalog(), emptyOverrides);
 
   it('traz personagens com nome PT, raridade, elemento e ícone da Enka', () => {
-    expect(catalog.characters.resolve('Mavuika')).toEqual({
+    expect(catalog.characters.resolve('Mavuika')).toMatchObject({
       id: 'mavuika',
       name: { en: 'Mavuika', pt: 'Mavuika' },
       rarity: 5,
       element: 'pyro',
       icon: 'UI_AvatarIcon_Mavuika',
     });
+  });
+
+  it('traz o tooltip do personagem no nível 90, com título e atributo de ascensão nos dois idiomas', () => {
+    const tooltip = catalog.characters.resolve('Mavuika').tooltip!;
+    expect(tooltip).toMatchObject({ level: 90, baseHp: 12552, baseAtk: 359, baseDef: 792 });
+    expect(tooltip.ascensionStat).toEqual({ value: 88.4, isPercent: true });
+    expect(tooltip.text.pt).toMatchObject({ title: 'Chama da Noite Ardente', ascensionStatName: 'Dano Crítico' });
+    expect(tooltip.text.en.description).not.toBe('');
+  });
+
+  it('deixa a Proficiência Elemental plana e omite o título de quem não tem', () => {
+    expect(catalog.characters.resolve('Nahida').tooltip!.ascensionStat).toEqual({ value: 115, isPercent: false });
+    expect(catalog.characters.resolve('Lumine').tooltip!.text.pt.title).toBeUndefined();
   });
 
   it('resolve armas e sets pelo nome em português', () => {
