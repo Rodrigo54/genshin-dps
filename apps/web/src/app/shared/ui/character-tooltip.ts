@@ -83,7 +83,7 @@ export class CharacterTooltipCard {
     const { region, weaponType } = text[this.locale()];
     return [
       { text: this.translate('tooltip.level', { level }) },
-      ...(region ? [{ text: region }] : []),
+      { text: region },
       { text: weaponType },
       { text: `C${this.constellation()}`, colorClass: 'text-[wheat]' },
     ];
@@ -93,8 +93,7 @@ export class CharacterTooltipCard {
     const rows: (TableRow | false)[] = [
       !!title && { label: this.translate('tooltip.title'), value: title },
       { label: this.translate('tooltip.constellation'), value: constellation },
-      // Sem rótulo próprio no jogo, vale o padrão da aba Perfil: "Visão"
-      { label: visionLabel ?? this.translate('tooltip.vision'), value: this.translate(`elements.${this.element()}`) },
+      { label: visionLabel, value: this.translate(`elements.${this.element()}`) },
       !!affiliation && { label: this.translate('tooltip.affiliation'), value: affiliation },
     ];
     return rows.filter((row): row is TableRow => row !== false);

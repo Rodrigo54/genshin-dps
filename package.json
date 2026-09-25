@@ -11,7 +11,6 @@
   "scripts": {
     "data": "bun scripts/build-data.ts",
     "images": "bun scripts/build-images.ts",
-    "vision-labels": "bun scripts/build-vision-labels.ts",
     "characters": "bun scripts/build-characters.ts",
     "build": "bun run data && bun run images && bun run --cwd apps/web build",
     "start": "bun run data && bun run images && bun run --cwd apps/web start",

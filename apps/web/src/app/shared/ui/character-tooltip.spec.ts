@@ -33,6 +33,7 @@ const mavuika: CharacterEntry = {
         region: 'Natlan',
         affiliation: 'Huitztlan',
         constellation: 'Sol Invictus',
+        visionLabel: 'Stellar Linchpin',
         weaponType: 'Claymore',
         ascensionStatName: 'CRIT DMG',
         description: 'The leader of Natlan.',
@@ -96,7 +97,7 @@ describe('CharacterTooltip', () => {
     expect(trigger.getAttribute('aria-describedby')).toBe(card?.id);
   });
 
-  it('omite região, título e afiliação de quem não tem, e usa "Visão" sem rótulo próprio', async () => {
+  it('omite título e afiliação de quem não tem', async () => {
     const { card } = await openTooltip((host) =>
       host.character.update((character) => ({
         ...character,
@@ -106,19 +107,17 @@ describe('CharacterTooltip', () => {
             ...character.tooltip!.text,
             pt: {
               ...character.tooltip!.text.pt,
-              region: undefined,
               title: undefined,
               affiliation: undefined,
-              visionLabel: undefined,
             },
           },
         },
       })),
     );
     const tags = [...card!.querySelectorAll('.whitespace-nowrap')].map((tag) => tag.textContent?.trim());
-    expect(tags).toEqual(['Nível 90', 'Espadão', 'C2']);
+    expect(tags).toEqual(['Nível 90', 'Natlan', 'Espadão', 'C2']);
     const profileLabels = [...card!.querySelectorAll('dl')[0]!.querySelectorAll('dt')].map((dt) => dt.textContent);
-    expect(profileLabels).toEqual(['Constelação', 'Visão']);
+    expect(profileLabels).toEqual(['Constelação', 'Eixo Estelar']);
   });
 
   it('não abre para personagem sem dados de tooltip', async () => {

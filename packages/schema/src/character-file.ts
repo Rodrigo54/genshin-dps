@@ -23,7 +23,7 @@ const profileSchema = z.strictObject({
   constellation: localizedNameSchema,
   // "Visão", "Gnosis", "Eixo Estelar", "Disco Lunar"…
   visionLabel: localizedNameSchema,
-  // A Viajante não tem afiliação
+  // Opcional porque o jogo pode deixar vazia; a da Viajante ("Melhor amigo de Paimon") é nossa
   affiliation: localizedNameSchema.optional(),
   description: localizedNameSchema,
 });

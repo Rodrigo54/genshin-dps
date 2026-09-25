@@ -69,7 +69,6 @@
   "tooltip": {
     "title": "Title",
     "constellation": "Constellation",
-    "vision": "Vision",
     "affiliation": "Affiliation",
     "level": "Lv. {{level}}",
     "baseHp": "Base HP",

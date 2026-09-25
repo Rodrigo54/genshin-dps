@@ -69,7 +69,6 @@
   "tooltip": {
     "title": "Título",
     "constellation": "Constelação",
-    "vision": "Visão",
     "affiliation": "Afiliação",
     "level": "Nível {{level}}",
     "baseHp": "Vida base",

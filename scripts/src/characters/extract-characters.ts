@@ -6,7 +6,10 @@ import { type AvatarRow, type CodexRow, type FetterRow, type GameTables } from '
 import { createGameTextLookup, type GameTextLookup } from './game-text-lookup';
 
 // A Viajante é uma entrada só, a do Aether; a Lumine (mesmos status e textos) fica de fora
+const AETHER_ID = 10000005;
 const LUMINE_ID = 10000007;
+// O jogo deixa a afiliação da Viajante vazia ("——"); o site mostra esta, que não existe nos textos do jogo
+const TRAVELER_AFFILIATION: LocalizedText = { pt: 'Melhor amigo de Paimon', en: "Paimon's Best Friend" };
 
 const TEYVAT: LocalizedText = { pt: 'Teyvat', en: 'Teyvat' };
 
@@ -87,7 +90,10 @@ function toCharacterFile(tables: GameTables, texts: GameTextLookup, avatar: Avat
     icon: avatar.iconName,
     weaponType: texts.readManual(avatar.weaponType),
     region: readRegion(tables, texts, fetter),
-    profile: readProfile(texts, fetter),
+    profile: {
+      ...readProfile(texts, fetter),
+      ...(avatar.id === AETHER_ID && { affiliation: TRAVELER_AFFILIATION }),
+    },
     ascensionStat: { name: texts.readManual(ascensionStat.propType), isPercent: ascensionStat.isPercent },
     stats: computeCharacterStats(avatar, tables),
   };

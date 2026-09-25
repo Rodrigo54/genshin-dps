@@ -1,5 +1,5 @@
 import type { BenchmarkInput, CatalogOverrides, SupportMemberInput } from '@genshin-dps/schema';
-import type { CatalogSource } from './catalog/genshin-db-source';
+import type { CatalogSource } from './catalog/build-catalog';
 
 // Catálogo reduzido e fixo para testar o build sem depender da versão do genshin-db
 export const catalogSourceFixture: CatalogSource = {

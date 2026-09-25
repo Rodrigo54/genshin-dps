@@ -1,10 +1,5 @@
 import {
   type ArtifactSetEntry,
-  type CharacterEntry,
-  type CharacterTooltipData,
-  type CharacterTooltipText,
-  type VisionLabels,
-  type Element,
   FLAT_WEAPON_SUBSTAT,
   WEAPON_SUBSTAT_TYPES,
   type WeaponEntry,
@@ -12,13 +7,13 @@ import {
   type WeaponTooltipData,
   type WeaponTooltipText,
 } from '@genshin-dps/schema';
-import gdb, { type Artifact, type Character, Language, type QueryFunction, type Weapon } from 'genshin-db';
+import gdb, { type Artifact, Language, type QueryFunction, type Weapon } from 'genshin-db';
 import { parseGameText } from './game-text';
 import { roundStat } from './round-stat';
 import { toSlug } from './slug';
 
-export interface CatalogSource {
-  characters: CharacterEntry[];
+// Armas e sets ainda vêm do genshin-db; os personagens vêm de data/characters
+export interface GenshinDbCatalog {
   weapons: WeaponEntry[];
   artifactSets: ArtifactSetEntry[];
 }
@@ -27,17 +22,6 @@ interface GameEntity {
   id: number;
   name: string;
 }
-
-const ELEMENT_BY_TYPE: Record<Character['elementType'], Element> = {
-  ELEMENT_PYRO: 'pyro',
-  ELEMENT_HYDRO: 'hydro',
-  ELEMENT_ANEMO: 'anemo',
-  ELEMENT_ELECTRO: 'electro',
-  ELEMENT_DENDRO: 'dendro',
-  ELEMENT_CRYO: 'cryo',
-  ELEMENT_GEO: 'geo',
-  ELEMENT_NONE: 'none',
-};
 
 function fetchAll<T extends GameEntity>(query: QueryFunction<T>, language: Language): T[] {
   return query('names', { matchCategories: true, verboseCategories: true, resultLanguage: language });
@@ -98,55 +82,6 @@ function toWeaponTooltip(english: Weapon, portuguese: Weapon): WeaponTooltipData
   };
 }
 
-function toCharacterTooltipText(character: Character, visionLabel: string | undefined): CharacterTooltipText {
-  return {
-    ...(character.title && { title: character.title }),
-    ...(character.region && { region: character.region }),
-    ...(character.affiliation && { affiliation: character.affiliation }),
-    constellation: character.constellation,
-    ...(visionLabel && { visionLabel }),
-    weaponType: character.weaponText,
-    ascensionStatName: character.substatText,
-    description: character.description,
-  };
-}
-
-function toCharacterTooltip(
-  english: Character,
-  portuguese: Character,
-  visionLabel: VisionLabels[string] | undefined,
-): CharacterTooltipData {
-  const { hp, attack, defense, specialized } = english.stats(MAX_LEVEL);
-  if (hp === undefined || attack === undefined || defense === undefined || specialized === undefined) {
-    throw new Error(`genshin-db sem status base para "${english.name}" no nível ${MAX_LEVEL}`);
-  }
-  // A Proficiência Elemental é o único atributo plano, tanto na arma quanto na ascensão
-  const isPercent = english.substatType !== FLAT_WEAPON_SUBSTAT;
-  return {
-    level: MAX_LEVEL,
-    baseHp: Math.round(hp),
-    baseAtk: Math.round(attack),
-    baseDef: Math.round(defense),
-    ascensionStat: { value: roundStat(specialized, isPercent), isPercent },
-    text: {
-      en: toCharacterTooltipText(english, visionLabel?.en),
-      pt: toCharacterTooltipText(portuguese, visionLabel?.pt),
-    },
-  };
-}
-
-function toCharacterEntry(character: Character, portuguese: Character, visionLabels: VisionLabels): CharacterEntry {
-  const id = toSlug(character.name);
-  return {
-    id,
-    name: { en: character.name, pt: portuguese.name },
-    rarity: character.rarity,
-    element: ELEMENT_BY_TYPE[character.elementType],
-    icon: character.images.filename_icon,
-    tooltip: toCharacterTooltip(character, portuguese, visionLabels[id]),
-  };
-}
-
 function toWeaponEntry(weapon: Weapon, portuguese: Weapon): WeaponEntry {
   return {
     id: toSlug(weapon.name),
@@ -162,12 +97,8 @@ function toArtifactSetEntry(artifact: Artifact, portuguese: Artifact): ArtifactS
   return { id: toSlug(artifact.name), name: { en: artifact.name, pt: portuguese.name } };
 }
 
-// Os rótulos da aba Perfil vêm de data/vision-labels.yaml, gerado das tabelas do jogo
-export function loadGenshinDbCatalog(visionLabels: VisionLabels): CatalogSource {
+export function loadGenshinDbCatalog(): GenshinDbCatalog {
   return {
-    characters: joinLocales(gdb.characters, (english, portuguese) =>
-      toCharacterEntry(english, portuguese, visionLabels),
-    ),
     weapons: joinLocales(gdb.weapons, toWeaponEntry),
     artifactSets: joinLocales(gdb.artifacts, toArtifactSetEntry),
   };

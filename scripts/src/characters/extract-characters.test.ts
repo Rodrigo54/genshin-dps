@@ -198,14 +198,14 @@ describe('extractCharacters', () => {
     expect(extractCharacters(custom, GENERATED_AT).mavuika!.profile.visionLabel.en).toBe('Stellar Linchpin');
   });
 
-  it('dá à Viajante o Aether: ícone, texto no masculino, Teyvat e sem título, afiliação nem elemento', () => {
+  it('dá à Viajante o Aether: ícone, texto no masculino, Teyvat, "Melhor amigo de Paimon" e sem título nem elemento', () => {
     const traveler = extractCharacters(tables(), GENERATED_AT).traveler!;
     expect(traveler.icon).toBe('UI_AvatarIcon_10000005');
     expect(traveler.profile.description).toEqual({ pt: 'Um Viajante forçado.', en: 'A traveler.' });
     expect(traveler.region.en).toBe('Teyvat');
     expect(traveler.element).toBe('none');
     expect(traveler.profile.title).toBeUndefined();
-    expect(traveler.profile.affiliation).toBeUndefined();
+    expect(traveler.profile.affiliation).toEqual({ pt: 'Melhor amigo de Paimon', en: "Paimon's Best Friend" });
   });
 
   it('falha com tipo de afiliação sem região ligada', () => {

@@ -3,8 +3,8 @@ import {
   benchmarkFileSchema,
   type CatalogOverrides,
   catalogOverridesSchema,
-  type VisionLabels,
-  visionLabelsSchema,
+  type CharacterFile,
+  characterFileSchema,
 } from '@genshin-dps/schema';
 import { parse } from 'yaml';
 import { z } from 'zod';
@@ -26,10 +26,21 @@ export async function loadCatalogOverrides(path: string): Promise<CatalogOverrid
   return result.data;
 }
 
-export async function loadVisionLabels(path: string): Promise<VisionLabels> {
-  const result = visionLabelsSchema.safeParse((await readYaml(path)) ?? {});
-  if (!result.success) throw new DataValidationError([describeZodError(path, result.error)]);
-  return result.data;
+// Um arquivo por personagem, gerado por `bun run characters`: data/characters/<id>.yaml
+export async function loadCharacterFiles(directory: string): Promise<Record<string, CharacterFile>> {
+  const fileNames = (await Array.fromAsync(new Bun.Glob(`*${YAML_EXTENSION}`).scan(directory))).sort();
+  const parsed = await Promise.all(
+    fileNames.map(async (fileName) => ({
+      id: basename(fileName, YAML_EXTENSION),
+      relativePath: `data/characters/${fileName}`,
+      result: characterFileSchema.safeParse(await readYaml(join(directory, fileName))),
+    })),
+  );
+  const issues = parsed.flatMap(({ relativePath, result }) =>
+    result.success ? [] : [describeZodError(relativePath, result.error)],
+  );
+  if (issues.length > 0) throw new DataValidationError(issues);
+  return Object.fromEntries(parsed.flatMap(({ id, result }) => (result.success ? [[id, result.data]] : [])));
 }
 
 // Cada arquivo agrupa os benchmarks de um DPS principal: data/benchmarks/<id-do-personagem>.yaml

@@ -1,7 +1,13 @@
 import type { ArtifactSetEntry, CatalogOverrides, CharacterEntry, WeaponEntry } from '@genshin-dps/schema';
 import { CatalogIndex, type NamedEntry } from './catalog-index';
-import type { CatalogSource } from './genshin-db-source';
 import { toSlug } from './slug';
+
+// Personagens de data/characters; armas e sets do genshin-db
+export interface CatalogSource {
+  characters: CharacterEntry[];
+  weapons: WeaponEntry[];
+  artifactSets: ArtifactSetEntry[];
+}
 
 export interface ResolvedCatalog {
   characters: CatalogIndex<CharacterEntry>;
@@ -26,7 +32,7 @@ interface IndexInput<T extends NamedEntry> {
   aliases: Readonly<Record<string, string>>;
 }
 
-// Override com o mesmo id substitui a entrada do genshin-db (serve para correção);
+// Override com o mesmo id substitui a entrada da fonte (serve para correção);
 // quando o pacote já traz a entrada, ou o alias aponta para a entrada que o nome já teria, o override ficou
 // redundante e gera aviso. Alias que redireciona um nome do pacote para outra entrada (Lumine → Traveler) é válido.
 function buildIndex<T extends NamedEntry>({
@@ -44,12 +50,14 @@ function buildIndex<T extends NamedEntry>({
 
   const redundantEntries = overrideEntries
     .filter((entry) => sourceIndex.hasExactName(entry.name.en))
-    .map((entry) => `${kind} "${entry.name.en}" já existe no genshin-db; remova o override se não for uma correção`);
+    .map(
+      (entry) => `${kind} "${entry.name.en}" já existe na fonte do catálogo; remova o override se não for uma correção`,
+    );
   const redundantAliases = Object.entries(aliases)
     .filter(
       ([alias, target]) => sourceIndex.hasExactName(alias) && sourceIndex.resolve(alias) === index.resolve(target),
     )
-    .map(([alias]) => `Alias de ${kind.toLowerCase()} "${alias}" já é um nome do genshin-db; remova o alias`);
+    .map(([alias]) => `Alias de ${kind.toLowerCase()} "${alias}" já é um nome da fonte do catálogo; remova o alias`);
 
   return { index, warnings: [...redundantEntries, ...redundantAliases] };
 }
